@@ -1,0 +1,3215 @@
+
+@base          <http://example.org/> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ite:   <http://w3id.org/sparql-generate/iter/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<http://ex.com/Lyon/22001>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Place Saint-Luc / Provinces" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7495654052048620" ;
+        geo:lon        "4.8008960240920420" .
+
+<http://ex.com/Lyon/5054>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Champvert" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7638977674247510" ;
+        geo:lon        "4.7927143081079864" .
+
+<http://ex.com/Lyon/7056>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Place Raspail" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7557747699610790" ;
+        geo:lon        "4.8407411543374979" .
+
+<http://ex.com/Lyon/8057>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Vienne  / Montagny" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7323603634356320" ;
+        geo:lon        "4.8534202156019024" .
+
+<http://ex.com/Lyon/4023>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Pont Masaryk" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7782780129806140" ;
+        geo:lon        "4.8106317576202677" .
+
+<http://ex.com/Lyon/2016>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Place Regaud" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7630769295669990" ;
+        geo:lon        "4.8342866883470439" .
+
+<http://ex.com/Lyon/6025>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Place d'Helvétie" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7731863072103170" ;
+        geo:lon        "4.8419593354412900" .
+
+<http://ex.com/Lyon/7026>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Baldassini / Gerland" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7276967807767180" ;
+        geo:lon        "4.8373820902736711" .
+
+<http://ex.com/Lyon/3094>
+        a              crm:Station ;
+        rdfs:capacity  "38" ;
+        rdfs:label     "Villette" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7577645564235310" ;
+        geo:lon        "4.8614965859401122" .
+
+<http://ex.com/Lyon/10038>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Condorcet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7790457737185790" ;
+        geo:lon        "4.8667783280240924" .
+
+<http://ex.com/Lyon/14001>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Centre Nautique" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7430804426039540" ;
+        geo:lon        "4.9092686508128613" .
+
+<http://ex.com/Lyon/15002>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Cité Berliet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7059819724876420" ;
+        geo:lon        "4.9009848506091007" .
+
+<http://ex.com/Lyon/16003>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Joliot Curie / Sembat" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7145266404338170" ;
+        geo:lon        "4.8800876211039439" .
+
+<http://ex.com/Lyon/10008>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Salengro / Vaillant" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7783682080048780" ;
+        geo:lon        "4.8796732813004162" .
+
+<http://ex.com/Lyon/3034>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Garibaldi / Pensionnat" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7547065642496240" ;
+        geo:lon        "4.8534044474099280" .
+
+<http://ex.com/Lyon/5036>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "La Salette" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7496868148719000" ;
+        geo:lon        "4.7956106152696716" .
+
+<http://ex.com/Lyon/2028>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Sainte-Blandine" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7444223014223040" ;
+        geo:lon        "4.8221428704396105" .
+
+<http://ex.com/Lyon/6037>
+        a              crm:Station ;
+        rdfs:capacity  "27" ;
+        rdfs:label     "Cité Internationale / Interpol" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7823061128328350" ;
+        geo:lon        "4.8493439808167293" .
+
+<http://ex.com/Lyon/7038>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Place Stalingard" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7495788810534310" ;
+        geo:lon        "4.8529655050157778" .
+
+<http://ex.com/Lyon/8039>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Pierre Delore" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7387410923419680" ;
+        geo:lon        "4.8522860109415236" .
+
+<http://ex.com/Lyon/3004>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Bourse du travail" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7596382324954690" ;
+        geo:lon        "4.8480846921356076" .
+
+<http://ex.com/Lyon/4005>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Place Bertone" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7776173765049850" ;
+        geo:lon        "4.8345009421112763" .
+
+<http://ex.com/Lyon/5006>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Quai Romain Rolland" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7620370806926720" ;
+        geo:lon        "4.8288896824580405" .
+
+<http://ex.com/Lyon/6007>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Masséna" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7696721806905060" ;
+        geo:lon        "4.8523652715024763" .
+
+<http://ex.com/Lyon/7008>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Jean Jaurès / Guillotière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7525809002148800" ;
+        geo:lon        "4.8463206182240945" .
+
+<http://ex.com/Lyon/8009>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Jean XXIII / Mermoz" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7364796056891410" ;
+        geo:lon        "4.8698054320071753" .
+
+<http://ex.com/Lyon/8040>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Ambroise Paré" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7362404944940690" ;
+        geo:lon        "4.8837368262130560" .
+
+<http://ex.com/Lyon/9041>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Carret / Sédaillan" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7924777385859370" ;
+        geo:lon        "4.8205782575315625" .
+
+<http://ex.com/Lyon/8010>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place Mendès France" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7399270587134770" ;
+        geo:lon        "4.8595210870362999" .
+
+<http://ex.com/Lyon/9011>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Conservatoire" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7697822121574090" ;
+        geo:lon        "4.8126762195854047" .
+
+<http://ex.com/Lyon/3101>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Patinoire Baraban" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7620516689039150" ;
+        geo:lon        "4.8685003507160687" .
+
+<http://ex.com/Lyon/3016>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Liberté / Part Dieu" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7593422663364460" ;
+        geo:lon        "4.8422275870211209" .
+
+<http://ex.com/Lyon/4017>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Place des tapis" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7760264913711410" ;
+        geo:lon        "4.8296210962258828" .
+
+<http://ex.com/Lyon/10021>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "GrandClément" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7597183207295690" ;
+        geo:lon        "4.8899469363178758" .
+
+<http://ex.com/Lyon/10117>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "La Pérralière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7645636665294120" ;
+        geo:lon        "4.8923336071821142" .
+
+<http://ex.com/Lyon/3088>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Place Guichard" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7588252495330470" ;
+        geo:lon        "4.8465386095114376" .
+
+<http://ex.com/Lyon/2041>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Sala / Charité" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7544732763091350" ;
+        geo:lon        "4.8330110846859418" .
+
+<http://ex.com/Lyon/8052>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Clinique Montplaisir" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7470967140946740" ;
+        geo:lon        "4.8601437036179034" .
+
+<http://ex.com/Lyon/3058>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Place du Lac" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7588856223001270" ;
+        geo:lon        "4.8537678938544726" .
+
+<http://ex.com/Lyon/2011>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Sala / Rue du Plat" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7568084876169440" ;
+        geo:lon        "4.8283743801395120" .
+
+<http://ex.com/Lyon/6020>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Musée Guimet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7745048729892690" ;
+        geo:lon        "4.8484771018513761" .
+
+<http://ex.com/Lyon/7021>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Challemel Lacour / Gerland" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7298058652087600" ;
+        geo:lon        "4.8381384383404171" .
+
+<http://ex.com/Lyon/10063>
+        a              crm:Station ;
+        rdfs:capacity  "34" ;
+        rdfs:label     "Perrin / Jean Jaurès" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7583918194315590" ;
+        geo:lon        "4.8856094344245129" .
+
+<http://ex.com/Lyon/19001>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Médiathèque / Hôpitaux" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.6989616754135780" ;
+        geo:lon        "4.8079078030331805" .
+
+<http://ex.com/Lyon/6032>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Préfecture / Sarrail" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7648582723532300" ;
+        geo:lon        "4.8415654714910223" .
+
+<http://ex.com/Lyon/1022>
+        a              crm:Station ;
+        rdfs:capacity  "36" ;
+        rdfs:label     "Place Tolozan" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7696005888254260" ;
+        geo:lon        "4.8376084367310748" .
+
+<http://ex.com/Lyon/5031>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Ménival / Joliot Curie" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7546405115265320" ;
+        geo:lon        "4.7881488839855884" .
+
+<http://ex.com/Lyon/10075>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Gabriel Péri" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7722995938508110" ;
+        geo:lon        "4.8656992684460585" .
+
+<http://ex.com/Lyon/7033>
+        a              crm:Station ;
+        rdfs:capacity  "28" ;
+        rdfs:label     "Saint-Luc / Saint-Joseph" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7494176952947240" ;
+        geo:lon        "4.8347520047111061" .
+
+<http://ex.com/Lyon/8034>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Berthelot / Villon" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7382725902588940" ;
+        geo:lon        "4.8626987923823561" .
+
+<http://ex.com/Lyon/8004>
+        a              crm:Station ;
+        rdfs:capacity  "21" ;
+        rdfs:label     "Mairie du 8e" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7351509957904980" ;
+        geo:lon        "4.8728173875360472" .
+
+<http://ex.com/Lyon/5001>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Place Varillon (funiculaire Saint-Just)" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7573003219205030" ;
+        geo:lon        "4.8150900113095236" .
+
+<http://ex.com/Lyon/6002>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Porte des Enfants du Rhône" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7774932959538890" ;
+        geo:lon        "4.8448707260176658" .
+
+<http://ex.com/Lyon/7003>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Gambetta / Garibaldi" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7517901355474730" ;
+        geo:lon        "4.8526079660087520" .
+
+<http://ex.com/Lyon/10045>
+        a              crm:Station ;
+        rdfs:capacity  "" ;
+        rdfs:label     "Anatole France / Alsace" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7670823153311870" ;
+        geo:lon        "4.8706390455761799" .
+
+<http://ex.com/Lyon/3071>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "BioParc" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7404830910258650" ;
+        geo:lon        "4.8880858101360474" .
+
+<http://ex.com/Lyon/28001>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Simon / Leclerc" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.8324657183306240" ;
+        geo:lon        "4.8487792326838308" .
+
+<http://ex.com/Lyon/4042>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Grégory Coupet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7817001067679500" ;
+        geo:lon        "4.8206000461275869" .
+
+<http://ex.com/Lyon/1034>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Carmélites" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7700015740910830" ;
+        geo:lon        "4.8292695053207497" .
+
+<http://ex.com/Lyon/2035>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Childebert / Rivière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7598862786474210" ;
+        geo:lon        "4.8357987999345911" .
+
+<http://ex.com/Lyon/6044>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Charmettes / Bellecombe" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7663703493176260" ;
+        geo:lon        "4.8650841638710620" .
+
+<http://ex.com/Lyon/7045>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Parc des Berges" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7377409586890170" ;
+        geo:lon        "4.8244875157097109" .
+
+<http://ex.com/Lyon/10087>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Baratin" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7606037573681730" ;
+        geo:lon        "4.9006969683209185" .
+
+<http://ex.com/Lyon/3011>
+        a              crm:Station ;
+        rdfs:capacity  "59" ;
+        rdfs:label     "Part-Dieu / Cuirassiers" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7598976512354200" ;
+        geo:lon        "4.8575730314142138" .
+
+<http://ex.com/Lyon/4012>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Place Adrien Godien" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7786706157080870" ;
+        geo:lon        "4.8410134096251811" .
+
+<http://ex.com/Lyon/2005>
+        a              crm:Station ;
+        rdfs:capacity  "32" ;
+        rdfs:label     "Confluence Hôtel de Région" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7405383152039140" ;
+        geo:lon        "4.8191795184368047" .
+
+<http://ex.com/Lyon/7015>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Techsud" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7227999997408930" ;
+        geo:lon        "4.8427060003576159" .
+
+<http://ex.com/Lyon/10112>
+        a              crm:Station ;
+        rdfs:capacity  "32" ;
+        rdfs:label     "Place de la Reconnaissance" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7544402430766440" ;
+        geo:lon        "4.8853489189380230" .
+
+<http://ex.com/Lyon/3083>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Les Halles" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7615189274364060" ;
+        geo:lon        "4.8504862573912657" .
+
+<http://ex.com/Lyon/10027>
+        a              crm:Station ;
+        rdfs:capacity  "26" ;
+        rdfs:label     "Mairie de Villeurbanne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7668306064525150" ;
+        geo:lon        "4.8798938672774597" .
+
+<http://ex.com/Lyon/21001>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Aquarium" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7273693332767340" ;
+        geo:lon        "4.8146354766198369" .
+
+<http://ex.com/Lyon/3053>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Gambetta / Jusserand" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7511124102764410" ;
+        geo:lon        "4.8555850883006508" .
+
+<http://ex.com/Lyon/5055>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Buyer / Apollinaire" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7620132943614020" ;
+        geo:lon        "4.8027598903443769" .
+
+<http://ex.com/Lyon/7057>
+        a              crm:Station ;
+        rdfs:capacity  "34" ;
+        rdfs:label     "Jaurès / Bollier" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7347254902347230" ;
+        geo:lon        "4.8354967607642045" .
+
+<http://ex.com/Lyon/8058>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Longefer / Kruger" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7386678839509320" ;
+        geo:lon        "4.8781309055528315" .
+
+<http://ex.com/Lyon/4024>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Lyon Métropole" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7881700188236560" ;
+        geo:lon        "4.8185602866725281" .
+
+<http://ex.com/Lyon/1016>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Pêcherie" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7659547300349490" ;
+        geo:lon        "4.8311781246444845" .
+
+<http://ex.com/Lyon/2017>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "République / Ferrandière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7621739970214780" ;
+        geo:lon        "4.8359706936868223" .
+
+<http://ex.com/Lyon/9029>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Saint Pierre de Vaise" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7730995725331480" ;
+        geo:lon        "4.8078137222645942" .
+
+<http://ex.com/Lyon/10039>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Bouvier" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7794499265826080" ;
+        geo:lon        "4.8915008245270393" .
+
+<http://ex.com/Lyon/30001>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Place Canellas" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.8050913402650010" ;
+        geo:lon        "4.8847438731991382" .
+
+<http://ex.com/Lyon/3035>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Magnin / Buire" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7526125818453550" ;
+        geo:lon        "4.8587710033051472" .
+
+<http://ex.com/Lyon/7039>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Guillotière / Madeleine" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7510565465262080" ;
+        geo:lon        "4.8480482303453218" .
+
+<http://ex.com/Lyon/3005>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Saxe / Gambetta" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7537858652435570" ;
+        geo:lon        "4.8480424261036825" .
+
+<http://ex.com/Lyon/4006>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Philippe de Lassalle" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7733802953437490" ;
+        geo:lon        "4.8212427601652648" .
+
+<http://ex.com/Lyon/5007>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Place de Trion" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7579063089064060" ;
+        geo:lon        "4.8131349528107474" .
+
+<http://ex.com/Lyon/6008>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place Jules Ferry" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7684122613764610" ;
+        geo:lon        "4.8590705567383443" .
+
+<http://ex.com/Lyon/7009>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Jean Jaurès" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7375180973509360" ;
+        geo:lon        "4.8375089199170214" .
+
+<http://ex.com/Lyon/2030>
+        a              crm:Station ;
+        rdfs:capacity  "7" ;
+        rdfs:label     "République / Poulaillerie" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7640723503116150" ;
+        geo:lon        "4.8355253578885975" .
+
+<http://ex.com/Lyon/8041>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Etats-Unis / Viviani" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7247162655050090" ;
+        geo:lon        "4.8708316547687760" .
+
+<http://ex.com/Lyon/9042>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Vaise Docks" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7865084443620280" ;
+        geo:lon        "4.8114412174203718" .
+
+<http://ex.com/Lyon/7010>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Centre Berthelot" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7473561743230870" ;
+        geo:lon        "4.8359996982041684" .
+
+<http://ex.com/Lyon/8011>
+        a              crm:Station ;
+        rdfs:capacity  "14" ;
+        rdfs:label     "Place Lebret" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7356139906482110" ;
+        geo:lon        "4.8529965568657403" .
+
+<http://ex.com/Lyon/3102>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Docteur Long / Aubépins" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7525429085336630" ;
+        geo:lon        "4.8942587457505971" .
+
+<http://ex.com/Lyon/3017>
+        a              crm:Station ;
+        rdfs:capacity  "37" ;
+        rdfs:label     "Saxe / Dunoir" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7609483816605830" ;
+        geo:lon        "4.8452325958943723" .
+
+<http://ex.com/Lyon/3089>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Trarieux / Lacassagne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7453145927333720" ;
+        geo:lon        "4.8889645723972111" .
+
+<http://ex.com/Lyon/10118>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Voyant / Chambord" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7671533127280340" ;
+        geo:lon        "4.9005991607433979" .
+
+<http://ex.com/Lyon/2042>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Joffre / Vaubecour" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7518482427555360" ;
+        geo:lon        "4.8247344893159925" .
+
+<http://ex.com/Lyon/5050>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Théâtre Romain" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7583623960292910" ;
+        geo:lon        "4.8210866415482529" .
+
+<http://ex.com/Lyon/7052>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Parc Blandan" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7459637288850090" ;
+        geo:lon        "4.8511961077823749" .
+
+<http://ex.com/Lyon/8053>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Lumière / Trouilhet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7435720690503300" ;
+        geo:lon        "4.8701059691417319" .
+
+<http://ex.com/Lyon/6021>
+        a              crm:Station ;
+        rdfs:capacity  "11" ;
+        rdfs:label     "Garibaldi" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7706974838463410" ;
+        geo:lon        "4.8499357293643790" .
+
+<http://ex.com/Lyon/2012>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Gailleton" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7534549142114390" ;
+        geo:lon        "4.8333538439572381" .
+
+<http://ex.com/Lyon/8023>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Mermoz / Pinel" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7307938036109430" ;
+        geo:lon        "4.8874632602485164" .
+
+<http://ex.com/Lyon/7022>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Jaurès / Lagrange" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7439256046218220" ;
+        geo:lon        "4.8415220893002839" .
+
+<http://ex.com/Lyon/10064>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "4 août 1789" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7648217045185530" ;
+        geo:lon        "4.8843189291137268" .
+
+<http://ex.com/Lyon/3029>
+        a              crm:Station ;
+        rdfs:capacity  "38" ;
+        rdfs:label     "Place Aristide Briand" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7530043530220990" ;
+        geo:lon        "4.8502474272199692" .
+
+<http://ex.com/Lyon/3090>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Vinatier" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7419208619871470" ;
+        geo:lon        "4.8939627777052399" .
+
+<http://ex.com/Lyon/10034>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Docteur Damidot" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7617882849687090" ;
+        geo:lon        "4.8861572848566013" .
+
+<http://ex.com/Lyon/18001>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Europe / Voltaire" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7026237463266300" ;
+        geo:lon        "4.8219985866813753" .
+
+<http://ex.com/Lyon/10004>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Tonkin" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7762210147081350" ;
+        geo:lon        "4.8626475813297994" .
+
+<http://ex.com/Lyon/11005>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Passerelle de la Paix" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7879516402910550" ;
+        geo:lon        "4.8530543333992187" .
+
+<http://ex.com/Lyon/7064>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "CROUS" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7454305152808020" ;
+        geo:lon        "4.8477802774631007" .
+
+<http://ex.com/Lyon/2024>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "République / Maupin" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7587390821938480" ;
+        geo:lon        "4.8340765154131455" .
+
+<http://ex.com/Lyon/1023>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Croix Rousse / Perfetti" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7722538415304920" ;
+        geo:lon        "4.8194608620100041" .
+
+<http://ex.com/Lyon/5032>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Ménival / Eisenhower" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7567027351715510" ;
+        geo:lon        "4.7831510682805529" .
+
+<http://ex.com/Lyon/6033>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Créqui / Lafayette" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7637960125263280" ;
+        geo:lon        "4.8470620002854572" .
+
+<http://ex.com/Lyon/7034>
+        a              crm:Station ;
+        rdfs:capacity  "31" ;
+        rdfs:label     "Piscine du Rhône" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7536107053595200" ;
+        geo:lon        "4.8382209724032039" .
+
+<http://ex.com/Lyon/8035>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Sans Souci" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7472487338214580" ;
+        geo:lon        "4.8652857830315162" .
+
+<http://ex.com/Lyon/4001>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Conservatoire bis" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7703894302220250" ;
+        geo:lon        "4.8142456674237000" .
+
+<http://ex.com/Lyon/5002>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Place des Compagnons de la chanson" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7565273368783990" ;
+        geo:lon        "4.7966121788894247" .
+
+<http://ex.com/Lyon/6003>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Avenue Verguin" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7729113974482830" ;
+        geo:lon        "4.8563267813588187" .
+
+<http://ex.com/Lyon/7004>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Mairie du 7e" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7465601730305520" ;
+        geo:lon        "4.8423412580916123" .
+
+<http://ex.com/Lyon/10046>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Charmettes / Zola" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7707297451097760" ;
+        geo:lon        "4.8673418461692233" .
+
+<http://ex.com/Lyon/9006>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Théâtre Nouvelle Génération" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7772955373720120" ;
+        geo:lon        "4.8033117445656650" .
+
+<http://ex.com/Lyon/10101>
+        a              crm:Station ;
+        rdfs:capacity  "34" ;
+        rdfs:label     "Einstein / 11 novembre 1918" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7794214867087280" ;
+        geo:lon        "4.8740757995838857" .
+
+<http://ex.com/Lyon/10016>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Place de la paix" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7520997282193140" ;
+        geo:lon        "4.9146430086846324" .
+
+<http://ex.com/Lyon/27001>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Gare / Quai de la Libération" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.8308539622466850" ;
+        geo:lon        "4.8470037538635253" .
+
+<http://ex.com/Lyon/28002>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Gambetta / Ferry" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.8354059997715170" ;
+        geo:lon        "4.8457000001885611" .
+
+<http://ex.com/Lyon/1035>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Quai Lassagne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7722014692572260" ;
+        geo:lon        "4.8379117929264730" .
+
+<http://ex.com/Lyon/2036>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Place Antonin Gourju" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7594863490351000" ;
+        geo:lon        "4.8301699554160633" .
+
+<http://ex.com/Lyon/5044>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Champvert" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7597959541759560" ;
+        geo:lon        "4.7965641858696300" .
+
+<http://ex.com/Lyon/6045>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Brotteaux / Vauban" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7663673112669610" ;
+        geo:lon        "4.8570018759142295" .
+
+<http://ex.com/Lyon/7046>
+        a              crm:Station ;
+        rdfs:capacity  "28" ;
+        rdfs:label     "Place de l'Ecole" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7300799170408610" ;
+        geo:lon        "4.8278229564284700" .
+
+<http://ex.com/Lyon/10088>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "4 août 1789 / Pressensé" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7660587436588950" ;
+        geo:lon        "4.8987031427962373" .
+
+<http://ex.com/Lyon/3012>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Place du Château" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7495170788471200" ;
+        geo:lon        "4.8872857232192937" .
+
+<http://ex.com/Lyon/1005>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Meissonier" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7660850668591980" ;
+        geo:lon        "4.8328335830568179" .
+
+<http://ex.com/Lyon/2006>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Place de l'Hippodrome" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7455815521804820" ;
+        geo:lon        "4.8235326732363086" .
+
+<http://ex.com/Lyon/7016>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Place Saint Louis" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7490037273034530" ;
+        geo:lon        "4.8476441418616316" .
+
+<http://ex.com/Lyon/10058>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "métro Flachet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7670909450657110" ;
+        geo:lon        "4.8924286413845515" .
+
+<http://ex.com/Lyon/10113>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Gare de Villeurbanne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7557668546375140" ;
+        geo:lon        "4.8914894327085978" .
+
+<http://ex.com/Lyon/3084>
+        a              crm:Station ;
+        rdfs:capacity  "28" ;
+        rdfs:label     "Desaix" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7572612599251580" ;
+        geo:lon        "4.8552008564228180" .
+
+<http://ex.com/Lyon/10028>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Ecole de musique" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7675343020076260" ;
+        geo:lon        "4.8739662098689820" .
+
+<http://ex.com/Lyon/20001>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Gare Oullins" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7170299434914180" ;
+        geo:lon        "4.8141359805783805" .
+
+<http://ex.com/Lyon/8059>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Laennec / Pinel" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7353460225460320" ;
+        geo:lon        "4.8895839762811750" .
+
+<http://ex.com/Lyon/3024>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Rockfeller / Esquirol" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7414231127129510" ;
+        geo:lon        "4.8853771979328720" .
+
+<http://ex.com/Lyon/4025>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Chazière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7754224668984690" ;
+        geo:lon        "4.8178899295525035" .
+
+<http://ex.com/Lyon/5026>
+        a              crm:Station ;
+        rdfs:capacity  "14" ;
+        rdfs:label     "Rue de la Baleine" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7633837102434310" ;
+        geo:lon        "4.8290114774217887" .
+
+<http://ex.com/Lyon/8029>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Etats-Unis / Lévigne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7322180106596860" ;
+        geo:lon        "4.8651415367367150" .
+
+<http://ex.com/Lyon/12001>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "La Soie" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7608131946829250" ;
+        geo:lon        "4.9206039456886055" .
+
+<http://ex.com/Lyon/8060>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Santy / Beauvisage" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7316833148738980" ;
+        geo:lon        "4.8741275326105118" .
+
+<http://ex.com/Lyon/14003>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Place Curial" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7366744242415280" ;
+        geo:lon        "4.9171004856320097" .
+
+<http://ex.com/Lyon/16005>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Gare de Vénissieux" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7063403824794530" ;
+        geo:lon        "4.8886809407000067" .
+
+<http://ex.com/Lyon/3066>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Kimmerling / Faure" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7542631708598860" ;
+        geo:lon        "4.8634659165957501" .
+
+<http://ex.com/Lyon/8030>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Laënnec" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7413737377965570" ;
+        geo:lon        "4.8797369306165574" .
+
+<http://ex.com/Lyon/10071>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Lycée Marie Curie" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7615279698755510" ;
+        geo:lon        "4.8956902199613603" .
+
+<http://ex.com/Lyon/30002>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Loup pendu" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.8163360093169910" ;
+        geo:lon        "4.8876120672760024" .
+
+<http://ex.com/Lyon/3036>
+        a              crm:Station ;
+        rdfs:capacity  "35" ;
+        rdfs:label     "Félix Faure / Vivier Merle" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7538149056220500" ;
+        geo:lon        "4.8598558941293657" .
+
+<http://ex.com/Lyon/6039>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Garibaldi / Vauban" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7666921938824130" ;
+        geo:lon        "4.8520859812468151" .
+
+<http://ex.com/Lyon/10041>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Kimmerling" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7529723995867810" ;
+        geo:lon        "4.8988656628976361" .
+
+<http://ex.com/Lyon/3006>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Villette / Saint-Antoine" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7628598508923400" ;
+        geo:lon        "4.8622869000871978" .
+
+<http://ex.com/Lyon/4007>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Place Flammarion" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7793264516606800" ;
+        geo:lon        "4.8203031984414517" .
+
+<http://ex.com/Lyon/5008>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Sainte-Irénée" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7549458810740010" ;
+        geo:lon        "4.8124212248457434" .
+
+<http://ex.com/Lyon/10011>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Gratte-Ciel" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7692274364669060" ;
+        geo:lon        "4.8804622522382601" .
+
+<http://ex.com/Lyon/10083>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Château Gaillard / Bienvenus" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7778649152535660" ;
+        geo:lon        "4.8842442857728363" .
+
+<http://ex.com/Lyon/6040>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Les Halles" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7640576127189080" ;
+        geo:lon        "4.8499305460757522" .
+
+<http://ex.com/Lyon/7041>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Domer / Chevreul" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7466748285384950" ;
+        geo:lon        "4.8444434656856057" .
+
+<http://ex.com/Lyon/8042>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Francis de Pressenssé" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7314272671117620" ;
+        geo:lon        "4.8600379663129871" .
+
+<http://ex.com/Lyon/9043>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Marietton Ouest" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7760850428762750" ;
+        geo:lon        "4.7997376609700089" .
+
+<http://ex.com/Lyon/2001>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Bellecour / République" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7579850990088130" ;
+        geo:lon        "4.8345938219838454" .
+
+<http://ex.com/Lyon/7011>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Berthelot / Garibaldi" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7437195253426760" ;
+        geo:lon        "4.8472752679987110" .
+
+<http://ex.com/Lyon/10053>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Rossellini / 11 Novembre" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7794083136080090" ;
+        geo:lon        "4.8629021690287688" .
+
+<http://ex.com/Lyon/9013>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Quai Paul Sédaillan" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7875097567311830" ;
+        geo:lon        "4.8144211278496751" .
+
+<http://ex.com/Lyon/3103>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Place Danton" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7548124485154370" ;
+        geo:lon        "4.8575743726010305" .
+
+<http://ex.com/Lyon/3018>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Créqui / Voltaire" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7566983441751920" ;
+        geo:lon        "4.8484034857557150" .
+
+<http://ex.com/Lyon/10119>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Villeurbanne Saint-Jean" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7804458217109410" ;
+        geo:lon        "4.9044888457892961" .
+
+<http://ex.com/Lyon/7053>
+        a              crm:Station ;
+        rdfs:capacity  "28" ;
+        rdfs:label     "Jaurès / Thibaudière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7503447975739450" ;
+        geo:lon        "4.8450482534996375" .
+
+<http://ex.com/Lyon/8054>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Martinière / Monplaisir" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7408472643867510" ;
+        geo:lon        "4.8682065451769923" .
+
+<http://ex.com/Lyon/1012>
+        a              crm:Station ;
+        rdfs:capacity  "26" ;
+        rdfs:label     "Ampère / Bourse" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7658113822040560" ;
+        geo:lon        "4.8368957414205633" .
+
+<http://ex.com/Lyon/2013>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Célestins" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7599398325897230" ;
+        geo:lon        "4.8320716113863762" .
+
+<http://ex.com/Lyon/6022>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place Maréchal Lyautey" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7693730577565390" ;
+        geo:lon        "4.8423179538871635" .
+
+<http://ex.com/Lyon/7023>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Berthelot / Route de Vienne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7426537617282920" ;
+        geo:lon        "4.8505369714596656" .
+
+<http://ex.com/Lyon/8024>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Mermoz / Michelet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7332717801443990" ;
+        geo:lon        "4.8786008569623753" .
+
+<http://ex.com/Lyon/10120>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Salengro / Descartes" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7762517515064500" ;
+        geo:lon        "4.8716291781443655" .
+
+<http://ex.com/Lyon/3091>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Hôpital Neurologique" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7481832938431690" ;
+        geo:lon        "4.8969570575460013" .
+
+<http://ex.com/Lyon/10035>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Boiron Grangé" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7631587956905860" ;
+        geo:lon        "4.9004795303651321" .
+
+<http://ex.com/Lyon/17001>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Jaurès / Arsenal" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7122289030370230" ;
+        geo:lon        "4.8557509431770072" .
+
+<http://ex.com/Lyon/10005>
+        a              crm:Station ;
+        rdfs:capacity  "35" ;
+        rdfs:label     "11 novembre" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7797016132489390" ;
+        geo:lon        "4.8599911609956870" .
+
+<http://ex.com/Lyon/34001>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Pont de Neuville" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.8766089913122170" ;
+        geo:lon        "4.8386237264875973" .
+
+<http://ex.com/Lyon/3031>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Corneille / Servient" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7599305258836110" ;
+        geo:lon        "4.8445159039671504" .
+
+<http://ex.com/Lyon/1024>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Rouville" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7696644422938020" ;
+        geo:lon        "4.8246123488633987" .
+
+<http://ex.com/Lyon/2025>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Mercière / Ferrandière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7620553014781280" ;
+        geo:lon        "4.8332059556379781" .
+
+<http://ex.com/Lyon/7035>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Marseille / Université" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7509549511840560" ;
+        geo:lon        "4.8392671207183300" .
+
+<http://ex.com/Lyon/4002>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Mairie du 4e" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7742004406999570" ;
+        geo:lon        "4.8277652218641753" .
+
+<http://ex.com/Lyon/6004>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Foch" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7688513697593610" ;
+        geo:lon        "4.8447649388425829" .
+
+<http://ex.com/Lyon/8006>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place du 8 mai 1945" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7297663546006700" ;
+        geo:lon        "4.8681665813493629" .
+
+<http://ex.com/Lyon/7005>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Debourg" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7317535548177500" ;
+        geo:lon        "4.8339617941232040" .
+
+<http://ex.com/Lyon/10047>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Lherminier / Pressensé" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7711232449440570" ;
+        geo:lon        "4.8850235984658994" .
+
+<http://ex.com/Lyon/10102>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "DOUA / Gaston Berger" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7809444797410170" ;
+        geo:lon        "4.8713269128915702" .
+
+<http://ex.com/Lyon/5045>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Valdo / Rivet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7504814834310240" ;
+        geo:lon        "4.7887741211031214" .
+
+<http://ex.com/Lyon/3043>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Place Rouget de L'Isle" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7539631929670630" ;
+        geo:lon        "4.8673532946259153" .
+
+<http://ex.com/Lyon/1036>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Aveyron" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7743716157555480" ;
+        geo:lon        "4.8328150087604627" .
+
+<http://ex.com/Lyon/2037>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Place des Archives" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7479691410901740" ;
+        geo:lon        "4.8248617280093153" .
+
+<http://ex.com/Lyon/10089>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Colin / Perroncel" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7744984646734280" ;
+        geo:lon        "4.8740523266943319" .
+
+<http://ex.com/Lyon/9049>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Sergent Berthet / Gorge de Loup" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7701340720176050" ;
+        geo:lon        "4.8051580030149461" .
+
+<http://ex.com/Lyon/5015>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Fulchiron" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7520011769432880" ;
+        geo:lon        "4.8216617983516281" .
+
+<http://ex.com/Lyon/1006>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Subsistances" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7678957694769370" ;
+        geo:lon        "4.8198166574203691" .
+
+<http://ex.com/Lyon/3013>
+        a              crm:Station ;
+        rdfs:capacity  "21" ;
+        rdfs:label     "Place Antoinette" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7536448445955490" ;
+        geo:lon        "4.8892685574130930" .
+
+<http://ex.com/Lyon/4014>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Philippe de Lassalle / Pillement" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7774206479390600" ;
+        geo:lon        "4.8205384707114511" .
+
+<http://ex.com/Lyon/2007>
+        a              crm:Station ;
+        rdfs:capacity  "37" ;
+        rdfs:label     "Patinoire Charlemagne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7426115005543960" ;
+        geo:lon        "4.8204716703055039" .
+
+<http://ex.com/Lyon/6016>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Viabert / Thiers" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7659879833823520" ;
+        geo:lon        "4.8620922782007510" .
+
+<http://ex.com/Lyon/10059>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Anatole France / Zola" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7688763179066740" ;
+        geo:lon        "4.8842415132426114" .
+
+<http://ex.com/Lyon/10114>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Bel Air / Les Brosses" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7579070732360900" ;
+        geo:lon        "4.9108067086686678" .
+
+<http://ex.com/Lyon/3085>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Sacré Coeur" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7578296698746030" ;
+        geo:lon        "4.8683950401971430" .
+
+<http://ex.com/Lyon/20002>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Mairie Oullins" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7140014190252940" ;
+        geo:lon        "4.8065443341113525" .
+
+<http://ex.com/Lyon/9050>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Allée de l'Europe" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7836371650547920" ;
+        geo:lon        "4.7945253084995629" .
+
+<http://ex.com/Lyon/10060>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Saint Exupéry" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7588589710478640" ;
+        geo:lon        "4.8787495764625985" .
+
+<http://ex.com/Lyon/9020>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Bourbonnais" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7734645659819610" ;
+        geo:lon        "4.8002879293936394" .
+
+<http://ex.com/Lyon/4026>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Birmingham" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7746311098016750" ;
+        geo:lon        "4.8134162571603989" .
+
+<http://ex.com/Lyon/6028>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Récamier / Tête d'Or" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7643336975612060" ;
+        geo:lon        "4.8534921297061953" .
+
+<http://ex.com/Lyon/10030>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Greuze" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7738436681981610" ;
+        geo:lon        "4.8938480167143412" .
+
+<http://ex.com/Lyon/3097>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Augagneur / Fosse aux Ours" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7571997023265380" ;
+        geo:lon        "4.8404991375424880" .
+
+<http://ex.com/Lyon/11001>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Gare de Cuire" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7857755308468410" ;
+        geo:lon        "4.8337134215891258" .
+
+<http://ex.com/Lyon/12002>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Poudrette / La Soie" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7644003130587790" ;
+        geo:lon        "4.9192757859473666" .
+
+<http://ex.com/Lyon/8061>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Stade Vuillermet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7254037172007980" ;
+        geo:lon        "4.8812948922096577" .
+
+<http://ex.com/Lyon/14004>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Mairie de Bron" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7339455296300700" ;
+        geo:lon        "4.9087206818679405" .
+
+<http://ex.com/Lyon/3067>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Hachette" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7529160218789240" ;
+        geo:lon        "4.8638526893825507" .
+
+<http://ex.com/Lyon/2020>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Musée des Confluences" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7333083359277880" ;
+        geo:lon        "4.8189203135366743" .
+
+<http://ex.com/Lyon/7030>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Quartier Général Frère" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7432217977239400" ;
+        geo:lon        "4.8342510240081396" .
+
+<http://ex.com/Lyon/10072>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Jacques Brel" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7742255397182520" ;
+        geo:lon        "4.8642860657508757" .
+
+<http://ex.com/Lyon/9032>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Place du Port Mouton" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7738201179439200" ;
+        geo:lon        "4.8095603029641687" .
+
+<http://ex.com/Lyon/3037>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Paul Bert / Garibaldi" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7571028581681740" ;
+        geo:lon        "4.8534807971166600" .
+
+<http://ex.com/Lyon/8001>
+        a              crm:Station ;
+        rdfs:capacity  "26" ;
+        rdfs:label     "Université Lyon III" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7485395662598650" ;
+        geo:lon        "4.8615417793642548" .
+
+<http://ex.com/Lyon/9002>
+        a              crm:Station ;
+        rdfs:capacity  "27" ;
+        rdfs:label     "Mairie du 9e" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7742408280787810" ;
+        geo:lon        "4.8056660114147771" .
+
+<http://ex.com/Lyon/3007>
+        a              crm:Station ;
+        rdfs:capacity  "32" ;
+        rdfs:label     "Place d'Arsonval" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7434416841709890" ;
+        geo:lon        "4.8789031261753726" .
+
+<http://ex.com/Lyon/4008>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Clos Savaron" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7826362574796020" ;
+        geo:lon        "4.8255591851847726" .
+
+<http://ex.com/Lyon/5009>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Place Ennemond Fousseret" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7646815056712270" ;
+        geo:lon        "4.8289833265225157" .
+
+<http://ex.com/Lyon/10012>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Zola / France" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7680704202145780" ;
+        geo:lon        "4.8871237200591935" .
+
+<http://ex.com/Lyon/1031>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place de la Paix" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7680236126546520" ;
+        geo:lon        "4.8317412517184160" .
+
+<http://ex.com/Lyon/3079>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Place Louise" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7512052508819170" ;
+        geo:lon        "4.8848204636500698" .
+
+<http://ex.com/Lyon/5040>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place Crépu" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7578416796382400" ;
+        geo:lon        "4.8261054516922881" .
+
+<http://ex.com/Lyon/6041>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Cité Internationale / Tête d'Or nord" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7846110498866350" ;
+        geo:lon        "4.8596391471386804" .
+
+<http://ex.com/Lyon/10084>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Doua / Avenue des Arts" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7835136793198600" ;
+        geo:lon        "4.8712731104104918" .
+
+<http://ex.com/Lyon/9044>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Masset / Saint-Pierre de Vaise" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7704769200645740" ;
+        geo:lon        "4.8009004832411426" .
+
+<http://ex.com/Lyon/1001>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Terreaux / Terme" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7677346863698560" ;
+        geo:lon        "4.8321350621908303" .
+
+<http://ex.com/Lyon/2002>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Bellecour / St Exupéry" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7581569109321860" ;
+        geo:lon        "4.8304346949094690" .
+
+<http://ex.com/Lyon/6011>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Mairie du 6e" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7684041683728250" ;
+        geo:lon        "4.8494967237845854" .
+
+<http://ex.com/Lyon/7012>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Place des Pavillons" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7295008043116340" ;
+        geo:lon        "4.8297016085827407" .
+
+<http://ex.com/Lyon/10054>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Stalingrad / Meliès" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7767057578019490" ;
+        geo:lon        "4.8595233537915794" .
+
+<http://ex.com/Lyon/9014>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Quai du Commerce" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7834856612731400" ;
+        geo:lon        "4.8114878428420669" .
+
+<http://ex.com/Lyon/3080>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Part-Dieu / Villette" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7600550578148390" ;
+        geo:lon        "4.8616738805899402" .
+
+<http://ex.com/Lyon/10024>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Maisons Neuves" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7559510292356110" ;
+        geo:lon        "4.8773464298740201" .
+
+<http://ex.com/Lyon/24001>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Place Libération" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7750890702448960" ;
+        geo:lon        "4.7786729160837336" .
+
+<http://ex.com/Lyon/3050>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Friche RVI" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7483207051236600" ;
+        geo:lon        "4.8759239595508284" .
+
+<http://ex.com/Lyon/8055>
+        a              crm:Station ;
+        rdfs:capacity  "" ;
+        rdfs:label     "Saint-Romain / Berliet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7423298999083700" ;
+        geo:lon        "4.8613692531156163" .
+
+<http://ex.com/Lyon/4021>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Tabareau" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7740806705343890" ;
+        geo:lon        "4.8251597121983645" .
+
+<http://ex.com/Lyon/1013>
+        a              crm:Station ;
+        rdfs:capacity  "11" ;
+        rdfs:label     "Martinière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7682183165921970" ;
+        geo:lon        "4.8276217044711549" .
+
+<http://ex.com/Lyon/2014>
+        a              crm:Station ;
+        rdfs:capacity  "26" ;
+        rdfs:label     "Jacobins" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7607516950581540" ;
+        geo:lon        "4.8343042285358893" .
+
+<http://ex.com/Lyon/6023>
+        a              crm:Station ;
+        rdfs:capacity  "14" ;
+        rdfs:label     "Quai Sarrail" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7668296196242750" ;
+        geo:lon        "4.8411393393513276" .
+
+<http://ex.com/Lyon/7024>
+        a              crm:Station ;
+        rdfs:capacity  "21" ;
+        rdfs:label     "Bancel / Chevreul" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7485202867305600" ;
+        geo:lon        "4.8405245716725132" .
+
+<http://ex.com/Lyon/8025>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Dumont / Jouvet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7444606289942610" ;
+        geo:lon        "4.8609937736791071" .
+
+<http://ex.com/Lyon/10121>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Parc du Centre" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7719119252490780" ;
+        geo:lon        "4.8790707067819019" .
+
+<http://ex.com/Lyon/10036>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Stalingrad" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7743568286995240" ;
+        geo:lon        "4.8591545857608356" .
+
+<http://ex.com/Lyon/17002>
+        a              crm:Station ;
+        rdfs:capacity  "11" ;
+        rdfs:label     "Place des 4 chemins" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7084541926180350" ;
+        geo:lon        "4.8547671040719056" .
+
+<http://ex.com/Lyon/10006>
+        a              crm:Station ;
+        rdfs:capacity  "46" ;
+        rdfs:label     "Charpennes" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7702267691493530" ;
+        geo:lon        "4.8631327223602243" .
+
+<http://ex.com/Lyon/33001>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Avenue de la Gare" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.8749934925375340" ;
+        geo:lon        "4.8330021360822784" .
+
+<http://ex.com/Lyon/34002>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Bellegarde / Lycée R.Parks" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.8717091470933910" ;
+        geo:lon        "4.8397485150123112" .
+
+<http://ex.com/Lyon/2026>
+        a              crm:Station ;
+        rdfs:capacity  "28" ;
+        rdfs:label     "République / Paufique" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7593809563465260" ;
+        geo:lon        "4.8353992022816499" .
+
+<http://ex.com/Lyon/6035>
+        a              crm:Station ;
+        rdfs:capacity  "21" ;
+        rdfs:label     "Cité Internationale" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7854214249623790" ;
+        geo:lon        "4.8541240727107642" .
+
+<http://ex.com/Lyon/7036>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Thibaudière / Gryphe" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7519114393107320" ;
+        geo:lon        "4.8437864046911105" .
+
+<http://ex.com/Lyon/8037>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Cazeneuve" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7340200917966370" ;
+        geo:lon        "4.8629023792941544" .
+
+<http://ex.com/Lyon/8007>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Frères Lumière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7450174320831950" ;
+        geo:lon        "4.8664523172668295" .
+
+<http://ex.com/Lyon/4003>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Place Commandant Arnaud" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7797251519675610" ;
+        geo:lon        "4.8347072824510775" .
+
+<http://ex.com/Lyon/5004>
+        a              crm:Station ;
+        rdfs:capacity  "39" ;
+        rdfs:label     "Saint-Jean" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7604837438977800" ;
+        geo:lon        "4.8265650503972601" .
+
+<http://ex.com/Lyon/6005>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place Edgar Quinet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7657655924629200" ;
+        geo:lon        "4.8447318928504437" .
+
+<http://ex.com/Lyon/7006>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Gerland" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7275732848257230" ;
+        geo:lon        "4.8311974821956261" .
+
+<http://ex.com/Lyon/10048>
+        a              crm:Station ;
+        rdfs:capacity  "27" ;
+        rdfs:label     "Place Marengo" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7591435230511510" ;
+        geo:lon        "4.8759935561091980" .
+
+<http://ex.com/Lyon/9008>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "L'Ile Barbe" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7974121962714450" ;
+        geo:lon        "4.8290463533634593" .
+
+<http://ex.com/Lyon/10103>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "DOUA / Rue des sports" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7844851872384310" ;
+        geo:lon        "4.8774042325766302" .
+
+<http://ex.com/Lyon/10018>
+        a              crm:Station ;
+        rdfs:capacity  "21" ;
+        rdfs:label     "Tolstoï / Florian" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7618051903302860" ;
+        geo:lon        "4.8807224046277389" .
+
+<http://ex.com/Lyon/3044>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Quai Augagneur" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7619651301154850" ;
+        geo:lon        "4.8410534307662090" .
+
+<http://ex.com/Lyon/2008>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Place Antonin Poncet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7567623213032210" ;
+        geo:lon        "4.8339273966533849" .
+
+<http://ex.com/Lyon/5016>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Mairie du 5e" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7561939286588810" ;
+        geo:lon        "4.8027110791690140" .
+
+<http://ex.com/Lyon/6017>
+        a              crm:Station ;
+        rdfs:capacity  "" ;
+        rdfs:label     "Lafayette / Inkermann" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7640561265724840" ;
+        geo:lon        "4.8660225365162342" .
+
+<http://ex.com/Lyon/7018>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Lycée Louise Labé" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7402806526508460" ;
+        geo:lon        "4.8320593704251733" .
+
+<http://ex.com/Lyon/10115>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Place d'Espagne / Stade Kruger" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7541767015908220" ;
+        geo:lon        "4.9052991893735278" .
+
+<http://ex.com/Lyon/3086>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Feuillat / Lacassagne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7495627067970790" ;
+        geo:lon        "4.8759334029685046" .
+
+<http://ex.com/Lyon/20003>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Pont Blanc" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7201577769260510" ;
+        geo:lon        "4.7983317319214027" .
+
+<http://ex.com/Lyon/8050>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Bataille / Krüger" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7362395960067330" ;
+        geo:lon        "4.8798418411853790" .
+
+<http://ex.com/Lyon/10091>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Château Gaillard / Fort" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7747507993117250" ;
+        geo:lon        "4.8880387408797779" .
+
+<http://ex.com/Lyon/9051>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Andréi Sakharov" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7865247393491330" ;
+        geo:lon        "4.7970709023310114" .
+
+<http://ex.com/Lyon/8020>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Moulin à Vent" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7296761340645830" ;
+        geo:lon        "4.8541819412364093" .
+
+<http://ex.com/Lyon/10061>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "République" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7707838400683830" ;
+        geo:lon        "4.8729593888672902" .
+
+<http://ex.com/Lyon/10031>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Croix Luizet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7807198477544190" ;
+        geo:lon        "4.8834995751426700" .
+
+<http://ex.com/Lyon/10001>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "IUT / Feyssine" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7856324623544990" ;
+        geo:lon        "4.8824104015349032" .
+
+<http://ex.com/Lyon/12003>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Mairie Annexe" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7570697600648660" ;
+        geo:lon        "4.9273216112656586" .
+
+<http://ex.com/Lyon/11002>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Saint-Clair" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7854707644412220" ;
+        geo:lon        "4.8478421222935548" .
+
+<http://ex.com/Lyon/7061>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Jaurès / Université" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7485374331787540" ;
+        geo:lon        "4.8432493337468063" .
+
+<http://ex.com/Lyon/1020>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Terreaux / Chenavard" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7667671045630020" ;
+        geo:lon        "4.8329314879659684" .
+
+<http://ex.com/Lyon/2021>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Bichat / Rambaud" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7458789961784400" ;
+        geo:lon        "4.8205826679876838" .
+
+<http://ex.com/Lyon/7031>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Jaurès / Gerland" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7398132348896810" ;
+        geo:lon        "4.8403073886228567" .
+
+<http://ex.com/Lyon/10073>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Institut d'Art contemporain" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7614496449619350" ;
+        geo:lon        "4.8724655049634791" .
+
+<http://ex.com/Lyon/9033>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Gorge de Loup" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7673562652623570" ;
+        geo:lon        "4.8056402801834430" .
+
+<http://ex.com/Lyon/3038>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Vivier Merle / Paul Bert" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7573307386789660" ;
+        geo:lon        "4.8589349649959805" .
+
+<http://ex.com/Lyon/8002>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place Ambroise Courtois" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7452926164534970" ;
+        geo:lon        "4.8716789632578008" .
+
+<http://ex.com/Lyon/7001>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place Gabriel Péri" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7548790164649190" ;
+        geo:lon        "4.8436750818920178" .
+
+<http://ex.com/Lyon/10043>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Salengro / Feyssine" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7830110745978800" ;
+        geo:lon        "4.8905858366251023" .
+
+<http://ex.com/Lyon/9003>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Place Valmy" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7756749996432220" ;
+        geo:lon        "4.8053036651209080" .
+
+<http://ex.com/Lyon/3008>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Institut Lumière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7458332337286610" ;
+        geo:lon        "4.8706387106502866" .
+
+<http://ex.com/Lyon/4009>
+        a              crm:Station ;
+        rdfs:capacity  "14" ;
+        rdfs:label     "Jacquart / Denfert-Rochereau" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7758995112138360" ;
+        geo:lon        "4.8253789620711203" .
+
+<http://ex.com/Lyon/10013>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Cusset" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7650422669277150" ;
+        geo:lon        "4.9011328928202982" .
+
+<http://ex.com/Lyon/1032>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Pizay" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7672004172203160" ;
+        geo:lon        "4.8363916853563289" .
+
+<http://ex.com/Lyon/5041>
+        a              crm:Station ;
+        rdfs:capacity  "21" ;
+        rdfs:label     "L'Homme de la Roche" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7665803442908090" ;
+        geo:lon        "4.8202302422982601" .
+
+<http://ex.com/Lyon/6042>
+        a              crm:Station ;
+        rdfs:capacity  "28" ;
+        rdfs:label     "Cité Internationale / Résidence hôtelière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7848181552653910" ;
+        geo:lon        "4.8565116142349005" .
+
+<http://ex.com/Lyon/1002>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Opéra" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7675408025157610" ;
+        geo:lon        "4.8363010304217200" .
+
+<http://ex.com/Lyon/2003>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Place Ampère" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7530437074095100" ;
+        geo:lon        "4.8282672826226927" .
+
+<http://ex.com/Lyon/6012>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Place Puvis de Chavannes" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7717570855733980" ;
+        geo:lon        "4.8446036357483555" .
+
+<http://ex.com/Lyon/7013>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Halle Tony Garnier" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7308422388673180" ;
+        geo:lon        "4.8237404067653964" .
+
+<http://ex.com/Lyon/10055>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Condorcet / Galline" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7764535731413250" ;
+        geo:lon        "4.8671149219928846" .
+
+<http://ex.com/Lyon/9015>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Saint-Cyr" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7828282303757130" ;
+        geo:lon        "4.8072963588022786" .
+
+<http://ex.com/Lyon/10110>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Mémoire et Société" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7595776564178540" ;
+        geo:lon        "4.8827081207421843" .
+
+<http://ex.com/Lyon/3081>
+        a              crm:Station ;
+        rdfs:capacity  "28" ;
+        rdfs:label     "Part-Dieu / Francfort" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7606085556441120" ;
+        geo:lon        "4.8630862498286334" .
+
+<http://ex.com/Lyon/10025>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Totem" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7636407030234980" ;
+        geo:lon        "4.8731410878807795" .
+
+<http://ex.com/Lyon/23001>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Promenade Tuileries" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7632560325953860" ;
+        geo:lon        "4.7786100656705530" .
+
+<http://ex.com/Lyon/3051>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Place Henri" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7481869061751420" ;
+        geo:lon        "4.8805939581712154" .
+
+<http://ex.com/Lyon/5053>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Saint-Just" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7559666422450850" ;
+        geo:lon        "4.8189064482919699" .
+
+<http://ex.com/Lyon/7055>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Servant / Jaboulay" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7467662258473740" ;
+        geo:lon        "4.8420506993495058" .
+
+<http://ex.com/Lyon/8056>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Delore / Audibert et Lavirotte" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7357952320592890" ;
+        geo:lon        "4.8568128186711998" .
+
+<http://ex.com/Lyon/3021>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place de la Ferrandière" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7594733965948140" ;
+        geo:lon        "4.8693428966594272" .
+
+<http://ex.com/Lyon/4022>
+        a              crm:Station ;
+        rdfs:capacity  "21" ;
+        rdfs:label     "Place de la Croix-Rousse" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7760751390863940" ;
+        geo:lon        "4.8325539207543908" .
+
+<http://ex.com/Lyon/2015>
+        a              crm:Station ;
+        rdfs:capacity  "27" ;
+        rdfs:label     "République / Stella" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7607097863131220" ;
+        geo:lon        "4.8362889729420431" .
+
+<http://ex.com/Lyon/6024>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Tronchet / Anatole France" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7707371546228860" ;
+        geo:lon        "4.8567521774675422" .
+
+<http://ex.com/Lyon/7025>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Lacour / Artillerie" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7294969995972310" ;
+        geo:lon        "4.8439379996052212" .
+
+<http://ex.com/Lyon/10122>
+        a              crm:Station ;
+        rdfs:capacity  "21" ;
+        rdfs:label     "Verdun / Desgrand" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7840513436847370" ;
+        geo:lon        "4.8970859241187767" .
+
+<http://ex.com/Lyon/16002>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Préssensé / Levy / Vienne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7202204709751500" ;
+        geo:lon        "4.8554810983756136" .
+
+<http://ex.com/Lyon/17003>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Théatre Jean Marais" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7080679804046850" ;
+        geo:lon        "4.8638037538035510" .
+
+<http://ex.com/Lyon/10007>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Piaton / Condorcet" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7742151784181320" ;
+        geo:lon        "4.8675042131350823" .
+
+<http://ex.com/Lyon/3033>
+        a              crm:Station ;
+        rdfs:capacity  "21" ;
+        rdfs:label     "Paul Bert / Vivier Merle" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7571477697522010" ;
+        geo:lon        "4.8580904354818850" .
+
+<http://ex.com/Lyon/6036>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Musée d'art contemporain" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7838816142830540" ;
+        geo:lon        "4.8521404034163993" .
+
+<http://ex.com/Lyon/8038>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Albert Thomas / Villon" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7467163314946890" ;
+        geo:lon        "4.8674286445260062" .
+
+<http://ex.com/Lyon/10079>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Anatole France / Barbusse" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7681304002299290" ;
+        geo:lon        "4.8791614891381103" .
+
+<http://ex.com/Lyon/8008>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Beauvisage / Préssensé" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7278718558835000" ;
+        geo:lon        "4.8634420589052638" .
+
+<http://ex.com/Lyon/3003>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Part-Dieu / Deruelle" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7629790120815440" ;
+        geo:lon        "4.8550066229887996" .
+
+<http://ex.com/Lyon/4004>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Hénon" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7797553671142550" ;
+        geo:lon        "4.8276484010879557" .
+
+<http://ex.com/Lyon/5005>
+        a              crm:Station ;
+        rdfs:capacity  "23" ;
+        rdfs:label     "Saint-Paul" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7662717372985600" ;
+        geo:lon        "4.8274321226910386" .
+
+<http://ex.com/Lyon/6006>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Boulevard des Belges" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7733270382747510" ;
+        geo:lon        "4.8519894989151782" .
+
+<http://ex.com/Lyon/7007>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Farge / Ayasse" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7356738897811970" ;
+        geo:lon        "4.8277191559612227" .
+
+<http://ex.com/Lyon/10049>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Pressensé" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7691684753850790" ;
+        geo:lon        "4.8967695846255017" .
+
+<http://ex.com/Lyon/9009>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Berlioz / Chalinel" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.8011198081158210" ;
+        geo:lon        "4.8252725616689833" .
+
+<http://ex.com/Lyon/10019>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Racine" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7644829391731920" ;
+        geo:lon        "4.8779206263003294" .
+
+<http://ex.com/Lyon/10080>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Vaillant / Perroncel" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7753988102813590" ;
+        geo:lon        "4.8802630912578131" .
+
+<http://ex.com/Lyon/9040>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Place de la Rhodiacéta" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7709906411448560" ;
+        geo:lon        "4.8075804142518948" .
+
+<http://ex.com/Lyon/2039>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Charité / Récamier" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7492533954913870" ;
+        geo:lon        "4.8298441257520306" .
+
+<http://ex.com/Lyon/5047>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Albéric Pont" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7534443435600410" ;
+        geo:lon        "4.8044009888454049" .
+
+<http://ex.com/Lyon/7049>
+        a              crm:Station ;
+        rdfs:capacity  "25" ;
+        rdfs:label     "Cité Scolaire Internationale" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7279188576411290" ;
+        geo:lon        "4.8235600814059092" .
+
+<http://ex.com/Lyon/9010>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Piscine de Vaise" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7710182884515080" ;
+        geo:lon        "4.7964503487575509" .
+
+<http://ex.com/Lyon/3100>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Sisley / Dauphiné" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7528275113150610" ;
+        geo:lon        "4.8687687708041860" .
+
+<http://ex.com/Lyon/3015>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Servient / Garibaldi" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7607758409992020" ;
+        geo:lon        "4.8526939571425469" .
+
+<http://ex.com/Lyon/2009>
+        a              crm:Station ;
+        rdfs:capacity  "26" ;
+        rdfs:label     "Confluence / Docks" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7396275873331040" ;
+        geo:lon        "4.8150259306438121" .
+
+<http://ex.com/Lyon/10116>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Blum / Faÿs" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7605212388028870" ;
+        geo:lon        "4.9059454396164748" .
+
+<http://ex.com/Lyon/3087>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Part-Dieu / Garibaldi" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7627511569952010" ;
+        geo:lon        "4.8524277723450728" .
+
+<http://ex.com/Lyon/8051>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Hôpital Saint-Jean de Dieu" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7242705028889130" ;
+        geo:lon        "4.8541521271275219" .
+
+<http://ex.com/Lyon/10092>
+        a              crm:Station ;
+        rdfs:capacity  "17" ;
+        rdfs:label     "Montgolfier / Château Gaillard" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7715577376675430" ;
+        geo:lon        "4.8903695657718780" .
+
+<http://ex.com/Lyon/9052>
+        a              crm:Station ;
+        rdfs:capacity  "12" ;
+        rdfs:label     "Balmont" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7893151875845130" ;
+        geo:lon        "4.7991603409726267" .
+
+<http://ex.com/Lyon/2010>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Confluence / Darse" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7434140947079870" ;
+        geo:lon        "4.8158543610390252" .
+
+<http://ex.com/Lyon/7020>
+        a              crm:Station ;
+        rdfs:capacity  "26" ;
+        rdfs:label     "Parc de Gerland" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7243483551230130" ;
+        geo:lon        "4.8268214305884181" .
+
+<http://ex.com/Lyon/8021>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Paul Santy" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7285181510160830" ;
+        geo:lon        "4.8773059343942400" .
+
+<http://ex.com/Lyon/9022>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Masaryk / Saint-Cyr" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7786288989070300" ;
+        geo:lon        "4.8071200280976578" .
+
+<http://ex.com/Lyon/5029>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place Gerson" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7670544551410640" ;
+        geo:lon        "4.8270475070640995" .
+
+<http://ex.com/Lyon/10032>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Primat / Decorps" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7571560146472440" ;
+        geo:lon        "4.8999652194279451" .
+
+<http://ex.com/Lyon/12004>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Palais des Sports" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7786673502594470" ;
+        geo:lon        "4.9219084050182778" .
+
+<http://ex.com/Lyon/3099>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Place Sainte Anne" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7569549747275200" ;
+        geo:lon        "4.8654416591953460" .
+
+<http://ex.com/Lyon/10002>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "INSA" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7821896441245850" ;
+        geo:lon        "4.8768799244436716" .
+
+<http://ex.com/Lyon/11003>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "La Rochette" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7916701826039940" ;
+        geo:lon        "4.8235970239637442" .
+
+<http://ex.com/Lyon/7062>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Garibaldi / Domer" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7477327368804790" ;
+        geo:lon        "4.8516273700582797" .
+
+<http://ex.com/Lyon/5030>
+        a              crm:Station ;
+        rdfs:capacity  "32" ;
+        rdfs:label     "Charcot / Résidence universitaire" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7550310886452610" ;
+        geo:lon        "4.8077850541519442" .
+
+<http://ex.com/Lyon/3069>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Dauphiné / Saint-Maximin" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7499462288418290" ;
+        geo:lon        "4.8646503841216662" .
+
+<http://ex.com/Lyon/1021>
+        a              crm:Station ;
+        rdfs:capacity  "11" ;
+        rdfs:label     "Terreaux / Beaux Arts" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7670410048109700" ;
+        geo:lon        "4.8342839059717138" .
+
+<http://ex.com/Lyon/2022>
+        a              crm:Station ;
+        rdfs:capacity  "30" ;
+        rdfs:label     "Place Carnot" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7512303840983710" ;
+        geo:lon        "4.8268909446731270" .
+
+<http://ex.com/Lyon/6031>
+        a              crm:Station ;
+        rdfs:capacity  "13" ;
+        rdfs:label     "Lafayette / Corneille" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7637594783418750" ;
+        geo:lon        "4.8437773405191873" .
+
+<http://ex.com/Lyon/8033>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Berthelot / Cazeneuve" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7373162879662940" ;
+        geo:lon        "4.8655284896846744" .
+
+<http://ex.com/Lyon/10074>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Zola / Passage Rey" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7700978432658230" ;
+        geo:lon        "4.8766904175328012" .
+
+<http://ex.com/Lyon/3039>
+        a              crm:Station ;
+        rdfs:capacity  "19" ;
+        rdfs:label     "Place Bir-Hakeim" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7525921437139620" ;
+        geo:lon        "4.8557101486887975" .
+
+<http://ex.com/Lyon/6001>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Gare des Brotteaux" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7669095802662650" ;
+        geo:lon        "4.8589921673125618" .
+
+<http://ex.com/Lyon/7002>
+        a              crm:Station ;
+        rdfs:capacity  "40" ;
+        rdfs:label     "Universités Lyon III / Lyon II" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7514132273513000" ;
+        geo:lon        "4.8363931815987780" .
+
+<http://ex.com/Lyon/8003>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Claude Bernard Lyon I" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7381400560294940" ;
+        geo:lon        "4.8868803087115333" .
+
+<http://ex.com/Lyon/9004>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Gare de Vaise" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7797819839255380" ;
+        geo:lon        "4.8046653309593905" .
+
+<http://ex.com/Lyon/3009>
+        a              crm:Station ;
+        rdfs:capacity  "22" ;
+        rdfs:label     "Musée Africain" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7502533119060360" ;
+        geo:lon        "4.8579250300630621" .
+
+<http://ex.com/Lyon/10014>
+        a              crm:Station ;
+        rdfs:capacity  "29" ;
+        rdfs:label     "Laurent Bonnevay - Astroballe" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7651240553553580" ;
+        geo:lon        "4.9098182197044347" .
+
+<http://ex.com/Lyon/4041>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Boussange / Austerlitz" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7755023590485810" ;
+        geo:lon        "4.8350625452914064" .
+
+<http://ex.com/Lyon/6043>
+        a              crm:Station ;
+        rdfs:capacity  "32" ;
+        rdfs:label     "Cité Internationale / Cinéma" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7847015036764230" ;
+        geo:lon        "4.8519081064540366" .
+
+<http://ex.com/Lyon/10086>
+        a              crm:Station ;
+        rdfs:capacity  "10" ;
+        rdfs:label     "Anatole France" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7698360005897630" ;
+        geo:lon        "4.8895260857893161" .
+
+<http://ex.com/Lyon/9046>
+        a              crm:Station ;
+        rdfs:capacity  "24" ;
+        rdfs:label     "Mangini / Plasson et Chaize" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7904088071307310" ;
+        geo:lon        "4.8163493917942377" .
+
+<http://ex.com/Lyon/1003>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Place Sathonay" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7692658462512870" ;
+        geo:lon        "4.8300797887695630" .
+
+<http://ex.com/Lyon/4011>
+        a              crm:Station ;
+        rdfs:capacity  "20" ;
+        rdfs:label     "Place Joannès Ambre" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7815755185206110" ;
+        geo:lon        "4.8328577220510196" .
+
+<http://ex.com/Lyon/2004>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Perrache / Carnot" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7500996433260670" ;
+        geo:lon        "4.8280515013551550" .
+
+<http://ex.com/Lyon/10056>
+        a              crm:Station ;
+        rdfs:capacity  "35" ;
+        rdfs:label     "11 novembre / Gaston Berger" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7790639863242460" ;
+        geo:lon        "4.8714964631896152" .
+
+<http://ex.com/Lyon/7014>
+        a              crm:Station ;
+        rdfs:capacity  "15" ;
+        rdfs:label     "Marseille / Félissent" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7529863435116080" ;
+        geo:lon        "4.8414152874617793" .
+
+<http://ex.com/Lyon/8015>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Jean XXIII" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7403259296418700" ;
+        geo:lon        "4.8741942706838781" .
+
+<http://ex.com/Lyon/10111>
+        a              crm:Station ;
+        rdfs:capacity  "16" ;
+        rdfs:label     "Charles Hernu" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7703105281291940" ;
+        geo:lon        "4.8620024989211670" .
+
+<http://ex.com/Lyon/3082>
+        a              crm:Station ;
+        rdfs:capacity  "18" ;
+        rdfs:label     "Place Bahadourian" ;
+        geo:city       "Lyon" ;
+        geo:lat        "45.7576229228584170" ;
+        geo:lon        "4.8451085953553852" .

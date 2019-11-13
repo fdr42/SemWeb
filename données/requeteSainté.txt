@@ -1,0 +1,15 @@
+PREFIX ite: <http://w3id.org/sparql-generate/iter/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+GENERATE { 
+  <http://ex.com/Saint-Etienne/{ ?Station_id }> a crm:Station;
+                geo:city "Saint Etienne";
+                rdfs:label ?name;
+    		rdfs:capacity ?capacity;
+    		geo:lat ?lat;
+    		geo:lon ?lon.
+}
+ITERATOR ite:JSONPath(<https://saint-etienne-gbfs.klervi.net/gbfs/en/station_information.json>,"$.data.stations.[*]", "$.station_id","$.name", "$.capacity", "$.lat", "$.lon") AS ?station ?Station_id ?name ?capacity ?lat ?lon
+
