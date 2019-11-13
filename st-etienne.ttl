@@ -1,0 +1,150 @@
+
+@base          <http://example.org/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ite:   <http://w3id.org/sparql-generate/iter/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<http://ex.com/st-etienne/124>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Janin" .
+
+<http://ex.com/st-etienne/105>
+        a              crm:Station ;
+        rdfs:capacity  32 ;
+        rdfs:label     "Jaures" .
+
+<http://ex.com/st-etienne/114>
+        a              crm:Station ;
+        rdfs:capacity  24 ;
+        rdfs:label     "Bellevue" .
+
+<http://ex.com/st-etienne/123>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Marx" .
+
+<http://ex.com/st-etienne/129>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Roannelle" .
+
+<http://ex.com/st-etienne/104>
+        a              crm:Station ;
+        rdfs:capacity  12 ;
+        rdfs:label     "Jacquard" .
+
+<http://ex.com/st-etienne/113>
+        a              crm:Station ;
+        rdfs:capacity  24 ;
+        rdfs:label     "Centre 2" .
+
+<http://ex.com/st-etienne/119>
+        a              crm:Station ;
+        rdfs:capacity  24 ;
+        rdfs:label     "Fourneyron" .
+
+<http://ex.com/st-etienne/122>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Terrasse" .
+
+<http://ex.com/st-etienne/128>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Technopole" .
+
+<http://ex.com/st-etienne/103>
+        a              crm:Station ;
+        rdfs:capacity  24 ;
+        rdfs:label     "Carnot" .
+
+<http://ex.com/st-etienne/109>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "A. Thomas" .
+
+<http://ex.com/st-etienne/112>
+        a              crm:Station ;
+        rdfs:capacity  24 ;
+        rdfs:label     "Tréfilerie" .
+
+<http://ex.com/st-etienne/118>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "J. Moulin" .
+
+<http://ex.com/st-etienne/127>
+        a              crm:Station ;
+        rdfs:capacity  24 ;
+        rdfs:label     "J. Marc" .
+
+<http://ex.com/st-etienne/102>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Chaléassiere" .
+
+<http://ex.com/st-etienne/108>
+        a              crm:Station ;
+        rdfs:capacity  32 ;
+        rdfs:label     "Peuple" .
+
+<http://ex.com/st-etienne/130>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Bicentenaire" .
+
+<http://ex.com/st-etienne/111>
+        a              crm:Station ;
+        rdfs:capacity  12 ;
+        rdfs:label     "Tardy" .
+
+<http://ex.com/st-etienne/117>
+        a              crm:Station ;
+        rdfs:capacity  24 ;
+        rdfs:label     "Chavanelle" .
+
+<http://ex.com/st-etienne/120>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "St Francois" .
+
+<http://ex.com/st-etienne/126>
+        a              crm:Station ;
+        rdfs:capacity  32 ;
+        rdfs:label     "Hôp. Nord" .
+
+<http://ex.com/st-etienne/101>
+        a              crm:Station ;
+        rdfs:capacity  32 ;
+        rdfs:label     "Châteaucreux" .
+
+<http://ex.com/st-etienne/107>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Clapier" .
+
+<http://ex.com/st-etienne/110>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "A. France" .
+
+<http://ex.com/st-etienne/116>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Villeboeuf" .
+
+<http://ex.com/st-etienne/125>
+        a              crm:Station ;
+        rdfs:capacity  16 ;
+        rdfs:label     "Soleil" .
+
+<http://ex.com/st-etienne/106>
+        a              crm:Station ;
+        rdfs:capacity  32 ;
+        rdfs:label     "Dorian" .
+
+<http://ex.com/st-etienne/115>
+        a              crm:Station ;
+        rdfs:capacity  24 ;
+        rdfs:label     "Congrès" .
