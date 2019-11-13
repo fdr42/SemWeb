@@ -24,16 +24,33 @@ public class HelloController {
     public String index() {
 		
 		SparqlQueryConnection conn = RDFConnectionFactory.connect("http://localhost:3030/semwebproject/");
-		QueryExecution qe = conn.query("SELECT ?s ?p ?o WHERE {?s ?p ?o}");
+		QueryExecution qe = conn.query("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
+				"PREFIX vocab: <http://localhost/>\n" +
+				"PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>\n" +
+				"PREFIX dbo: <http://dbpedia.org/ontology/>\n" +
+				"PREFIX db: <http://dbpedia.org/>\n" +
+				"prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+				"prefix owl: <http://www.w3.org/2002/07/owl#>\n" +
+				"SELECT ?nomStation ?capacity ?latitude ?longitude ?id\n" +
+				"WHERE {\n" +
+				"  ?object dbo:locationCity ?label.\n" +
+				"  ?label rdfs:label ?stp.\n" +
+				"  ?object rdfs:label ?nomStation.\n" +
+				"  ?object rdfs:capacity ?capacity.\n" +
+				"  ?object geo:lat ?latitude.\n" +
+				"  ?object geo:lon ?longitude.\n" +
+				"  ?object dbo:id ?id.\n" +
+				"  FILTER regex(?stp, \"Sa\", \"i\").}");
 		ResultSet rs = qe.execSelect();
 		String result = "";
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
-			RDFNode s = qs.get("s");
-			RDFNode p = qs.get("p");
-			RDFNode o = qs.get("o");
+			qs.getResource("id");
+			RDFNode s =qs.getResource("id");
+			RDFNode p = qs.get("nomStation");
+			RDFNode o = qs.get("capacity");
 			
-			result+= "<p> Subject : " + s + " Predicate : " + p + " Object : " + o + "</p>";
+			result+= "<p> id : " + s + " nom : " + p + " capacité : " + o + "</p>";
 					
 		}
 		

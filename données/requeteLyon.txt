@@ -2,11 +2,18 @@ PREFIX ite: <http://w3id.org/sparql-generate/iter/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX dbo:<http://dbpedia.org/ontology/>
+PREFIX dbr:<http://dbpedia.org/resource/> 
+PREFIX schema:<http://schema.org/> 
 
 GENERATE { 
+  dbr:Lyon a schema:City;
+    	rdfs:label "Lyon".
+
   <http://ex.com/Lyon/{ ?Station_id }> a crm:Station;
+		dbo:id ?Station_id;
+		dbo:locationCity dbr:Lyon;
            	rdfs:label ?name;
-		geo:city "Lyon";
     		rdfs:capacity ?capacity;
     		geo:lat ?lat;
     		geo:lon ?lon.

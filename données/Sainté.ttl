@@ -1,238 +1,276 @@
 
 @base          <http://example.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
 @prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix re:    <http://www.w3.org/2000/10/swap/reason#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dbr:   <http://dbpedia.org/resource/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ite:   <http://w3id.org/sparql-generate/iter/> .
+@prefix db:    <http://dbpedia.org/> .
 @prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <http://ex.com/Saint-Etienne/125>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Soleil" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.450533e0 ;
-        geo:lon        4.403566e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Soleil" ;
+        dbo:id            "125" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.450533e0 ;
+        geo:lon           4.403566e0 .
+
+dbr:Saint-Étienne  a  schema:City ;
+        rdfs:label  "Saint Etienne" .
 
 <http://ex.com/Saint-Etienne/106>
-        a              crm:Station ;
-        rdfs:capacity  32 ;
-        rdfs:label     "Dorian" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.43836e0 ;
-        geo:lon        4.388435e0 .
+        a                 crm:Station ;
+        rdfs:capacity     32 ;
+        rdfs:label        "Dorian" ;
+        dbo:id            "106" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.43836e0 ;
+        geo:lon           4.388435e0 .
 
 <http://ex.com/Saint-Etienne/115>
-        a              crm:Station ;
-        rdfs:capacity  24 ;
-        rdfs:label     "Congrès" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.426972e0 ;
-        geo:lon        4.404048e0 .
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Congrès" ;
+        dbo:id            "115" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.426972e0 ;
+        geo:lon           4.404048e0 .
 
 <http://ex.com/Saint-Etienne/124>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Janin" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.448458e0 ;
-        geo:lon        4.39492e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Janin" ;
+        dbo:id            "124" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.448458e0 ;
+        geo:lon           4.39492e0 .
 
 <http://ex.com/Saint-Etienne/105>
-        a              crm:Station ;
-        rdfs:capacity  32 ;
-        rdfs:label     "Jaures" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.440725e0 ;
-        geo:lon        4.387295e0 .
+        a                 crm:Station ;
+        rdfs:capacity     32 ;
+        rdfs:label        "Jaures" ;
+        dbo:id            "105" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.440725e0 ;
+        geo:lon           4.387295e0 .
 
 <http://ex.com/Saint-Etienne/114>
-        a              crm:Station ;
-        rdfs:capacity  24 ;
-        rdfs:label     "Bellevue" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.415579e0 ;
-        geo:lon        4.393322e0 .
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Bellevue" ;
+        dbo:id            "114" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.415579e0 ;
+        geo:lon           4.393322e0 .
 
 <http://ex.com/Saint-Etienne/123>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Marx" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.422732e0 ;
-        geo:lon        4.409376e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Marx" ;
+        dbo:id            "123" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.422732e0 ;
+        geo:lon           4.409376e0 .
 
 <http://ex.com/Saint-Etienne/129>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Roannelle" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.4357171e0 ;
-        geo:lon        4.3829931e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Roannelle" ;
+        dbo:id            "129" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.4357171e0 ;
+        geo:lon           4.3829931e0 .
 
 <http://ex.com/Saint-Etienne/104>
-        a              crm:Station ;
-        rdfs:capacity  12 ;
-        rdfs:label     "Jacquard" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.441888e0 ;
-        geo:lon        4.382492e0 .
+        a                 crm:Station ;
+        rdfs:capacity     12 ;
+        rdfs:label        "Jacquard" ;
+        dbo:id            "104" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.441888e0 ;
+        geo:lon           4.382492e0 .
 
 <http://ex.com/Saint-Etienne/113>
-        a              crm:Station ;
-        rdfs:capacity  24 ;
-        rdfs:label     "Centre 2" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.42342e0 ;
-        geo:lon        4.392292e0 .
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Centre 2" ;
+        dbo:id            "113" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.42342e0 ;
+        geo:lon           4.392292e0 .
 
 <http://ex.com/Saint-Etienne/119>
-        a              crm:Station ;
-        rdfs:capacity  24 ;
-        rdfs:label     "Fourneyron" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.4395e0 ;
-        geo:lon        4.395669e0 .
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Fourneyron" ;
+        dbo:id            "119" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.4395e0 ;
+        geo:lon           4.395669e0 .
 
 <http://ex.com/Saint-Etienne/122>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Terrasse" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.46502e0 ;
-        geo:lon        4.37874e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Terrasse" ;
+        dbo:id            "122" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.46502e0 ;
+        geo:lon           4.37874e0 .
 
 <http://ex.com/Saint-Etienne/128>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Technopole" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.457e0 ;
-        geo:lon        4.39241e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Technopole" ;
+        dbo:id            "128" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.457e0 ;
+        geo:lon           4.39241e0 .
 
 <http://ex.com/Saint-Etienne/103>
-        a              crm:Station ;
-        rdfs:capacity  24 ;
-        rdfs:label     "Carnot" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.447093e0 ;
-        geo:lon        4.385487e0 .
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Carnot" ;
+        dbo:id            "103" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.447093e0 ;
+        geo:lon           4.385487e0 .
 
 <http://ex.com/Saint-Etienne/109>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "A. Thomas" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.4328e0 ;
-        geo:lon        4.388035e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "A. Thomas" ;
+        dbo:id            "109" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.4328e0 ;
+        geo:lon           4.388035e0 .
 
 <http://ex.com/Saint-Etienne/112>
-        a              crm:Station ;
-        rdfs:capacity  24 ;
-        rdfs:label     "Tréfilerie" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.427296e0 ;
-        geo:lon        4.390669e0 .
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Tréfilerie" ;
+        dbo:id            "112" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.427296e0 ;
+        geo:lon           4.390669e0 .
 
 <http://ex.com/Saint-Etienne/118>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "J. Moulin" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.437404e0 ;
-        geo:lon        4.392469e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "J. Moulin" ;
+        dbo:id            "118" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.437404e0 ;
+        geo:lon           4.392469e0 .
 
 <http://ex.com/Saint-Etienne/127>
-        a              crm:Station ;
-        rdfs:capacity  24 ;
-        rdfs:label     "J. Marc" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.4732778e0 ;
-        geo:lon        4.3665277e0 .
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "J. Marc" ;
+        dbo:id            "127" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.4732778e0 ;
+        geo:lon           4.3665277e0 .
 
 <http://ex.com/Saint-Etienne/102>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Chaléassiere" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.453601e0 ;
-        geo:lon        4.383062e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Chaléassiere" ;
+        dbo:id            "102" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.453601e0 ;
+        geo:lon           4.383062e0 .
 
 <http://ex.com/Saint-Etienne/108>
-        a              crm:Station ;
-        rdfs:capacity  32 ;
-        rdfs:label     "Peuple" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.436265e0 ;
-        geo:lon        4.387539e0 .
+        a                 crm:Station ;
+        rdfs:capacity     32 ;
+        rdfs:label        "Peuple" ;
+        dbo:id            "108" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.436265e0 ;
+        geo:lon           4.387539e0 .
 
 <http://ex.com/Saint-Etienne/130>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Bicentenaire" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.420286e0 ;
-        geo:lon        4.392776e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Bicentenaire" ;
+        dbo:id            "130" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.420286e0 ;
+        geo:lon           4.392776e0 .
 
 <http://ex.com/Saint-Etienne/111>
-        a              crm:Station ;
-        rdfs:capacity  12 ;
-        rdfs:label     "Tardy" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.427396e0 ;
-        geo:lon        4.386718e0 .
+        a                 crm:Station ;
+        rdfs:capacity     12 ;
+        rdfs:label        "Tardy" ;
+        dbo:id            "111" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.427396e0 ;
+        geo:lon           4.386718e0 .
 
 <http://ex.com/Saint-Etienne/117>
-        a              crm:Station ;
-        rdfs:capacity  24 ;
-        rdfs:label     "Chavanelle" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.435109e0 ;
-        geo:lon        4.391962e0 .
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Chavanelle" ;
+        dbo:id            "117" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.435109e0 ;
+        geo:lon           4.391962e0 .
 
 <http://ex.com/Saint-Etienne/120>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "St Francois" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.439538e0 ;
-        geo:lon        4.403407e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "St Francois" ;
+        dbo:id            "120" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.439538e0 ;
+        geo:lon           4.403407e0 .
 
 <http://ex.com/Saint-Etienne/126>
-        a              crm:Station ;
-        rdfs:capacity  32 ;
-        rdfs:label     "Hôp. Nord" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.479487e0 ;
-        geo:lon        4.362541e0 .
+        a                 crm:Station ;
+        rdfs:capacity     32 ;
+        rdfs:label        "Hôp. Nord" ;
+        dbo:id            "126" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.479487e0 ;
+        geo:lon           4.362541e0 .
 
 <http://ex.com/Saint-Etienne/101>
-        a              crm:Station ;
-        rdfs:capacity  32 ;
-        rdfs:label     "Châteaucreux" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.442972e0 ;
-        geo:lon        4.398855e0 .
+        a                 crm:Station ;
+        rdfs:capacity     32 ;
+        rdfs:label        "Châteaucreux" ;
+        dbo:id            "101" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.442972e0 ;
+        geo:lon           4.398855e0 .
 
 <http://ex.com/Saint-Etienne/107>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Clapier" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.436903e0 ;
-        geo:lon        4.378789e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Clapier" ;
+        dbo:id            "107" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.436903e0 ;
+        geo:lon           4.378789e0 .
 
 <http://ex.com/Saint-Etienne/110>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "A. France" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.43065e0 ;
-        geo:lon        4.389752e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "A. France" ;
+        dbo:id            "110" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.43065e0 ;
+        geo:lon           4.389752e0 .
 
 <http://ex.com/Saint-Etienne/116>
-        a              crm:Station ;
-        rdfs:capacity  16 ;
-        rdfs:label     "Villeboeuf" ;
-        geo:city       "Saint Etienne" ;
-        geo:lat        45.431808e0 ;
-        geo:lon        4.395127e0 .
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Villeboeuf" ;
+        dbo:id            "116" ;
+        dbo:locationCity  dbr:Saint-Étienne ;
+        geo:lat           45.431808e0 ;
+        geo:lon           4.395127e0 .
