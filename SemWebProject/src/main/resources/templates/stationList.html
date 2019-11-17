@@ -1,10 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <title>Liste des stations à ${locationCity.cityName}</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
 </head>
 <body>
-
+<h1>Voici la liste des station à <b th:text="${locationCity.cityName}">.</b></h1>
+<table>
+    <thead>
+        <tr>
+            <th>Identifiant</th>
+            <th>Nom de la station</th>
+            <th>Capacitée</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+    </thead>
+    <tbody th:each="station : ${stationList}">
+        <tr>
+            <td th:text="${station.stationId}"></td>
+            <td th:text="${station.stationName}"></td>
+            <td th:text="${station.capacity}"></td>
+            <td th:text="${station.latitude}"></td>
+            <td th:text="${station.longitude}"></td>
+        </tr>
+    </tbody>
+</table>
 </body>
+
 </html>
