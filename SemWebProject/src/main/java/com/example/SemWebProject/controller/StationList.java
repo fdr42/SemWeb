@@ -20,12 +20,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @RequestMapping("/")
-    public String index() {
-		
+	@RequestMapping("/")
+	public String index() {
+
 		SparqlQueryConnection conn = RDFConnectionFactory.connect("http://localhost:3030/semwebproject/");
 		QueryExecution qe = conn.query("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
-				"PREFIX vocab: <http://localhost/>\n" +
+		"PREFIX vocab: <http://localhost/>\n" +
 				"PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>\n" +
 				"PREFIX dbo: <http://dbpedia.org/ontology/>\n" +
 				"PREFIX voc: <http://voc.odw.tw/>\n" +
@@ -46,17 +46,14 @@ public class HelloController {
 		String result = "";
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
-			qs.getResource("id");
-			RDFNode s =qs.getResource("id");
-			RDFNode p = qs.get("nomStation");
-			RDFNode o = qs.get("capacity");
-			
-			result+= "<p> id : " + s + " nom : " + p + " capacité : " + o + "</p>";
-					
+			RDFNode nomStation = qs.get("nomStation");
+			result += "<p> nomStation : " + nomStation + "</p>";
+
 		}
-		
+
 		return result;
-		
-    }
+
+	}
 
 }
+
