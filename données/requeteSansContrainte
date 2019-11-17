@@ -6,7 +6,7 @@ prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix owl: <http://www.w3.org/2002/07/owl#>
 SELECT ?nomStation ?capacity ?latitude ?longitude ?id
 WHERE {
-  ?object geo:city ?label.
+  ?object dbo:locationCity ?label.
   ?object rdfs:label ?nomStation.
   ?object rdfs:capacity ?capacity.
   ?object geo:lat ?latitude.

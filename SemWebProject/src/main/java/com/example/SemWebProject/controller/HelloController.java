@@ -28,6 +28,7 @@ public class HelloController {
 				"PREFIX vocab: <http://localhost/>\n" +
 				"PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>\n" +
 				"PREFIX dbo: <http://dbpedia.org/ontology/>\n" +
+				"PREFIX voc: <http://voc.odw.tw/>\n" +
 				"PREFIX db: <http://dbpedia.org/>\n" +
 				"prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
 				"prefix owl: <http://www.w3.org/2002/07/owl#>\n" +
@@ -40,7 +41,7 @@ public class HelloController {
 				"  ?object geo:lat ?latitude.\n" +
 				"  ?object geo:lon ?longitude.\n" +
 				"  ?object dbo:id ?id.\n" +
-				"  FILTER regex(?stp, \"Sa\", \"i\").}");
+				"  FILTER regex(?stp, \"Ly\", \"i\").}");
 		ResultSet rs = qe.execSelect();
 		String result = "";
 		while(rs.hasNext()) {

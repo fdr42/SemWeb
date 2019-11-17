@@ -2,15 +2,18 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX vocab: <http://localhost/>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX voc: <http://voc.odw.tw/>
+PREFIX db: <http://dbpedia.org/>
 prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 prefix owl: <http://www.w3.org/2002/07/owl#>
 SELECT ?nomStation ?capacity ?latitude ?longitude ?id
 WHERE {
-  ?object rdfs:locationCity ?label.
+  ?object dbo:locationCity ?label.
   ?label rdfs:label ?stp.
   ?object rdfs:label ?nomStation.
-  ?object vocab:capacity ?capacity.
+  ?object rdfs:capacity ?capacity.
   ?object geo:lat ?latitude.
   ?object geo:lon ?longitude.
-  ?object dbo:idNumber ?id.
-  FILTER regex(?stp, "Ly", "i").}
+  ?object dbo:id ?id.
+  FILTER regex(?stp, "Ly", "i").
+}
