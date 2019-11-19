@@ -18,18 +18,16 @@ import org.apache.jena.rdfconnection.SparqlQueryConnection;
 import org.apache.jena.vocabulary.RDFS;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
-public class StationList {
+public class StationListController {
 
 	@RequestMapping(value = "/StationList", method = RequestMethod.GET)
-	public String stationList(Model model) {
+	public String stationList(Model model, @RequestParam String city) {
 
 		SparqlQueryConnection conn = RDFConnectionFactory.connect("http://localhost:3030/semwebproject/");
+
 		QueryExecution qe = conn.query("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +
 		"PREFIX vocab: <http://localhost/>\n" +
 				"PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>\n" +
@@ -38,7 +36,7 @@ public class StationList {
 				"PREFIX db: <http://dbpedia.org/>\n" +
 				"prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
 				"prefix owl: <http://www.w3.org/2002/07/owl#>\n" +
-				"SELECT ?nomStation ?capacity ?latitude ?longitude ?id\n" +
+				"SELECT ?nomStation ?capacity ?latitude ?longitude ?id ?stp\n" +
 				"WHERE {\n" +
 				"  ?object dbo:locationCity ?label.\n" +
 				"  ?label rdfs:label ?stp.\n" +
@@ -47,24 +45,21 @@ public class StationList {
 				"  ?object geo:lat ?latitude.\n" +
 				"  ?object geo:lon ?longitude.\n" +
 				"  ?object dbo:id ?id.\n" +
-				"  FILTER regex(?stp, \"Ly\", \"i\").}");
+				"  FILTER regex(?stp, \"" + city + "\", \"i\").}");
 		ResultSet rs = qe.execSelect();
 
-		LocationCity locationCity = new LocationCity("Lyon");
+		LocationCity locationCity = new LocationCity(rs.next().get("stp"));
 		List<Station> stationList = new ArrayList<Station>();
-		int i = 0;
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
-			System.out.println(qs.get("capacity"));
 			Station station = new Station(qs.get("id"),
 					locationCity,
 					qs.get("nomStation"),
 					qs.get("capacity"),
-					qs.get("longitude"),
-					qs.get("latitude"));
+					qs.get("latitude"),
+					qs.get("longitude"));
 
 			stationList.add(station);
-			i++;
 		}
 
 		model.addAttribute("stationList", stationList);
