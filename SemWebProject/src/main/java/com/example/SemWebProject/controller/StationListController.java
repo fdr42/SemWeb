@@ -36,7 +36,7 @@ public class StationListController {
 				"PREFIX db: <http://dbpedia.org/>\n" +
 				"prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
 				"prefix owl: <http://www.w3.org/2002/07/owl#>\n" +
-				"SELECT ?nomStation ?capacity ?latitude ?longitude ?id ?stp\n" +
+				"SELECT ?nomStation (str(?capacity) as ?cap) (str(?latitude) as ?lat) (str(?longitude) as ?lon) ?id ?stp\n" +
 				"WHERE {\n" +
 				"  ?object dbo:locationCity ?label.\n" +
 				"  ?label rdfs:label ?stp.\n" +
@@ -55,9 +55,9 @@ public class StationListController {
 			Station station = new Station(qs.get("id"),
 					locationCity,
 					qs.get("nomStation"),
-					qs.get("capacity"),
-					qs.get("latitude"),
-					qs.get("longitude"));
+					qs.get("cap"),
+					qs.get("lat"),
+					qs.get("lon"));
 
 			stationList.add(station);
 		}
