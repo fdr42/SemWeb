@@ -16,7 +16,7 @@ import java.util.List;
 
 @Controller
 public class IndexController {
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/djdkj", method = RequestMethod.GET)
     public String index(Model model) {
         SparqlQueryConnection conn = RDFConnectionFactory.connect("http://localhost:3030/semwebproject/");
         QueryExecution qe = conn.query("PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n" +

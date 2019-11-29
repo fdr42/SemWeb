@@ -23,8 +23,8 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class StationListController {
 
-	@RequestMapping(value = "/StationList", method = RequestMethod.GET)
-	public String stationList(Model model, @RequestParam String city) {
+	@RequestMapping(value = "/")
+	public String stationList(Model model) {
 
 		SparqlQueryConnection conn = RDFConnectionFactory.connect("http://localhost:3030/semwebproject/");
 
@@ -45,13 +45,13 @@ public class StationListController {
 				"  ?object geo:lat ?latitude.\n" +
 				"  ?object geo:lon ?longitude.\n" +
 				"  ?object dbo:id ?id.\n" +
-				"  FILTER regex(?stp, \"" + city + "\", \"i\").}");
+				"  }");
+				// FILTER regex(?stp, \"" + city + "\", \"i\").
 		ResultSet rs = qe.execSelect();
-
-		LocationCity locationCity = new LocationCity(rs.next().get("stp"));
 		List<Station> stationList = new ArrayList<Station>();
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
+			LocationCity locationCity = new LocationCity(qs.get("stp"));
 			Station station = new Station(qs.get("id"),
 					locationCity,
 					qs.get("nomStation"),
@@ -63,7 +63,6 @@ public class StationListController {
 		}
 
 		model.addAttribute("stationList", stationList);
-		model.addAttribute("locationCity", locationCity);
 		return "stationList";
 
 	}
