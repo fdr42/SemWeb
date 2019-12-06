@@ -1,5 +1,15 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:dbo="http://dbpedia.org/ontology/"
+      xmlns:dbr="http://dbpedia.org/resource/"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:schema="http://schema.org/"
+      xmlns:re="http://www.w3.org/2000/10/swap/reason#"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:db="http://dbpedia.org/"
+      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
 <head>
     <meta charset="UTF-8" />
     <title>Liste des stations à ${locationCity.cityName}</title>
@@ -25,20 +35,12 @@
 
     <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p id="pbody"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+            <div id="stationId" about="" class="modal-content">
+                <h2 id="locationCity" property="dbo:locationCity"></h2>
+                <h2 id="stationLabel" property="rdfs:label"></h2>
+                <h2 id="stationCapacity" property="rdfs:capacity"></h2>
+                <h2 id="stationLat" property="geo:lat"></h2>
+                <h2 id="stationLon" property="geo:lon"></h2>
             </div>
         </div>
     </div>
@@ -48,7 +50,6 @@
 <table>
     <thead>
         <tr>
-            <th>Identifiant</th>
             <th>Nom de la station</th>
             <th>Capacitée</th>
             <th>Latitude</th>
@@ -56,14 +57,13 @@
             <th>Ville</th>
         </tr>
     </thead>
-    <tbody th:each="station : ${stationList}">
-        <tr>
-            <td th:text="${station.stationId}"></td>
-            <td th:text="${station.stationName}"></td>
-            <td th:text="${station.capacity}"></td>
-            <td th:text="${station.latitude.toString()}"></td>
-            <td th:text="${station.longitude}"></td>
-            <td th:text="${station.locationCity.getCityName()}"></td>
+    <tbody>
+        <tr th:each="station : ${stationList}" th:about="${station.stationId}">
+            <td th:text="${station.stationName}" property="rdfs:label"></td>
+            <td th:text="${station.capacity}" property="rdfs:capacity"></td>
+            <td th:text="${station.latitude.toString()}" property="geo:lat"></td>
+            <td th:text="${station.longitude.toString()}" property="geo:lon"></td>
+            <td th:text="${station.locationCity.getCityName()}" property="dbo:locationCity"></td>
         </tr>
     </tbody>
 </table>
@@ -108,7 +108,9 @@
         var latPoint=/*[[${station.latitude.toString()}]]*/;
         var lonPoint=/*[[${station.longitude.toString()}]]*/;
         var nameStation=/*[[${station.stationName.toString()}]]*/;
+        var idStation=/*[[${station.getStationId().toString()}]]*/;
         var city=/*[[${station.locationCity.getCityName().toString()}]]*/;
+        var capacity=/*[[${station.getCapacity().toString()}]]*/;
         latPoint = parseFloat(latPoint);
         lonPoint = parseFloat(lonPoint);
         console.log(typeof latPoint);
@@ -118,11 +120,20 @@
         marker.latitude = latPoint;
         marker.longitude = lonPoint;
         marker.city = city;
+        marker.idStation = idStation;
+        marker.capacity = capacity
 
 
 
         marker.on('click', function() {
-            document.getElementById("pbody").innerHTML = this.nameStation + " " + this.city;
+
+            document.getElementById("stationId").setAttribute("about", this.idStation);
+            document.getElementById("locationCity").innerHTML = this.city;
+            document.getElementById("stationLabel").innerHTML = this.nameStation;
+            document.getElementById("stationCapacity").innerHTML = this.capacity;
+            document.getElementById("stationLat").innerHTML = this.latitude;
+            document.getElementById("stationLon").innerHTML = this.longitude;
+
             $('#exampleModal').modal('show');
         });
 

@@ -52,12 +52,15 @@ public class StationListController {
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			LocationCity locationCity = new LocationCity(qs.get("stp"));
+			
 			Station station = new Station(qs.get("id"),
 					locationCity,
 					qs.get("nomStation"),
 					qs.get("cap"),
 					qs.get("lat"),
 					qs.get("lon"));
+
+
 
 			stationList.add(station);
 		}
