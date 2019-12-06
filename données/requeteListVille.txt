@@ -1,0 +1,14 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX vocab: <http://localhost/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX voc: <http://voc.odw.tw/>
+PREFIX db: <http://dbpedia.org/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix schema: <http://schema.org/>
+SELECT ?label
+WHERE {
+  ?object a schema:City.
+  ?object rdfs:label ?label.
+}
