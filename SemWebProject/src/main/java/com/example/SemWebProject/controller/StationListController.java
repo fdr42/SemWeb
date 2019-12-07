@@ -69,7 +69,7 @@ public class StationListController {
 
 			stationList.add(station);
 			for (Proximity prox : station.getListProximity()){
-				System.out.println(prox.getPlaceLabel().asLiteral().getString());
+				System.out.println(prox.getPlaceLabel().toString());
 			}
 
 		}

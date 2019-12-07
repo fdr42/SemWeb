@@ -59,12 +59,24 @@ public class ProximityListController {
 		ResultSet rs2 = qu.execSelect();
 		while (rs2.hasNext()) {
 			QuerySolution qs2 = rs2.next();
+			Double longitude = Double.parseDouble(qs2.get("coordinate_location").toString().replace("Point", "").
+					replace("(", "").
+					replace(")", "").
+					replace("^^http://www.opengis.net/ont/geosparql#wktLiteral", "").split(" ")[0]);
+			Double latitude = Double.parseDouble(qs2.get("coordinate_location").toString().replace("Point", "").
+					replace("(", "").
+					replace(")", "").
+					replace("^^http://www.opengis.net/ont/geosparql#wktLiteral", "").split(" ")[1]);
+
+			Double dist = Double.parseDouble(qs2.get("dist").toString().replace("^^http://www.w3.org/2001/XMLSchema#double", ""));
+
 			Proximity item = new Proximity(
-					qs2.get("placeLabel"),
-					qs2.get("image"),
-					qs2.get("coordinate_location"),
-					qs2.get("dist"),
-					qs2.get("instance_ofLabel"));
+					qs2.get("placeLabel").toString(),
+					qs2.get("image").toString(),
+					longitude,
+					latitude,
+					dist,
+					qs2.get("instance_ofLabel").toString());
 
 
 			proximityList.add(item);

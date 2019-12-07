@@ -3,34 +3,40 @@ package com.example.SemWebProject.model;
 import org.apache.jena.rdf.model.RDFNode;
 
 public class Proximity {
-    private RDFNode placeLabel;
-    private RDFNode image;
-    private  RDFNode coordinate_location;
-    private  RDFNode dist;
-    private  RDFNode instance_ofLabel;
+    private String placeLabel;
+    private String image;
+    private Double longitude;
+    private Double latitude;
+    private Double dist;
+    private  String instance_ofLabel;
 
-    public RDFNode getPlaceLabel() {
+    public String getPlaceLabel() {
         return placeLabel;
     }
 
-    public RDFNode getImage() {
+    public String getImage() {
         return image;
     }
 
-    public RDFNode getCoordinate_location() {
-        return coordinate_location;
+    public Double getLongitude() {
+        return longitude;
     }
 
-    public RDFNode getDist() {
+    public Double getLatitude(){
+        return latitude;
+    }
+
+    public Double getDist() {
         return dist;
     }
 
-    public RDFNode getInstance_ofLabel() {
+    public String getInstance_ofLabel() {
         return instance_ofLabel;
     }
 
-    public Proximity(RDFNode placeLabel, RDFNode image, RDFNode coordinate_location, RDFNode dist, RDFNode instance_ofLabel) {
-        this.coordinate_location=coordinate_location;
+    public Proximity(String placeLabel, String image, Double longitude, Double latitude, Double dist, String instance_ofLabel) {
+        this.longitude = longitude;
+        this.latitude = latitude;
         this.dist=dist;
         this.image=image;
         this.instance_ofLabel=instance_ofLabel;
