@@ -2,6 +2,8 @@ package com.example.SemWebProject.model;
 
 import org.apache.jena.rdf.model.RDFNode;
 
+import java.util.List;
+
 public class Station {
     private  RDFNode stationId;
     private  LocationCity locationCity;
@@ -9,14 +11,24 @@ public class Station {
     private RDFNode capacity;
     private  RDFNode latitude;
     private  RDFNode longitude;
+    private List<Proximity> listProximity;
 
-    public Station(RDFNode stationId, LocationCity locationCity, RDFNode stationName, RDFNode capacity, RDFNode latitude, RDFNode longitude) {
+    public void setListProximity(List<Proximity> listProximity) {
+        this.listProximity = listProximity;
+    }
+
+    public List<Proximity> getListProximity() {
+        return listProximity;
+    }
+
+    public Station(RDFNode stationId, LocationCity locationCity, RDFNode stationName, RDFNode capacity, RDFNode latitude, RDFNode longitude, List<Proximity> listProximity) {
         this.stationId = stationId;
         this.locationCity = locationCity;
         this.stationName = stationName;
         this.capacity = capacity;
         this.latitude = latitude;
         this.longitude = longitude;
+        this.listProximity=listProximity;
     }
 
     public LocationCity getLocationCity() {

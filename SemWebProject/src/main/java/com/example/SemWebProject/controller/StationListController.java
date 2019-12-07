@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.example.SemWebProject.model.LocationCity;
+import com.example.SemWebProject.model.Proximity;
 import com.example.SemWebProject.model.Station;
 import org.apache.jena.datatypes.xsd.XSDDatatype;
 import org.apache.jena.query.QueryExecution;
@@ -52,19 +53,26 @@ public class StationListController {
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			LocationCity locationCity = new LocationCity(qs.get("stp"));
-			
+
+
+
+
 			Station station = new Station(qs.get("id"),
 					locationCity,
 					qs.get("nomStation"),
 					qs.get("cap"),
 					qs.get("lat"),
-					qs.get("lon"));
+					qs.get("lon"),
+					new ArrayList<>());
 
 
 
 			stationList.add(station);
-		}
+			for (Proximity prox : station.getListProximity()){
+				System.out.println(prox.getPlaceLabel().asLiteral().getString());
+			}
 
+		}
 		model.addAttribute("stationList", stationList);
 		return "stationList";
 
