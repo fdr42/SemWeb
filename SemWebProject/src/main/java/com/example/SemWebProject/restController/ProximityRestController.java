@@ -41,6 +41,9 @@ public class ProximityRestController {
                 "           && ?instance_of != wd:Q13634881 \n" +
                 "           && ?instance_of != wd:Q174782\n" +
                 "           && ?instance_of != wd:Q22746\n" +
+                "       &&  ?instance_of != wd:Q54114\n " +
+                "       &&  ?instance_of != wd:Q3947\n " +
+                "       &&  ?instance_of != wd:Q11755959\n " +
                 "           && ?instance_of != wd:Q194203) \n" +
 
 
@@ -68,7 +71,7 @@ String instanceoflabel="";
                 instanceoflabel= qs2.get("instance_ofLabel").asLiteral().getString();
             }
             Proximity item = new Proximity(
-                    qs2.get("placeLabel").toString(),
+                    qs2.get("placeLabel").asLiteral().getString(),
                     image,
                     longitude,
                     latitude,
