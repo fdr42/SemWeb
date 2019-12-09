@@ -1,5 +1,11 @@
 package com.example.SemWebProject.controller;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,15 +23,19 @@ import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdfconnection.RDFConnectionFactory;
 import org.apache.jena.rdfconnection.SparqlQueryConnection;
 import org.apache.jena.vocabulary.RDFS;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import static com.example.SemWebProject.JsonReader.readJsonFromUrl;
 
 @Controller
 public class StationListController {
 
 	@RequestMapping(value = "/")
-	public String stationList(Model model) {
+	public String stationList(Model model) throws IOException, JSONException {
 
 		SparqlQueryConnection conn = RDFConnectionFactory.connect("http://localhost:3030/semwebproject/");
 
@@ -53,8 +63,18 @@ public class StationListController {
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			LocationCity locationCity = new LocationCity(qs.get("stp"));
+			if(locationCity.getCityName().toString().equals("Lyon")){
+				JSONObject response = readJsonFromUrl("https://download.data.grandlyon.com/wfs/rdata?SERVICE=WFS&VERSION=1.1.0&outputformat=GEOJSON&request=GetFeature&typename=jcd_jcdecaux.jcdvelov&SRSNAME=urn:ogc:def:crs:EPSG::4171");
+				System.out.println(locationCity.getCityName() + ": " + response.getJSONArray("features").get(0));
 
 
+
+			}
+			else if(locationCity.getCityName().toString().equals("Saint Etienne")){
+				JSONObject response = readJsonFromUrl("https://saint-etienne-gbfs.klervi.net/gbfs/en/station_status.json");
+				System.out.println(locationCity.getCityName() + ": " + response.getJSONArray("stations"));
+
+			}
 
 
 			Station station = new Station(qs.get("id"),
