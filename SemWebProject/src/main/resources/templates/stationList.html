@@ -93,7 +93,14 @@
     function initMap() {
         // Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
 
-
+        var greenIcon = new L.Icon({
+            iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
 
         macarte = L.map('map').setView([46.52863469527167,2.43896484375], 5);
         markerClusters = L.markerClusterGroup();
@@ -123,17 +130,30 @@
         marker.city = city;
         marker.idStation = idStation;
         marker.capacity = capacity
-
+        marker.added=false;
         marker.incIdStat = null;
 
 
 
         marker.on('click', function() {
-
-            console.log('http://localhost:8080/proximityRest?lon='+lonPoint+'&lat='+latPoint)
-            axios.get('http://localhost:8080/proximityRest?lon='+lonPoint+'&lat='+latPoint)
+var mark=this;
+            console.log('http://localhost:8080/proximityRest?lon=' + this.longitude + '&lat=' + this.latitude)
+            axios.get('http://localhost:8080/proximityRest?lon=' + this.longitude + '&lat=' + this.latitude)
                 .then(function (response) {
+                    var i=0;
                     console.log(response.data);
+                    console.log(mark.added);
+                    if (!mark.added){
+                        mark.added=true;
+                    for(var item in response.data){
+                        console.log(response.data[i].placeLabel);
+
+
+                            markerClusters.addLayer(L.marker([response.data[i].latitude, response.data[i].longitude], {icon: greenIcon}));
+
+                        }
+                        i++;
+                    }
                 })
                 .catch(function (error) {
                     // handle error

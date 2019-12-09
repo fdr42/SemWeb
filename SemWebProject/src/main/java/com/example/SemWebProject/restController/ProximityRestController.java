@@ -28,7 +28,7 @@ public class ProximityRestController {
                 + "SELECT ?place ?placeLabel ?image ?coordinate_location ?dist ?instance_of ?instance_ofLabel WHERE {" +
                 "  SERVICE wikibase:around {" +
                 "    ?place wdt:P625 ?coordinate_location." +
-                "    bd:serviceParam wikibase:center \"Point(" + lat + " " + lon + ")\"^^geo:wktLiteral;" +
+                "    bd:serviceParam wikibase:center \"Point(" + lon + " " + lat + ")\"^^geo:wktLiteral;" +
                 "    wikibase:radius \"0.2\";" +
                 "     wikibase:distance ?dist." +
                 "  }" +
@@ -58,16 +58,25 @@ public class ProximityRestController {
                     replace("^^http://www.opengis.net/ont/geosparql#wktLiteral", "").split(" ")[1]);
 
             Double dist = Double.parseDouble(qs2.get("dist").toString().replace("^^http://www.w3.org/2001/XMLSchema#double", ""));
+String image="";
+String instanceoflabel="";
+            if( qs2.get("image")!=null) {
+                image=qs2.get("image").toString();
+}
+            if(qs2.get("instance_ofLabel")!=null){
 
+                instanceoflabel= qs2.get("instance_ofLabel").asLiteral().getString();
+            }
             Proximity item = new Proximity(
                     qs2.get("placeLabel").toString(),
-                    qs2.get("image").toString(),
+                    image,
                     longitude,
                     latitude,
                     dist,
-                    qs2.get("instance_ofLabel").toString());
-
-            proximityList.add(item);
+                    instanceoflabel);
+if(!proximityList.stream().anyMatch(item2 ->  qs2.get("placeLabel").toString().equals(item2.getPlaceLabel()))) {
+    proximityList.add(item);
+}
         }
 
         return proximityList;
