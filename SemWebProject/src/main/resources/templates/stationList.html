@@ -26,6 +26,7 @@
         }
         #mapProximite{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
             height:400px;
+
         }
     </style>
 </head>
@@ -160,7 +161,9 @@
             if(macarteProximite != undefined || macarteProximite != null){
                 macarteProximite.remove();
             }
-            macarteProximite = L.map('mapProximite').setView([this.latitude, this.longitude], 11);
+
+            macarteProximite = L.map('mapProximite').setView([this.latitude, this.longitude], 15);
+
             // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
             L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
                 // Il est toujours bien de laisser le lien vers la source des données
@@ -168,6 +171,8 @@
                 minZoom: 1,
                 maxZoom: 20
             }).addTo(macarteProximite);
+
+            var markerStationSelect = L.marker([this.latitude, this.longitude]).addTo(macarteProximite);
 
             console.log('http://localhost:8080/proximityRest?lon=' + this.longitude + '&lat=' + this.latitude)
             axios.get('http://localhost:8080/proximityRest?lon=' + this.longitude + '&lat=' + this.latitude)
@@ -203,7 +208,14 @@
             document.getElementById("stationLon").innerHTML = this.longitude;
             document.getElementById("stationLon").innerHTML = this.longitude;
             document.getElementById("indidstat").innerHTML = this.incIdStat;
+
+            $('#modalProximite').on('show.bs.modal', function(){
+                setTimeout(function() {
+                    macarteProximite.invalidateSize();
+                }, 10);
+            });
             $('#modalProximite').modal('show');
+
         });
 
         markerClusters.addLayer(marker);
