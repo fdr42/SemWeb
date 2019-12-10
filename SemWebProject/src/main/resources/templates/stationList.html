@@ -20,7 +20,17 @@
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
     <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
 
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" />
+
+
+
     <style type="text/css">
+        body{
+            background-color: whitesmoke;
+        }
+
         #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
             height:400px;
         }
@@ -30,46 +40,68 @@
         }
     </style>
 </head>
-<body>
+<body class="m-3">
 <div class="container-fluid">
-<h1>Voici la liste des sations en France.</b></h1>
-    <div id="map">
-        <!-- Ici s'affichera la carte -->
-    </div>
-
-
     <div id="modalProximite" class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
+                    <h1 class="modal-title">Lieux à proximité</h1>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div id="mapProximite">
-                        <!-- Ici s'affichera la carte -->
-                    </div>
-                    <div id="stationId" about="" class="modal-content">
-                        <h2 id="locationCity" property="dbo:locationCity"></h2>
-                        <h2 id="stationLabel" property="rdfs:label"></h2>
-                        <h2 id="stationCapacity" property="rdfs:capacity"></h2>
-                        <h2 id="available"></h2>
-                        <h2 id="stationLat" property="geo:lat"></h2>
-                        <h2 id="stationLon" property="geo:lon"></h2>
-                        <h1 id="indidstat"></h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div id="mapProximite">
+                                <!-- Ici s'affichera la carte -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <table id="stationId" about="" class="table table-striped table-bordered" style="width:100%">
+                                <tr style="min-height: 100px">
+                                    <th>Ville</th>
+                                    <td id="locationCity" property="dbo:locationCity"></td>
+                                </tr>
+                                <tr style="min-height: 100px">
+                                    <th>Nom station</th>
+                                    <td id="stationLabel" property="rdfs:label"></td>
+                                </tr>
+                                <tr style="min-height: 100px">
+                                    <th>Vélos disponibles</th>
+                                    <td id="available"></td>
+                                </tr>
+                                <tr style="min-height: 100px">
+                                    <th>Nombres d'emplacements</th>
+                                    <td id="stationCapacity" property="rdfs:capacity"></td>
+                                </tr>
+                                <tr style="display:none">
+                                    <th>Latitude</th>
+                                    <td id="stationLat" property="geo:lat"></td>
+                                </tr>
+                                <tr style="display:none">
+                                    <th>Longitude</th>
+                                    <td id="stationLon" property="geo:lon"></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
-<table>
-    <thead>
+
+    <div id="map" class="mb-3">
+        <!-- Ici s'affichera la carte -->
+    </div>
+
+    <table id="example" class="table table-striped table-bordered" style="width:100%; height: 100%">
+        <thead>
         <tr>
             <th>Nom de la station</th>
             <th>Capacitée</th>
@@ -90,7 +122,14 @@
 </table>
 
 </div>
+
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -98,6 +137,11 @@
 <script type='text/javascript' src='https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js'></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script th:inline="javascript" type="text/javascript">
+
+    $(document).ready(function() {
+        $('#example').DataTable();
+    } );
+
     // On initialise la latitude et la longitude de Paris (centre de la carte)
 
     var macarte = null;
@@ -146,7 +190,7 @@
         /*[# th:each="station : ${stationList}"]*/
         var latPoint=/*[[${station.latitude.toString()}]]*/;
         var lonPoint=/*[[${station.longitude.toString()}]]*/;
-        var nameStation=/*[[${station.stationName.toString()}]]*/;
+        var nameStation=/*[[${station.stationName.toString().replace(station.getStationId().toString(),"")}]]*/;
         var idStation=/*[[${station.getStationId().toString()}]]*/;
         var city=/*[[${station.locationCity.getCityName().toString()}]]*/;
         var capacity=/*[[${station.getCapacity().toString()}]]*/;
@@ -159,8 +203,7 @@
         marker.longitude = lonPoint;
         marker.city = city;
         marker.idStation = idStation;
-        marker.capacity = capacity
-        marker.incIdStat = null;
+        marker.capacity = capacity;
 
         marker.on('click', function() {
             var stationActuelle = this.nameStation;
@@ -215,7 +258,7 @@ if("restaurant"==results[i].instance_ofLabel){
 
                       var markProx= L.marker([response.data[i].latitude, response.data[i].longitude], {icon: icone,title:placeLabel});
                         markProx.bindPopup(
-                        "<img src=\""+results[i].image+"\" alt=\""+placeLabel+"\"style=\"width:200px;height:200px;\">"+
+                        "<img src=\""+results[i].image+"\" alt=\""+placeLabel+"\"style=\"width:100%;height:200px;\">"+
                             "<br /><b>"+placeLabel+"</b><br />"+results[i].instance_ofLabel+". Se situe à "+results[i].dist*1000+"m de la station "+stationActuelle
 
 
@@ -241,7 +284,6 @@ if("restaurant"==results[i].instance_ofLabel){
             document.getElementById("stationLat").innerHTML = this.latitude;
             document.getElementById("stationLon").innerHTML = this.longitude;
             document.getElementById("stationLon").innerHTML = this.longitude;
-            document.getElementById("indidstat").innerHTML = this.incIdStat;
 
             $('#modalProximite').on('show.bs.modal', function(){
                 setTimeout(function() {
