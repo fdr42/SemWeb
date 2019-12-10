@@ -1,0 +1,103 @@
+
+@base          <http://example.org/> .
+@prefix schema: <http://schema.org/> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dbr:   <http://dbpedia.org/resource/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ite:   <http://w3id.org/sparql-generate/iter/> .
+@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
+
+<http://ex.com/Rennes/5534>
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Brest - Verdun" ;
+        dbo:id            "5534" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.113009e0 ;
+        geo:lon           -1.693264e0 .
+
+<http://ex.com/Rennes/5582>
+        a                 crm:Station ;
+        rdfs:capacity     28 ;
+        rdfs:label        "La Poterie" ;
+        dbo:id            "5582" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.087282e0 ;
+        geo:lon           -1.644121e0 .
+
+dbr:Rennes  a       schema:City ;
+        rdfs:label  "Rennes" .
+
+<http://ex.com/Rennes/5580>
+        a                 crm:Station ;
+        rdfs:capacity     18 ;
+        rdfs:label        "Painlevé" ;
+        dbo:id            "5580" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.122994e0 ;
+        geo:lon           -1.660547e0 .
+
+<http://ex.com/Rennes/5521>
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "La Criée" ;
+        dbo:id            "5521" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.107626e0 ;
+        geo:lon           -1.680085e0 .
+
+<http://ex.com/Rennes/5510>
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Musée Beaux-Arts" ;
+        dbo:id            "5510" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.109601e0 ;
+        geo:lon           -1.67408e0 .
+
+<http://ex.com/Rennes/5546>
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Plaine de Baud" ;
+        dbo:id            "5546" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.112461e0 ;
+        geo:lon           -1.643674e0 .
+
+<http://ex.com/Rennes/5581>
+        a                 crm:Station ;
+        rdfs:capacity     16 ;
+        rdfs:label        "Turmel" ;
+        dbo:id            "5581" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.122147e0 ;
+        geo:lon           -1.650808e0 .
+
+<http://ex.com/Rennes/5538>
+        a                 crm:Station ;
+        rdfs:capacity     20 ;
+        rdfs:label        "Marbeuf" ;
+        dbo:id            "5538" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.111749e0 ;
+        geo:lon           -1.702077e0 .
+
+<http://ex.com/Rennes/5516>
+        a                 crm:Station ;
+        rdfs:capacity     24 ;
+        rdfs:label        "Champs Libres" ;
+        dbo:id            "5516" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.105537e0 ;
+        geo:lon           -1.674328e0 .
+
+<http://ex.com/Rennes/5578>
+        a                 crm:Station ;
+        rdfs:capacity     18 ;
+        rdfs:label        "Gros-Chêne" ;
+        dbo:id            "5578" ;
+        dbo:locationCity  dbr:Rennes ;
+        geo:lat           48.126795e0 ;
+        geo:lon           -1.665101e0 .

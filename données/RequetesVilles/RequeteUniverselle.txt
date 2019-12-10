@@ -1,0 +1,21 @@
+PREFIX ite: <http://w3id.org/sparql-generate/iter/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX dbo:<http://dbpedia.org/ontology/>
+PREFIX dbr:<http://dbpedia.org/resource/> 
+PREFIX schema:<http://schema.org/> 
+
+GENERATE { 
+  <http://dbpedia.org/resource/{?city}> a schema:City;
+    rdfs:label ?city.
+
+  <http://ex.com/{?city}/{?Station_id}> a crm:Station;
+		dbo:id ?Station_id;
+		dbo:locationCity <http://dbpedia.org/resource/{?city}>;
+           	rdfs:label  ?name;
+    		rdfs:capacity ?capacity;
+    		geo:lat ?lat;
+    		geo:lon ?lon.
+}
+ITERATOR ite:JSONPath(<https://api.jcdecaux.com/vls/v3/stations?apiKey=4a9440953e549e83e6263734f3ced9b67c44b639>,"$[*]", ".number","$.contractName","$.name", "$.totalStands.capacity", "$.position.latitude", "$.position.longitude") AS ?station ?Station_id ?city ?name ?capacity ?lat ?lon

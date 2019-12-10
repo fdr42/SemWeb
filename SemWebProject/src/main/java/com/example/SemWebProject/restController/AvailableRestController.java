@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.example.SemWebProject.JsonReader.readJsonArrayFromUrl;
 import static com.example.SemWebProject.JsonReader.readJsonFromUrl;
 
 @RestController
@@ -26,19 +27,7 @@ public class AvailableRestController {
     @GetMapping(produces = "application/json")
     public int getAvailable(@RequestParam(name = "id") Integer id, @RequestParam(name = "city") String city) throws IOException, JSONException {
 
-        if (city.equals("Lyon")) {
-            JSONObject response = readJsonFromUrl("https://download.data.grandlyon.com/wfs/rdata?SERVICE=WFS&VERSION=1.1.0&outputformat=GEOJSON&request=GetFeature&typename=jcd_jcdecaux.jcdvelov&SRSNAME=urn:ogc:def:crs:EPSG::4171");
-
-            for (int i = 0; i < response.getJSONArray("features").length(); i++) {
-
-                if (response.getJSONArray("features").getJSONObject(i).getJSONObject("properties").get("number").toString().equals(id.toString())) {
-
-
-                    return  Integer.parseInt(response.getJSONArray("features").getJSONObject(i).getJSONObject("properties").get("available_bikes").toString());
-                }
-
-            }
-        } else if (city.equals("Saint Etienne")) {
+         if (city.equals("Saint Etienne")) {
             JSONObject response = readJsonFromUrl("https://saint-etienne-gbfs.klervi.net/gbfs/en/station_status.json");
             System.out.println(city + ": " + response);
             for (int i = 0; i < response.getJSONObject("data").getJSONArray("stations").length(); i++) {
@@ -48,6 +37,27 @@ public class AvailableRestController {
                 }
             }
             }
+        else if (city.equals("Rennes")) {
+            JSONObject response = readJsonFromUrl("https://data.rennesmetropole.fr/api/records/1.0/search/?dataset=etat-des-stations-le-velo-star-en-temps-reel");
+            System.out.println(city + ": " + response);
+            for (int i = 0; i < response.getJSONArray("records").length(); i++) {
+                if (response.getJSONArray("records").getJSONObject(i).getJSONObject("fields").get("idstation").toString().equals(id.toString())) {
+                    return  Integer.parseInt(response.getJSONArray("records").getJSONObject(i).getJSONObject("fields").get("nombrevelosdisponibles").toString());
+
+                }
+            }
+        }else{
+             JSONArray response = readJsonArrayFromUrl("https://api.jcdecaux.com/vls/v3/stations?contract="+city+"&apiKey=4a9440953e549e83e6263734f3ced9b67c44b639");
+
+             for (int i = 0; i < response.length(); i++) {
+                 if (response.getJSONObject(i).get("number").toString().equals(id.toString())) {
+                     return  Integer.parseInt(response.getJSONObject(i).getJSONObject("mainStands").getJSONObject("availabilities").get("bikes").toString());
+
+                 }
+             }
+
+
+         }
         return -1;
     }
 }

@@ -1,4 +1,5 @@
 package com.example.SemWebProject;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -30,7 +31,20 @@ public class JsonReader {
         }
         return null;
     }
-
+    public static JSONArray readJsonArrayFromUrl(String url) throws IOException, JSONException {
+        InputStream is = new URL(url).openStream();
+        try {
+            BufferedReader rd = new BufferedReader(new InputStreamReader(is, Charset.forName("UTF-8")));
+            String jsonText = readAll(rd);
+            JSONArray json = new JSONArray(jsonText);
+            return json;
+        } catch (org.json.JSONException e) {
+            e.printStackTrace();
+        } finally {
+            is.close();
+        }
+        return null;
+    }
     public static void main(String[] args) throws IOException, JSONException, org.json.JSONException {
         JSONObject json = readJsonFromUrl("https://swapi.co/api/people/1/");
         System.out.println(json.toString());
