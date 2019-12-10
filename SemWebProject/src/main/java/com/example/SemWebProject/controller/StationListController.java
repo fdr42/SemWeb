@@ -63,18 +63,7 @@ public class StationListController {
 		while(rs.hasNext()) {
 			QuerySolution qs = rs.next();
 			LocationCity locationCity = new LocationCity(qs.get("stp"));
-			if(locationCity.getCityName().toString().equals("Lyon")){
-				JSONObject response = readJsonFromUrl("https://download.data.grandlyon.com/wfs/rdata?SERVICE=WFS&VERSION=1.1.0&outputformat=GEOJSON&request=GetFeature&typename=jcd_jcdecaux.jcdvelov&SRSNAME=urn:ogc:def:crs:EPSG::4171");
-				System.out.println(locationCity.getCityName() + ": " + response.getJSONArray("features").get(0));
 
-
-
-			}
-			else if(locationCity.getCityName().toString().equals("Saint Etienne")){
-				JSONObject response = readJsonFromUrl("https://saint-etienne-gbfs.klervi.net/gbfs/en/station_status.json");
-				System.out.println(locationCity.getCityName() + ": " + response.getJSONArray("stations"));
-
-			}
 
 
 			Station station = new Station(qs.get("id"),

@@ -55,6 +55,7 @@
                         <h2 id="locationCity" property="dbo:locationCity"></h2>
                         <h2 id="stationLabel" property="rdfs:label"></h2>
                         <h2 id="stationCapacity" property="rdfs:capacity"></h2>
+                        <h2 id="available"></h2>
                         <h2 id="stationLat" property="geo:lat"></h2>
                         <h2 id="stationLon" property="geo:lon"></h2>
                         <h1 id="indidstat"></h1>
@@ -180,7 +181,22 @@
 
          L.marker([this.latitude, this.longitude]).addTo(macarteProximite);
 
-            console.log('http://localhost:8080/proximityRest?lon=' + this.longitude + '&lat=' + this.latitude)
+            axios.get('http://localhost:8080/availableRest?id=' + this.idStation + '&city=' + this.city)
+                .then(function (response) {
+                    console.log("NumValides : "+response.data);
+
+                    document.getElementById("available").innerHTML = response.data;
+
+                })
+                .catch(function (error) {
+                    // handle error
+                    console.log(error);
+                })
+                .finally(function () {
+                    // always executed
+                });
+
+
             axios.get('http://localhost:8080/proximityRest?lon=' + this.longitude + '&lat=' + this.latitude)
                 .then(function (response) {
                     var i=0;
