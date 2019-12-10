@@ -41,8 +41,13 @@ public class AvailableRestController {
         } else if (city.equals("Saint Etienne")) {
             JSONObject response = readJsonFromUrl("https://saint-etienne-gbfs.klervi.net/gbfs/en/station_status.json");
             System.out.println(city + ": " + response);
+            for (int i = 0; i < response.getJSONObject("data").getJSONArray("stations").length(); i++) {
+                if (response.getJSONObject("data").getJSONArray("stations").getJSONObject(i).get("station_id").toString().equals(id.toString())) {
+                    return  Integer.parseInt(response.getJSONObject("data").getJSONArray("stations").getJSONObject(i).get("num_bikes_available").toString());
 
-        }
+                }
+            }
+            }
         return -1;
     }
 }
