@@ -102,12 +102,12 @@
         </thead>
         <tbody>
         <tr th:each="station : ${stationList}"
-            th:about="${station.getLocationCity().getCityName().asLiteral().getString().replace(' ' ,'-')+'/'+station.stationId}">
+            th:about="${station.getLocationCity().replace(' ' ,'-')+'/'+station.stationId}">
             <td th:text="${station.stationName}" property="rdfs:label"></td>
             <td th:text="${station.capacity}" property="rdfs:capacity"></td>
             <td th:text="${station.latitude.toString()}" property="geo:lat"></td>
             <td th:text="${station.longitude.toString()}" property="geo:lon"></td>
-            <td th:text="${station.locationCity.getCityName()}" property="dbo:locationCity"></td>
+            <td th:text="${station.locationCity.toString()}" property="dbo:locationCity"></td>
         </tr>
         </tbody>
     </table>
@@ -123,180 +123,15 @@
 <script type="text/javascript" th:src="@{/js/leaflet.js}"></script>
 <script type="text/javascript" th:src="@{/js/leaflet.markercluster.js}"></script>
 
-<script th:inline="javascript" type="text/javascript">
-
-    $(document).ready(function () {
-        $('#example').DataTable();
-    });
-
-    // On initialise la latitude et la longitude de Paris (centre de la carte)
-
-    var macarte = null;
-    var macarteProximite = null;
+<script th:inline="javascript" language="javascript" type="text/javascript">
 
     /*<![CDATA[*/
-    var listStation =/*[[${stationList.toString()}]]*/ 'default';
-    var lat = /*[[${stationList[0].latitude.toString()}]]*/ 'default';
-    var lon = /*[[${stationList[0].longitude.toString()}]]*/ 'default';
-    var stationList = /*[[${stationList.size()}]]*/ 'default';
-    console.log(stationList);
-    console.log(lon);
+    var listStation =JSON.parse(/*[[${stationListJson}]]*/ 'default');
     /*]]>*/
-    var markerClusters;
 
-    // Fonction d'initialisation de la carte
-    function initMap() {
-        // Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
-
-        var greenIcon = new L.Icon({
-            iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [1, -34],
-            shadowSize: [41, 41]
-        });
-        var redIcon = new L.Icon({
-            iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
-            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
-            iconSize: [25, 41],
-            iconAnchor: [12, 41],
-            popupAnchor: [1, -34],
-            shadowSize: [41, 41]
-        });
-        macarte = L.map('map').setView([46.52863469527167, 2.43896484375], 5);
-        markerClusters = L.markerClusterGroup();
-        // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
-        L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-            // Il est toujours bien de laisser le lien vers la source des données
-            attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
-            minZoom: 1,
-            maxZoom: 20
-        }).addTo(macarte);
-        /*<![CDATA[*/
-
-        /*[# th:each="station : ${stationList}"]*/
-        var latPoint =/*[[${station.latitude.toString()}]]*/;
-        var lonPoint =/*[[${station.longitude.toString()}]]*/;
-        var nameStation =/*[[${station.stationName.toString().replace(station.getStationId().toString(),"")}]]*/;
-        var idStation =/*[[${station.getStationId().toString()}]]*/;
-        var city =/*[[${station.locationCity.getCityName().toString()}]]*/;
-        var capacity =/*[[${station.getCapacity().toString()}]]*/;
-        latPoint = parseFloat(latPoint);
-        lonPoint = parseFloat(lonPoint);
-        var marker = L.marker([latPoint, lonPoint]);
-
-        marker.nameStation = nameStation;
-        marker.latitude = latPoint;
-        marker.longitude = lonPoint;
-        marker.city = city;
-        marker.idStation = idStation;
-        marker.capacity = capacity;
-
-        marker.on('click', function () {
-            var stationActuelle = this.nameStation;
-
-            if (macarteProximite != undefined || macarteProximite != null) {
-                macarteProximite.remove();
-            }
-
-            macarteProximite = L.map('mapProximite').setView([this.latitude, this.longitude], 16);
-
-            // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
-            L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-                // Il est toujours bien de laisser le lien vers la source des données
-                attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
-                minZoom: 1,
-                maxZoom: 20
-            }).addTo(macarteProximite);
-
-            L.marker([this.latitude, this.longitude]).addTo(macarteProximite);
-
-            axios.get('http://localhost:8080/availableRest?id=' + this.idStation + '&city=' + this.city)
-                .then(function (response) {
-                    console.log("NumValides : " + response.data);
-
-                    document.getElementById("available").innerHTML = response.data;
-
-                })
-                .catch(function (error) {
-                    // handle error
-                    console.log(error);
-                })
-                .finally(function () {
-                    // always executed
-                });
-
-
-            axios.get('http://localhost:8080/proximityRest?lon=' + this.longitude + '&lat=' + this.latitude)
-                .then(function (response) {
-                    var i = 0;
-
-                    var results = response.data;
-                    console.log(results);
-                    for (var item in results) {
-                        var placeLabel = results[i].placeLabel;
-                        console.log(placeLabel + "  " + i);
-
-                        var icone = greenIcon;
-
-                        if ("restaurant" == results[i].instance_ofLabel) {
-                            icone = redIcon;
-                        }
-
-                        var markProx = L.marker([response.data[i].latitude, response.data[i].longitude], {
-                            icon: icone,
-                            title: placeLabel
-                        });
-                        markProx.bindPopup(
-                            "<img src=\"" + results[i].image + "\" alt=\"" + results[i].instance_ofLabel + "\"style=\"width:100%;height:200px;\">" +
-                            "<br /><b>" + placeLabel + "</b><br /><br /><em>" + results[i].placeDescription + ".</em> Se situe à " + results[i].dist * 1000 + "m de la station " + stationActuelle
-                        ).openPopup();
-                        markProx.addTo(macarteProximite);
-                        i++;
-                    }
-
-
-                })
-                .catch(function (error) {
-                    // handle error
-                    console.log(error);
-                })
-                .finally(function () {
-                    // always executed
-                });
-
-            document.getElementById("stationId").setAttribute("about", this.idStation);
-            document.getElementById("locationCity").innerHTML = this.city;
-            document.getElementById("stationLabel").innerHTML = this.nameStation;
-            document.getElementById("stationCapacity").innerHTML = this.capacity;
-            document.getElementById("stationLat").innerHTML = this.latitude;
-            document.getElementById("stationLon").innerHTML = this.longitude;
-            document.getElementById("stationLon").innerHTML = this.longitude;
-
-            $('#modalProximite').on('show.bs.modal', function () {
-                setTimeout(function () {
-                    macarteProximite.invalidateSize();
-                }, 10);
-            });
-            $('#modalProximite').modal('show');
-
-        });
-
-        markerClusters.addLayer(marker);
-
-        /*[/]*/
-
-        /*]]>*/
-        macarte.addLayer(markerClusters);
-
-    }
-
-    window.onload = function () {
-        // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
-        initMap();
-    };
 </script>
+
+<script type="text/javascript" th:src="@{/js/initMap.js}"></script>
 </body>
 
 </html>

@@ -2,6 +2,7 @@ package com.example.SemWebProject.controller;
 
 import com.example.SemWebProject.model.LocationCity;
 import com.example.SemWebProject.model.Station;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
@@ -56,8 +57,7 @@ public class StationListController {
                         qs.get("nomStation"),
                         qs.get("cap"),
                         qs.get("lat"),
-                        qs.get("lon"),
-                        new ArrayList<>());
+                        qs.get("lon"));
 
 
                 stationList.add(station);
@@ -65,6 +65,9 @@ public class StationListController {
 
         }
         model.addAttribute("stationList", stationList);
+        ObjectMapper mapper = new ObjectMapper();
+        String jsonInString = mapper.writeValueAsString(stationList);
+        model.addAttribute("stationListJson", jsonInString);
         return "stationList";
 
     }
