@@ -8,12 +8,12 @@ PREFIX schema:<http://schema.org/>
 
 GENERATE { 
   
-  <http://dbpedia.org/resource/{?city}> a schema:City;
-    rdfs:label ?city.
+  <http://dbpedia.org/resource/{?cityFormated}> a schema:City;
+    rdfs:label ?cityFormated.
 
-  <http://ex.com/{?city}/{?Station_id}> a crm:Station;
+  <http://ex.com/{?cityFormated}/{?Station_id}> a crm:Station;
 		dbo:id ?Station_id;
-		dbo:locationCity <http://dbpedia.org/resource/{?city}>;
+		dbo:locationCity <http://dbpedia.org/resource/{?cityFormated}>;
            	rdfs:label  ?outputName;
     		rdfs:capacity ?capacity;
     		geo:lat ?lat;
@@ -23,4 +23,8 @@ GENERATE {
 ITERATOR ite:JSONPath(<https://api.jcdecaux.com/vls/v3/stations?apiKey=4a9440953e549e83e6263734f3ced9b67c44b639>,"$[*]", ".number","$.contractName","$.name", "$.totalStands.capacity", "$.position.latitude", "$.position.longitude") AS ?station ?Station_id ?city ?name ?capacity ?lat ?lon
    WHERE{
   BIND(REPLACE(STR(?name),"^.*?(?=[a-z]|[A-Z])","") AS ?outputName) .
-  }
+  BIND(CONCAT(UCASE(SUBSTR(?city, 1, 1)), SUBSTR(?city, 2)) as ?cityFormated).
+  } 
+
+
+
