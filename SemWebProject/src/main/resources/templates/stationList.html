@@ -3,6 +3,14 @@
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns="http://www.w3.org/1999/xhtml"
 >
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"
+      xmlns:dbo="http://dbpedia.org/ontology/"
+      xmlns:dbr="http://dbpedia.org/resource/"
+      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 <head>
     <meta charset="UTF-8"/>
     <title>Liste des stations </title>
@@ -104,10 +112,10 @@
         <tr th:each="station : ${stationList}"
             th:about="${station.getLocationCity().replace(' ' ,'-')+'/'+station.stationId}">
             <td th:text="${station.stationName}" property="rdfs:label"></td>
-            <td th:text="${station.capacity}" property="rdfs:capacity"></td>
-            <td th:text="${station.latitude.toString()}" property="geo:lat"></td>
-            <td th:text="${station.longitude.toString()}" property="geo:lon"></td>
-            <td th:text="${station.locationCity.toString()}" property="dbo:locationCity"></td>
+            <td th:text="${station.capacity.toString()}" property="rdfs:capacity" datatype="xsd:integer"></td>
+            <td th:text="${station.latitude}" property="geo:lat" datatype="xsd:double"></td>
+            <td th:text="${station.longitude}" property="geo:lon" datatype="xsd:double"></td>
+            <td th:content="${'<http://dbpedia.org/resource/' + station.locationCity.toString() + '>'}" datatype="xsd:anyURI" property="dbr:locationCity"><a th:href="@{'http://dbpedia.org/resource/' + ${station.locationCity.toString()}}" th:text="${station.locationCity.toString()}"></a></td>
         </tr>
         </tbody>
     </table>

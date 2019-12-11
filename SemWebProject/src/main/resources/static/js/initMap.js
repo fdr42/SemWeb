@@ -115,7 +115,7 @@ function initMap() {
                         });
                         markProx.bindPopup(
                             "<img src=\"" + results[i].image + "\" alt=\"" + results[i].instance_ofLabel + "\"style=\"width:100%;height:200px;\">" +
-                            "<br /><b>" + placeLabel + "</b><br /><br /><em>" + results[i].placeDescription + ".</em> Se situe à " + results[i].dist * 1000 + "m de la station " + stationActuelle
+                            "<h6 class='p-2'>" + placeLabel + "</h6><span class='p-3'>" + results[i].placeDescription + ".</span> Se situe à " + results[i].dist * 1000 + "m de la station " + stationActuelle
                         ).openPopup();
                         markProx.addTo(macarteProximite);
                         i++;
