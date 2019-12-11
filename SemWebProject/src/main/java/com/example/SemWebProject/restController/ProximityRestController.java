@@ -6,7 +6,10 @@ import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
 import org.apache.jena.rdfconnection.RDFConnectionFactory;
 import org.apache.jena.rdfconnection.SparqlQueryConnection;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,14 +28,14 @@ public class ProximityRestController {
                 "PREFIX wd: <http://www.wikidata.org/entity/>" +
                 "PREFIX geo: <http://www.opengis.net/ont/geosparql#>" +
                 "				 PREFIX wikibase: <http://wikiba.se/ontology#> "
-                + "SELECT ?place ?placeLabel ?image ?coordinate_location ?dist ?instance_of ?instance_ofLabel WHERE {" +
+                + "SELECT ?place ?placeLabel ?placeDescription ?image ?coordinate_location ?dist ?instance_of ?instance_ofLabel WHERE {" +
                 "  SERVICE wikibase:around {" +
                 "    ?place wdt:P625 ?coordinate_location." +
                 "    bd:serviceParam wikibase:center \"Point(" + lon + " " + lat + ")\"^^geo:wktLiteral;" +
                 "    wikibase:radius \"0.2\";" +
                 "     wikibase:distance ?dist." +
                 "  }" +
-                "  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],fr\". }" +
+                "  SERVICE wikibase:label { bd:serviceParam wikibase:language \"[AUTO_LANGUAGE],fr,en,es\". }" +
                 "  OPTIONAL { ?place wdt:P18 ?image. }" +
                 "  OPTIONAL { ?place wdt:P31 ?instance_of. }" +
                 " FILTER (   ?instance_of != wd:Q79007 \n" +
@@ -61,25 +64,30 @@ public class ProximityRestController {
                     replace("^^http://www.opengis.net/ont/geosparql#wktLiteral", "").split(" ")[1]);
 
             Double dist = Double.parseDouble(qs2.get("dist").toString().replace("^^http://www.w3.org/2001/XMLSchema#double", ""));
-String image="";
-String instanceoflabel="";
-            if( qs2.get("image")!=null) {
-                image=qs2.get("image").toString();
-}
-            if(qs2.get("instance_ofLabel")!=null){
+            String image = "";
+            String instanceoflabel = "";
+            String description = "Aucune description disponible";
+            if (qs2.get("image") != null) {
+                image = qs2.get("image").toString();
+            }
+            if (qs2.get("instance_ofLabel") != null) {
 
-                instanceoflabel= qs2.get("instance_ofLabel").asLiteral().getString();
+                instanceoflabel = qs2.get("instance_ofLabel").asLiteral().getString();
+            }
+            if (qs2.get("placeDescription") != null) {
+                description = qs2.get("placeDescription").asLiteral().getString();
             }
             Proximity item = new Proximity(
                     qs2.get("placeLabel").asLiteral().getString(),
+                    description,
                     image,
                     longitude,
                     latitude,
                     dist,
                     instanceoflabel);
-if(!proximityList.stream().anyMatch(item2 ->  qs2.get("placeLabel").toString().equals(item2.getPlaceLabel()))) {
-    proximityList.add(item);
-}
+            if (!proximityList.stream().anyMatch(item2 -> qs2.get("placeLabel").toString().equals(item2.getPlaceLabel()))) {
+                proximityList.add(item);
+            }
         }
 
         return proximityList;

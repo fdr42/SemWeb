@@ -1,14 +1,13 @@
 package com.example.SemWebProject.model;
 
-import org.apache.jena.rdf.model.RDFNode;
-
 public class Proximity {
     private String placeLabel;
+    private String placeDescription;
     private String image;
     private Double longitude;
     private Double latitude;
     private Double dist;
-    private  String instance_ofLabel;
+    private String instance_ofLabel;
 
     public String getPlaceLabel() {
         return placeLabel;
@@ -22,7 +21,7 @@ public class Proximity {
         return longitude;
     }
 
-    public Double getLatitude(){
+    public Double getLatitude() {
         return latitude;
     }
 
@@ -34,12 +33,17 @@ public class Proximity {
         return instance_ofLabel;
     }
 
-    public Proximity(String placeLabel, String image, Double longitude, Double latitude, Double dist, String instance_ofLabel) {
+    public String getPlaceDescription() {
+        return placeDescription;
+    }
+
+    public Proximity(String placeLabel, String placeDescription, String image, Double longitude, Double latitude, Double dist, String instance_ofLabel) {
         this.longitude = longitude;
         this.latitude = latitude;
-        this.dist=dist;
-        this.image=image;
-        this.instance_ofLabel=instance_ofLabel;
-        this.placeLabel=placeLabel;
+        this.dist = dist;
+        this.image = image;
+        this.instance_ofLabel = instance_ofLabel;
+        this.placeLabel = placeLabel;
+        this.placeDescription = placeDescription;
     }
 }

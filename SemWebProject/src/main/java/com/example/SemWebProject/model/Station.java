@@ -5,12 +5,12 @@ import org.apache.jena.rdf.model.RDFNode;
 import java.util.List;
 
 public class Station {
-    private  RDFNode stationId;
-    private  LocationCity locationCity;
+    private RDFNode stationId;
+    private LocationCity locationCity;
     private RDFNode stationName;
     private RDFNode capacity;
-    private  RDFNode latitude;
-    private  RDFNode longitude;
+    private RDFNode latitude;
+    private RDFNode longitude;
     private List<Proximity> listProximity;
 
     public void setListProximity(List<Proximity> listProximity) {
@@ -28,7 +28,7 @@ public class Station {
         this.capacity = capacity;
         this.latitude = latitude;
         this.longitude = longitude;
-        this.listProximity=listProximity;
+        this.listProximity = listProximity;
     }
 
     public LocationCity getLocationCity() {

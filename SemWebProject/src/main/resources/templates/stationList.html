@@ -2,40 +2,29 @@
 
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:dbo="http://dbpedia.org/ontology/"
-      xmlns:dbr="http://dbpedia.org/resource/"
-      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:schema="http://schema.org/"
-      xmlns:re="http://www.w3.org/2000/10/swap/reason#"
-      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      xmlns:db="http://dbpedia.org/"
-      xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+>
 <head>
-    <meta charset="UTF-8" />
-    <title>Liste des stations à ${locationCity.cityName}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
-
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
-    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
-
-
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" />
-
+    <meta charset="UTF-8"/>
+    <title>Liste des stations </title>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/leaflet.css}">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/MarkerCluster.css}">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/MarkerCluster.Default.css}">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/dataTables.bootstrap4.min.css}">
 
 
     <style type="text/css">
-        body{
+        body {
             background-color: whitesmoke;
         }
 
-        #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-            height:400px;
+        #map { /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+            height: 400px;
         }
-        #mapProximite{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
-            height:400px;
+
+        #mapProximite { /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+            height: 400px;
 
         }
     </style>
@@ -60,7 +49,8 @@
                         </div>
 
                         <div class="col-md-6">
-                            <table id="stationId" about="" class="table table-striped table-bordered" style="width:100%">
+                            <table id="stationId" about="" class="table table-striped table-bordered"
+                                   style="width:100%">
                                 <tr style="min-height: 100px">
                                     <th>Ville</th>
                                     <td id="locationCity" property="dbo:locationCity"></td>
@@ -109,38 +99,35 @@
             <th>Longitude</th>
             <th>Ville</th>
         </tr>
-    </thead>
-    <tbody>
-        <tr th:each="station : ${stationList}" th:about="${station.stationId}">
+        </thead>
+        <tbody>
+        <tr th:each="station : ${stationList}"
+            th:about="${station.getLocationCity().getCityName().asLiteral().getString().replace(' ' ,'-')+'/'+station.stationId}">
             <td th:text="${station.stationName}" property="rdfs:label"></td>
             <td th:text="${station.capacity}" property="rdfs:capacity"></td>
             <td th:text="${station.latitude.toString()}" property="geo:lat"></td>
             <td th:text="${station.longitude.toString()}" property="geo:lon"></td>
             <td th:text="${station.locationCity.getCityName()}" property="dbo:locationCity"></td>
         </tr>
-    </tbody>
-</table>
+        </tbody>
+    </table>
 
 </div>
 
+<script type="text/javascript" th:src="@{/js/jquery-3.3.1.slim.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.dataTables.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/popper.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/axios.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/dataTables.bootstrap4.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/leaflet.js}"></script>
+<script type="text/javascript" th:src="@{/js/leaflet.markercluster.js}"></script>
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw==" crossorigin=""></script>
-<script type='text/javascript' src='https://unpkg.com/leaflet.markercluster@1.3.0/dist/leaflet.markercluster.js'></script>
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script th:inline="javascript" type="text/javascript">
 
-    $(document).ready(function() {
+    $(document).ready(function () {
         $('#example').DataTable();
-    } );
+    });
 
     // On initialise la latitude et la longitude de Paris (centre de la carte)
 
@@ -148,7 +135,7 @@
     var macarteProximite = null;
 
     /*<![CDATA[*/
-    var listStation=/*[[${stationList.toString()}]]*/ 'default';
+    var listStation =/*[[${stationList.toString()}]]*/ 'default';
     var lat = /*[[${stationList[0].latitude.toString()}]]*/ 'default';
     var lon = /*[[${stationList[0].longitude.toString()}]]*/ 'default';
     var stationList = /*[[${stationList.size()}]]*/ 'default';
@@ -156,6 +143,7 @@
     console.log(lon);
     /*]]>*/
     var markerClusters;
+
     // Fonction d'initialisation de la carte
     function initMap() {
         // Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
@@ -176,7 +164,7 @@
             popupAnchor: [1, -34],
             shadowSize: [41, 41]
         });
-        macarte = L.map('map').setView([46.52863469527167,2.43896484375], 5);
+        macarte = L.map('map').setView([46.52863469527167, 2.43896484375], 5);
         markerClusters = L.markerClusterGroup();
         // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
         L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
@@ -188,15 +176,15 @@
         /*<![CDATA[*/
 
         /*[# th:each="station : ${stationList}"]*/
-        var latPoint=/*[[${station.latitude.toString()}]]*/;
-        var lonPoint=/*[[${station.longitude.toString()}]]*/;
-        var nameStation=/*[[${station.stationName.toString().replace(station.getStationId().toString(),"")}]]*/;
-        var idStation=/*[[${station.getStationId().toString()}]]*/;
-        var city=/*[[${station.locationCity.getCityName().toString()}]]*/;
-        var capacity=/*[[${station.getCapacity().toString()}]]*/;
+        var latPoint =/*[[${station.latitude.toString()}]]*/;
+        var lonPoint =/*[[${station.longitude.toString()}]]*/;
+        var nameStation =/*[[${station.stationName.toString().replace(station.getStationId().toString(),"")}]]*/;
+        var idStation =/*[[${station.getStationId().toString()}]]*/;
+        var city =/*[[${station.locationCity.getCityName().toString()}]]*/;
+        var capacity =/*[[${station.getCapacity().toString()}]]*/;
         latPoint = parseFloat(latPoint);
         lonPoint = parseFloat(lonPoint);
-        var marker = L.marker([latPoint,lonPoint]);
+        var marker = L.marker([latPoint, lonPoint]);
 
         marker.nameStation = nameStation;
         marker.latitude = latPoint;
@@ -205,10 +193,10 @@
         marker.idStation = idStation;
         marker.capacity = capacity;
 
-        marker.on('click', function() {
+        marker.on('click', function () {
             var stationActuelle = this.nameStation;
 
-            if(macarteProximite != undefined || macarteProximite != null){
+            if (macarteProximite != undefined || macarteProximite != null) {
                 macarteProximite.remove();
             }
 
@@ -222,11 +210,11 @@
                 maxZoom: 20
             }).addTo(macarteProximite);
 
-         L.marker([this.latitude, this.longitude]).addTo(macarteProximite);
+            L.marker([this.latitude, this.longitude]).addTo(macarteProximite);
 
             axios.get('http://localhost:8080/availableRest?id=' + this.idStation + '&city=' + this.city)
                 .then(function (response) {
-                    console.log("NumValides : "+response.data);
+                    console.log("NumValides : " + response.data);
 
                     document.getElementById("available").innerHTML = response.data;
 
@@ -242,30 +230,31 @@
 
             axios.get('http://localhost:8080/proximityRest?lon=' + this.longitude + '&lat=' + this.latitude)
                 .then(function (response) {
-                    var i=0;
+                    var i = 0;
 
-                    var results= response.data;
+                    var results = response.data;
                     console.log(results);
-                    for(var item in results){
-                        var placeLabel=results[i].placeLabel;
-                        console.log(placeLabel+"  "+i);
+                    for (var item in results) {
+                        var placeLabel = results[i].placeLabel;
+                        console.log(placeLabel + "  " + i);
 
-var icone=greenIcon;
+                        var icone = greenIcon;
 
-if("restaurant"==results[i].instance_ofLabel){
-    icone=redIcon;
-}
-
-                      var markProx= L.marker([response.data[i].latitude, response.data[i].longitude], {icon: icone,title:placeLabel});
-                        markProx.bindPopup(
-                        "<img src=\""+results[i].image+"\" alt=\""+placeLabel+"\"style=\"width:100%;height:200px;\">"+
-                            "<br /><b>"+placeLabel+"</b><br />"+results[i].instance_ofLabel+". Se situe à "+results[i].dist*1000+"m de la station "+stationActuelle
-
-
-                        ).openPopup();
-                            markProx.addTo(macarteProximite);
-                        i++;
+                        if ("restaurant" == results[i].instance_ofLabel) {
+                            icone = redIcon;
                         }
+
+                        var markProx = L.marker([response.data[i].latitude, response.data[i].longitude], {
+                            icon: icone,
+                            title: placeLabel
+                        });
+                        markProx.bindPopup(
+                            "<img src=\"" + results[i].image + "\" alt=\"" + results[i].instance_ofLabel + "\"style=\"width:100%;height:200px;\">" +
+                            "<br /><b>" + placeLabel + "</b><br /><br /><em>" + results[i].placeDescription + ".</em> Se situe à " + results[i].dist * 1000 + "m de la station " + stationActuelle
+                        ).openPopup();
+                        markProx.addTo(macarteProximite);
+                        i++;
+                    }
 
 
                 })
@@ -285,8 +274,8 @@ if("restaurant"==results[i].instance_ofLabel){
             document.getElementById("stationLon").innerHTML = this.longitude;
             document.getElementById("stationLon").innerHTML = this.longitude;
 
-            $('#modalProximite').on('show.bs.modal', function(){
-                setTimeout(function() {
+            $('#modalProximite').on('show.bs.modal', function () {
+                setTimeout(function () {
                     macarteProximite.invalidateSize();
                 }, 10);
             });
@@ -302,7 +291,8 @@ if("restaurant"==results[i].instance_ofLabel){
         macarte.addLayer(markerClusters);
 
     }
-    window.onload = function(){
+
+    window.onload = function () {
         // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
         initMap();
     };

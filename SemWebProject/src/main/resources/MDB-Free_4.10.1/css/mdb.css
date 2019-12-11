@@ -1750,7 +1750,7 @@ a:not([href]):not([tabindex]):hover {
     margin-bottom: 2.8rem
 }
 
-.divider-new>h1,
+.divider-new > h1,
 .divider-new h2,
 .divider-new h3,
 .divider-new h4,
@@ -6277,8 +6277,8 @@ a.waves-light {
     box-shadow: none
 }
 
-.btn-group>.btn:not(:first-child),
-.btn-group>.btn-group:not(:first-child) {
+.btn-group > .btn:not(:first-child),
+.btn-group > .btn-group:not(:first-child) {
     margin-left: -.375rem
 }
 
@@ -6315,7 +6315,7 @@ a.waves-light {
 
 .btn-primary:not([disabled]):not(.disabled):active,
 .btn-primary:not([disabled]):not(.disabled).active,
-.show>.btn-primary.dropdown-toggle {
+.show > .btn-primary.dropdown-toggle {
     background-color: #0b51c5 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -6323,7 +6323,7 @@ a.waves-light {
 
 .btn-primary:not([disabled]):not(.disabled):active:focus,
 .btn-primary:not([disabled]):not(.disabled).active:focus,
-.show>.btn-primary.dropdown-toggle:focus {
+.show > .btn-primary.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6365,7 +6365,7 @@ table.table a.btn.btn-primary {
 
 .btn-outline-primary:not([disabled]):not(.disabled):active,
 .btn-outline-primary:not([disabled]):not(.disabled).active,
-.show>.btn-outline-primary.dropdown-toggle {
+.show > .btn-outline-primary.dropdown-toggle {
     background-color: transparent !important;
     border-color: #4285f4 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -6374,7 +6374,7 @@ table.table a.btn.btn-primary {
 
 .btn-outline-primary:not([disabled]):not(.disabled):active:focus,
 .btn-outline-primary:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-primary.dropdown-toggle:focus {
+.show > .btn-outline-primary.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6412,7 +6412,7 @@ table.table a.btn.btn-primary {
 
 .btn-danger:not([disabled]):not(.disabled):active,
 .btn-danger:not([disabled]):not(.disabled).active,
-.show>.btn-danger.dropdown-toggle {
+.show > .btn-danger.dropdown-toggle {
     background-color: #ce0012 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -6420,7 +6420,7 @@ table.table a.btn.btn-primary {
 
 .btn-danger:not([disabled]):not(.disabled):active:focus,
 .btn-danger:not([disabled]):not(.disabled).active:focus,
-.show>.btn-danger.dropdown-toggle:focus {
+.show > .btn-danger.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6462,7 +6462,7 @@ table.table a.btn.btn-danger {
 
 .btn-outline-danger:not([disabled]):not(.disabled):active,
 .btn-outline-danger:not([disabled]):not(.disabled).active,
-.show>.btn-outline-danger.dropdown-toggle {
+.show > .btn-outline-danger.dropdown-toggle {
     background-color: transparent !important;
     border-color: #ff3547 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -6471,7 +6471,7 @@ table.table a.btn.btn-danger {
 
 .btn-outline-danger:not([disabled]):not(.disabled):active:focus,
 .btn-outline-danger:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-danger.dropdown-toggle:focus {
+.show > .btn-outline-danger.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6509,7 +6509,7 @@ table.table a.btn.btn-danger {
 
 .btn-warning:not([disabled]):not(.disabled):active,
 .btn-warning:not([disabled]):not(.disabled).active,
-.show>.btn-warning.dropdown-toggle {
+.show > .btn-warning.dropdown-toggle {
     background-color: #c80 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -6517,7 +6517,7 @@ table.table a.btn.btn-danger {
 
 .btn-warning:not([disabled]):not(.disabled):active:focus,
 .btn-warning:not([disabled]):not(.disabled).active:focus,
-.show>.btn-warning.dropdown-toggle:focus {
+.show > .btn-warning.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6559,7 +6559,7 @@ table.table a.btn.btn-warning {
 
 .btn-outline-warning:not([disabled]):not(.disabled):active,
 .btn-outline-warning:not([disabled]):not(.disabled).active,
-.show>.btn-outline-warning.dropdown-toggle {
+.show > .btn-outline-warning.dropdown-toggle {
     background-color: transparent !important;
     border-color: #fb3 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -6568,7 +6568,7 @@ table.table a.btn.btn-warning {
 
 .btn-outline-warning:not([disabled]):not(.disabled):active:focus,
 .btn-outline-warning:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-warning.dropdown-toggle:focus {
+.show > .btn-outline-warning.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6606,7 +6606,7 @@ table.table a.btn.btn-warning {
 
 .btn-success:not([disabled]):not(.disabled):active,
 .btn-success:not([disabled]):not(.disabled).active,
-.show>.btn-success.dropdown-toggle {
+.show > .btn-success.dropdown-toggle {
     background-color: #006228 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -6614,7 +6614,7 @@ table.table a.btn.btn-warning {
 
 .btn-success:not([disabled]):not(.disabled):active:focus,
 .btn-success:not([disabled]):not(.disabled).active:focus,
-.show>.btn-success.dropdown-toggle:focus {
+.show > .btn-success.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6656,7 +6656,7 @@ table.table a.btn.btn-success {
 
 .btn-outline-success:not([disabled]):not(.disabled):active,
 .btn-outline-success:not([disabled]):not(.disabled).active,
-.show>.btn-outline-success.dropdown-toggle {
+.show > .btn-outline-success.dropdown-toggle {
     background-color: transparent !important;
     border-color: #00c851 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -6665,7 +6665,7 @@ table.table a.btn.btn-success {
 
 .btn-outline-success:not([disabled]):not(.disabled):active:focus,
 .btn-outline-success:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-success.dropdown-toggle:focus {
+.show > .btn-outline-success.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6703,7 +6703,7 @@ table.table a.btn.btn-success {
 
 .btn-info:not([disabled]):not(.disabled):active,
 .btn-info:not([disabled]):not(.disabled).active,
-.show>.btn-info.dropdown-toggle {
+.show > .btn-info.dropdown-toggle {
     background-color: #14799e !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -6711,7 +6711,7 @@ table.table a.btn.btn-success {
 
 .btn-info:not([disabled]):not(.disabled):active:focus,
 .btn-info:not([disabled]):not(.disabled).active:focus,
-.show>.btn-info.dropdown-toggle:focus {
+.show > .btn-info.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6753,7 +6753,7 @@ table.table a.btn.btn-info {
 
 .btn-outline-info:not([disabled]):not(.disabled):active,
 .btn-outline-info:not([disabled]):not(.disabled).active,
-.show>.btn-outline-info.dropdown-toggle {
+.show > .btn-outline-info.dropdown-toggle {
     background-color: transparent !important;
     border-color: #33b5e5 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -6762,7 +6762,7 @@ table.table a.btn.btn-info {
 
 .btn-outline-info:not([disabled]):not(.disabled):active:focus,
 .btn-outline-info:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-info.dropdown-toggle:focus {
+.show > .btn-outline-info.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6800,7 +6800,7 @@ table.table a.btn.btn-info {
 
 .btn-default:not([disabled]):not(.disabled):active,
 .btn-default:not([disabled]):not(.disabled).active,
-.show>.btn-default.dropdown-toggle {
+.show > .btn-default.dropdown-toggle {
     background-color: #186860 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -6808,7 +6808,7 @@ table.table a.btn.btn-info {
 
 .btn-default:not([disabled]):not(.disabled):active:focus,
 .btn-default:not([disabled]):not(.disabled).active:focus,
-.show>.btn-default.dropdown-toggle:focus {
+.show > .btn-default.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6850,7 +6850,7 @@ table.table a.btn.btn-default {
 
 .btn-outline-default:not([disabled]):not(.disabled):active,
 .btn-outline-default:not([disabled]):not(.disabled).active,
-.show>.btn-outline-default.dropdown-toggle {
+.show > .btn-outline-default.dropdown-toggle {
     background-color: transparent !important;
     border-color: #2bbbad !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -6859,7 +6859,7 @@ table.table a.btn.btn-default {
 
 .btn-outline-default:not([disabled]):not(.disabled):active:focus,
 .btn-outline-default:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-default.dropdown-toggle:focus {
+.show > .btn-outline-default.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6897,7 +6897,7 @@ table.table a.btn.btn-default {
 
 .btn-secondary:not([disabled]):not(.disabled):active,
 .btn-secondary:not([disabled]):not(.disabled).active,
-.show>.btn-secondary.dropdown-toggle {
+.show > .btn-secondary.dropdown-toggle {
     background-color: #739 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -6905,7 +6905,7 @@ table.table a.btn.btn-default {
 
 .btn-secondary:not([disabled]):not(.disabled):active:focus,
 .btn-secondary:not([disabled]):not(.disabled).active:focus,
-.show>.btn-secondary.dropdown-toggle:focus {
+.show > .btn-secondary.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6947,7 +6947,7 @@ table.table a.btn.btn-secondary {
 
 .btn-outline-secondary:not([disabled]):not(.disabled):active,
 .btn-outline-secondary:not([disabled]):not(.disabled).active,
-.show>.btn-outline-secondary.dropdown-toggle {
+.show > .btn-outline-secondary.dropdown-toggle {
     background-color: transparent !important;
     border-color: #a6c !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -6956,7 +6956,7 @@ table.table a.btn.btn-secondary {
 
 .btn-outline-secondary:not([disabled]):not(.disabled):active:focus,
 .btn-outline-secondary:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-secondary.dropdown-toggle:focus {
+.show > .btn-outline-secondary.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -6994,7 +6994,7 @@ table.table a.btn.btn-secondary {
 
 .btn-elegant:not([disabled]):not(.disabled):active,
 .btn-elegant:not([disabled]):not(.disabled).active,
-.show>.btn-elegant.dropdown-toggle {
+.show > .btn-elegant.dropdown-toggle {
     background-color: #000 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7002,7 +7002,7 @@ table.table a.btn.btn-secondary {
 
 .btn-elegant:not([disabled]):not(.disabled):active:focus,
 .btn-elegant:not([disabled]):not(.disabled).active:focus,
-.show>.btn-elegant.dropdown-toggle:focus {
+.show > .btn-elegant.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7044,7 +7044,7 @@ table.table a.btn.btn-elegant {
 
 .btn-outline-elegant:not([disabled]):not(.disabled):active,
 .btn-outline-elegant:not([disabled]):not(.disabled).active,
-.show>.btn-outline-elegant.dropdown-toggle {
+.show > .btn-outline-elegant.dropdown-toggle {
     background-color: transparent !important;
     border-color: #2e2e2e !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7053,7 +7053,7 @@ table.table a.btn.btn-elegant {
 
 .btn-outline-elegant:not([disabled]):not(.disabled):active:focus,
 .btn-outline-elegant:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-elegant.dropdown-toggle:focus {
+.show > .btn-outline-elegant.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7091,7 +7091,7 @@ table.table a.btn.btn-elegant {
 
 .btn-unique:not([disabled]):not(.disabled):active,
 .btn-unique:not([disabled]):not(.disabled).active,
-.show>.btn-unique.dropdown-toggle {
+.show > .btn-unique.dropdown-toggle {
     background-color: #2c0419 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7099,7 +7099,7 @@ table.table a.btn.btn-elegant {
 
 .btn-unique:not([disabled]):not(.disabled):active:focus,
 .btn-unique:not([disabled]):not(.disabled).active:focus,
-.show>.btn-unique.dropdown-toggle:focus {
+.show > .btn-unique.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7141,7 +7141,7 @@ table.table a.btn.btn-unique {
 
 .btn-outline-unique:not([disabled]):not(.disabled):active,
 .btn-outline-unique:not([disabled]):not(.disabled).active,
-.show>.btn-outline-unique.dropdown-toggle {
+.show > .btn-outline-unique.dropdown-toggle {
     background-color: transparent !important;
     border-color: #880e4f !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7150,7 +7150,7 @@ table.table a.btn.btn-unique {
 
 .btn-outline-unique:not([disabled]):not(.disabled):active:focus,
 .btn-outline-unique:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-unique.dropdown-toggle:focus {
+.show > .btn-outline-unique.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7188,7 +7188,7 @@ table.table a.btn.btn-unique {
 
 .btn-dark-green:not([disabled]):not(.disabled):active,
 .btn-dark-green:not([disabled]):not(.disabled).active,
-.show>.btn-dark-green.dropdown-toggle {
+.show > .btn-dark-green.dropdown-toggle {
     background-color: #1b451d !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7196,7 +7196,7 @@ table.table a.btn.btn-unique {
 
 .btn-dark-green:not([disabled]):not(.disabled):active:focus,
 .btn-dark-green:not([disabled]):not(.disabled).active:focus,
-.show>.btn-dark-green.dropdown-toggle:focus {
+.show > .btn-dark-green.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7238,7 +7238,7 @@ table.table a.btn.btn-dark-green {
 
 .btn-outline-dark-green:not([disabled]):not(.disabled):active,
 .btn-outline-dark-green:not([disabled]):not(.disabled).active,
-.show>.btn-outline-dark-green.dropdown-toggle {
+.show > .btn-outline-dark-green.dropdown-toggle {
     background-color: transparent !important;
     border-color: #388e3c !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7247,7 +7247,7 @@ table.table a.btn.btn-dark-green {
 
 .btn-outline-dark-green:not([disabled]):not(.disabled):active:focus,
 .btn-outline-dark-green:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-dark-green.dropdown-toggle:focus {
+.show > .btn-outline-dark-green.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7285,7 +7285,7 @@ table.table a.btn.btn-dark-green {
 
 .btn-mdb-color:not([disabled]):not(.disabled):active,
 .btn-mdb-color:not([disabled]):not(.disabled).active,
-.show>.btn-mdb-color.dropdown-toggle {
+.show > .btn-mdb-color.dropdown-toggle {
     background-color: #323a4e !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7293,7 +7293,7 @@ table.table a.btn.btn-dark-green {
 
 .btn-mdb-color:not([disabled]):not(.disabled):active:focus,
 .btn-mdb-color:not([disabled]):not(.disabled).active:focus,
-.show>.btn-mdb-color.dropdown-toggle:focus {
+.show > .btn-mdb-color.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7335,7 +7335,7 @@ table.table a.btn.btn-mdb-color {
 
 .btn-outline-mdb-color:not([disabled]):not(.disabled):active,
 .btn-outline-mdb-color:not([disabled]):not(.disabled).active,
-.show>.btn-outline-mdb-color.dropdown-toggle {
+.show > .btn-outline-mdb-color.dropdown-toggle {
     background-color: transparent !important;
     border-color: #59698d !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7344,7 +7344,7 @@ table.table a.btn.btn-mdb-color {
 
 .btn-outline-mdb-color:not([disabled]):not(.disabled):active:focus,
 .btn-outline-mdb-color:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-mdb-color.dropdown-toggle:focus {
+.show > .btn-outline-mdb-color.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7382,7 +7382,7 @@ table.table a.btn.btn-mdb-color {
 
 .btn-red:not([disabled]):not(.disabled):active,
 .btn-red:not([disabled]):not(.disabled).active,
-.show>.btn-red.dropdown-toggle {
+.show > .btn-red.dropdown-toggle {
     background-color: #811b1b !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7390,7 +7390,7 @@ table.table a.btn.btn-mdb-color {
 
 .btn-red:not([disabled]):not(.disabled):active:focus,
 .btn-red:not([disabled]):not(.disabled).active:focus,
-.show>.btn-red.dropdown-toggle:focus {
+.show > .btn-red.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7432,7 +7432,7 @@ table.table a.btn.btn-red {
 
 .btn-outline-red:not([disabled]):not(.disabled):active,
 .btn-outline-red:not([disabled]):not(.disabled).active,
-.show>.btn-outline-red.dropdown-toggle {
+.show > .btn-outline-red.dropdown-toggle {
     background-color: transparent !important;
     border-color: #d32f2f !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7441,7 +7441,7 @@ table.table a.btn.btn-red {
 
 .btn-outline-red:not([disabled]):not(.disabled):active:focus,
 .btn-outline-red:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-red.dropdown-toggle:focus {
+.show > .btn-outline-red.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7479,7 +7479,7 @@ table.table a.btn.btn-red {
 
 .btn-pink:not([disabled]):not(.disabled):active,
 .btn-pink:not([disabled]):not(.disabled).active,
-.show>.btn-pink.dropdown-toggle {
+.show > .btn-pink.dropdown-toggle {
     background-color: #b41249 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7487,7 +7487,7 @@ table.table a.btn.btn-red {
 
 .btn-pink:not([disabled]):not(.disabled):active:focus,
 .btn-pink:not([disabled]):not(.disabled).active:focus,
-.show>.btn-pink.dropdown-toggle:focus {
+.show > .btn-pink.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7529,7 +7529,7 @@ table.table a.btn.btn-pink {
 
 .btn-outline-pink:not([disabled]):not(.disabled):active,
 .btn-outline-pink:not([disabled]):not(.disabled).active,
-.show>.btn-outline-pink.dropdown-toggle {
+.show > .btn-outline-pink.dropdown-toggle {
     background-color: transparent !important;
     border-color: #ec407a !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7538,7 +7538,7 @@ table.table a.btn.btn-pink {
 
 .btn-outline-pink:not([disabled]):not(.disabled):active:focus,
 .btn-outline-pink:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-pink.dropdown-toggle:focus {
+.show > .btn-outline-pink.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7576,7 +7576,7 @@ table.table a.btn.btn-pink {
 
 .btn-purple:not([disabled]):not(.disabled):active,
 .btn-purple:not([disabled]):not(.disabled).active,
-.show>.btn-purple.dropdown-toggle {
+.show > .btn-purple.dropdown-toggle {
     background-color: #481256 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7584,7 +7584,7 @@ table.table a.btn.btn-pink {
 
 .btn-purple:not([disabled]):not(.disabled):active:focus,
 .btn-purple:not([disabled]):not(.disabled).active:focus,
-.show>.btn-purple.dropdown-toggle:focus {
+.show > .btn-purple.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7626,7 +7626,7 @@ table.table a.btn.btn-purple {
 
 .btn-outline-purple:not([disabled]):not(.disabled):active,
 .btn-outline-purple:not([disabled]):not(.disabled).active,
-.show>.btn-outline-purple.dropdown-toggle {
+.show > .btn-outline-purple.dropdown-toggle {
     background-color: transparent !important;
     border-color: #8e24aa !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7635,7 +7635,7 @@ table.table a.btn.btn-purple {
 
 .btn-outline-purple:not([disabled]):not(.disabled):active:focus,
 .btn-outline-purple:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-purple.dropdown-toggle:focus {
+.show > .btn-outline-purple.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7673,7 +7673,7 @@ table.table a.btn.btn-purple {
 
 .btn-deep-purple:not([disabled]):not(.disabled):active,
 .btn-deep-purple:not([disabled]):not(.disabled).active,
-.show>.btn-deep-purple.dropdown-toggle {
+.show > .btn-deep-purple.dropdown-toggle {
     background-color: #2a1758 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7681,7 +7681,7 @@ table.table a.btn.btn-purple {
 
 .btn-deep-purple:not([disabled]):not(.disabled):active:focus,
 .btn-deep-purple:not([disabled]):not(.disabled).active:focus,
-.show>.btn-deep-purple.dropdown-toggle:focus {
+.show > .btn-deep-purple.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7723,7 +7723,7 @@ table.table a.btn.btn-deep-purple {
 
 .btn-outline-deep-purple:not([disabled]):not(.disabled):active,
 .btn-outline-deep-purple:not([disabled]):not(.disabled).active,
-.show>.btn-outline-deep-purple.dropdown-toggle {
+.show > .btn-outline-deep-purple.dropdown-toggle {
     background-color: transparent !important;
     border-color: #512da8 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7732,7 +7732,7 @@ table.table a.btn.btn-deep-purple {
 
 .btn-outline-deep-purple:not([disabled]):not(.disabled):active:focus,
 .btn-outline-deep-purple:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-deep-purple.dropdown-toggle:focus {
+.show > .btn-outline-deep-purple.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7770,7 +7770,7 @@ table.table a.btn.btn-deep-purple {
 
 .btn-indigo:not([disabled]):not(.disabled):active,
 .btn-indigo:not([disabled]):not(.disabled).active,
-.show>.btn-indigo.dropdown-toggle {
+.show > .btn-indigo.dropdown-toggle {
     background-color: #252f69 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7778,7 +7778,7 @@ table.table a.btn.btn-deep-purple {
 
 .btn-indigo:not([disabled]):not(.disabled):active:focus,
 .btn-indigo:not([disabled]):not(.disabled).active:focus,
-.show>.btn-indigo.dropdown-toggle:focus {
+.show > .btn-indigo.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7820,7 +7820,7 @@ table.table a.btn.btn-indigo {
 
 .btn-outline-indigo:not([disabled]):not(.disabled):active,
 .btn-outline-indigo:not([disabled]):not(.disabled).active,
-.show>.btn-outline-indigo.dropdown-toggle {
+.show > .btn-outline-indigo.dropdown-toggle {
     background-color: transparent !important;
     border-color: #3f51b5 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7829,7 +7829,7 @@ table.table a.btn.btn-indigo {
 
 .btn-outline-indigo:not([disabled]):not(.disabled):active:focus,
 .btn-outline-indigo:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-indigo.dropdown-toggle:focus {
+.show > .btn-outline-indigo.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7867,7 +7867,7 @@ table.table a.btn.btn-indigo {
 
 .btn-blue:not([disabled]):not(.disabled):active,
 .btn-blue:not([disabled]):not(.disabled).active,
-.show>.btn-blue.dropdown-toggle {
+.show > .btn-blue.dropdown-toggle {
     background-color: #0e4377 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7875,7 +7875,7 @@ table.table a.btn.btn-indigo {
 
 .btn-blue:not([disabled]):not(.disabled):active:focus,
 .btn-blue:not([disabled]):not(.disabled).active:focus,
-.show>.btn-blue.dropdown-toggle:focus {
+.show > .btn-blue.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7917,7 +7917,7 @@ table.table a.btn.btn-blue {
 
 .btn-outline-blue:not([disabled]):not(.disabled):active,
 .btn-outline-blue:not([disabled]):not(.disabled).active,
-.show>.btn-outline-blue.dropdown-toggle {
+.show > .btn-outline-blue.dropdown-toggle {
     background-color: transparent !important;
     border-color: #1976d2 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -7926,7 +7926,7 @@ table.table a.btn.btn-blue {
 
 .btn-outline-blue:not([disabled]):not(.disabled):active:focus,
 .btn-outline-blue:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-blue.dropdown-toggle:focus {
+.show > .btn-outline-blue.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -7964,7 +7964,7 @@ table.table a.btn.btn-blue {
 
 .btn-light-blue:not([disabled]):not(.disabled):active,
 .btn-light-blue:not([disabled]):not(.disabled).active,
-.show>.btn-light-blue.dropdown-toggle {
+.show > .btn-light-blue.dropdown-toggle {
     background-color: #1c71ff !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -7972,7 +7972,7 @@ table.table a.btn.btn-blue {
 
 .btn-light-blue:not([disabled]):not(.disabled):active:focus,
 .btn-light-blue:not([disabled]):not(.disabled).active:focus,
-.show>.btn-light-blue.dropdown-toggle:focus {
+.show > .btn-light-blue.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8014,7 +8014,7 @@ table.table a.btn.btn-light-blue {
 
 .btn-outline-light-blue:not([disabled]):not(.disabled):active,
 .btn-outline-light-blue:not([disabled]):not(.disabled).active,
-.show>.btn-outline-light-blue.dropdown-toggle {
+.show > .btn-outline-light-blue.dropdown-toggle {
     background-color: transparent !important;
     border-color: #82b1ff !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8023,7 +8023,7 @@ table.table a.btn.btn-light-blue {
 
 .btn-outline-light-blue:not([disabled]):not(.disabled):active:focus,
 .btn-outline-light-blue:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-light-blue.dropdown-toggle:focus {
+.show > .btn-outline-light-blue.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8061,7 +8061,7 @@ table.table a.btn.btn-light-blue {
 
 .btn-cyan:not([disabled]):not(.disabled):active,
 .btn-cyan:not([disabled]):not(.disabled).active,
-.show>.btn-cyan.dropdown-toggle {
+.show > .btn-cyan.dropdown-toggle {
     background-color: #00626e !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8069,7 +8069,7 @@ table.table a.btn.btn-light-blue {
 
 .btn-cyan:not([disabled]):not(.disabled):active:focus,
 .btn-cyan:not([disabled]):not(.disabled).active:focus,
-.show>.btn-cyan.dropdown-toggle:focus {
+.show > .btn-cyan.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8111,7 +8111,7 @@ table.table a.btn.btn-cyan {
 
 .btn-outline-cyan:not([disabled]):not(.disabled):active,
 .btn-outline-cyan:not([disabled]):not(.disabled).active,
-.show>.btn-outline-cyan.dropdown-toggle {
+.show > .btn-outline-cyan.dropdown-toggle {
     background-color: transparent !important;
     border-color: #00bcd4 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8120,7 +8120,7 @@ table.table a.btn.btn-cyan {
 
 .btn-outline-cyan:not([disabled]):not(.disabled):active:focus,
 .btn-outline-cyan:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-cyan.dropdown-toggle:focus {
+.show > .btn-outline-cyan.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8158,7 +8158,7 @@ table.table a.btn.btn-cyan {
 
 .btn-teal:not([disabled]):not(.disabled):active,
 .btn-teal:not([disabled]):not(.disabled).active,
-.show>.btn-teal.dropdown-toggle {
+.show > .btn-teal.dropdown-toggle {
     background-color: #001311 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8166,7 +8166,7 @@ table.table a.btn.btn-cyan {
 
 .btn-teal:not([disabled]):not(.disabled):active:focus,
 .btn-teal:not([disabled]):not(.disabled).active:focus,
-.show>.btn-teal.dropdown-toggle:focus {
+.show > .btn-teal.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8208,7 +8208,7 @@ table.table a.btn.btn-teal {
 
 .btn-outline-teal:not([disabled]):not(.disabled):active,
 .btn-outline-teal:not([disabled]):not(.disabled).active,
-.show>.btn-outline-teal.dropdown-toggle {
+.show > .btn-outline-teal.dropdown-toggle {
     background-color: transparent !important;
     border-color: #00796b !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8217,7 +8217,7 @@ table.table a.btn.btn-teal {
 
 .btn-outline-teal:not([disabled]):not(.disabled):active:focus,
 .btn-outline-teal:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-teal.dropdown-toggle:focus {
+.show > .btn-outline-teal.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8255,7 +8255,7 @@ table.table a.btn.btn-teal {
 
 .btn-green:not([disabled]):not(.disabled):active,
 .btn-green:not([disabled]):not(.disabled).active,
-.show>.btn-green.dropdown-toggle {
+.show > .btn-green.dropdown-toggle {
     background-color: #1b451d !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8263,7 +8263,7 @@ table.table a.btn.btn-teal {
 
 .btn-green:not([disabled]):not(.disabled):active:focus,
 .btn-green:not([disabled]):not(.disabled).active:focus,
-.show>.btn-green.dropdown-toggle:focus {
+.show > .btn-green.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8305,7 +8305,7 @@ table.table a.btn.btn-green {
 
 .btn-outline-green:not([disabled]):not(.disabled):active,
 .btn-outline-green:not([disabled]):not(.disabled).active,
-.show>.btn-outline-green.dropdown-toggle {
+.show > .btn-outline-green.dropdown-toggle {
     background-color: transparent !important;
     border-color: #388e3c !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8314,7 +8314,7 @@ table.table a.btn.btn-green {
 
 .btn-outline-green:not([disabled]):not(.disabled):active:focus,
 .btn-outline-green:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-green.dropdown-toggle:focus {
+.show > .btn-outline-green.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8352,7 +8352,7 @@ table.table a.btn.btn-green {
 
 .btn-light-green:not([disabled]):not(.disabled):active,
 .btn-light-green:not([disabled]):not(.disabled).active,
-.show>.btn-light-green.dropdown-toggle {
+.show > .btn-light-green.dropdown-toggle {
     background-color: #577d2a !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8360,7 +8360,7 @@ table.table a.btn.btn-green {
 
 .btn-light-green:not([disabled]):not(.disabled):active:focus,
 .btn-light-green:not([disabled]):not(.disabled).active:focus,
-.show>.btn-light-green.dropdown-toggle:focus {
+.show > .btn-light-green.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8402,7 +8402,7 @@ table.table a.btn.btn-light-green {
 
 .btn-outline-light-green:not([disabled]):not(.disabled):active,
 .btn-outline-light-green:not([disabled]):not(.disabled).active,
-.show>.btn-outline-light-green.dropdown-toggle {
+.show > .btn-outline-light-green.dropdown-toggle {
     background-color: transparent !important;
     border-color: #8bc34a !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8411,7 +8411,7 @@ table.table a.btn.btn-light-green {
 
 .btn-outline-light-green:not([disabled]):not(.disabled):active:focus,
 .btn-outline-light-green:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-light-green.dropdown-toggle:focus {
+.show > .btn-outline-light-green.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8449,7 +8449,7 @@ table.table a.btn.btn-light-green {
 
 .btn-lime:not([disabled]):not(.disabled):active,
 .btn-lime:not([disabled]):not(.disabled).active,
-.show>.btn-lime.dropdown-toggle {
+.show > .btn-lime.dropdown-toggle {
     background-color: #5f6217 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8457,7 +8457,7 @@ table.table a.btn.btn-light-green {
 
 .btn-lime:not([disabled]):not(.disabled):active:focus,
 .btn-lime:not([disabled]):not(.disabled).active:focus,
-.show>.btn-lime.dropdown-toggle:focus {
+.show > .btn-lime.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8499,7 +8499,7 @@ table.table a.btn.btn-lime {
 
 .btn-outline-lime:not([disabled]):not(.disabled):active,
 .btn-outline-lime:not([disabled]):not(.disabled).active,
-.show>.btn-outline-lime.dropdown-toggle {
+.show > .btn-outline-lime.dropdown-toggle {
     background-color: transparent !important;
     border-color: #afb42b !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8508,7 +8508,7 @@ table.table a.btn.btn-lime {
 
 .btn-outline-lime:not([disabled]):not(.disabled):active:focus,
 .btn-outline-lime:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-lime.dropdown-toggle:focus {
+.show > .btn-outline-lime.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8546,7 +8546,7 @@ table.table a.btn.btn-lime {
 
 .btn-yellow:not([disabled]):not(.disabled):active,
 .btn-yellow:not([disabled]):not(.disabled).active,
-.show>.btn-yellow.dropdown-toggle {
+.show > .btn-yellow.dropdown-toggle {
     background-color: #be8904 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8554,7 +8554,7 @@ table.table a.btn.btn-lime {
 
 .btn-yellow:not([disabled]):not(.disabled):active:focus,
 .btn-yellow:not([disabled]):not(.disabled).active:focus,
-.show>.btn-yellow.dropdown-toggle:focus {
+.show > .btn-yellow.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8596,7 +8596,7 @@ table.table a.btn.btn-yellow {
 
 .btn-outline-yellow:not([disabled]):not(.disabled):active,
 .btn-outline-yellow:not([disabled]):not(.disabled).active,
-.show>.btn-outline-yellow.dropdown-toggle {
+.show > .btn-outline-yellow.dropdown-toggle {
     background-color: transparent !important;
     border-color: #fbc02d !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8605,7 +8605,7 @@ table.table a.btn.btn-yellow {
 
 .btn-outline-yellow:not([disabled]):not(.disabled):active:focus,
 .btn-outline-yellow:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-yellow.dropdown-toggle:focus {
+.show > .btn-outline-yellow.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8643,7 +8643,7 @@ table.table a.btn.btn-yellow {
 
 .btn-amber:not([disabled]):not(.disabled):active,
 .btn-amber:not([disabled]):not(.disabled).active,
-.show>.btn-amber.dropdown-toggle {
+.show > .btn-amber.dropdown-toggle {
     background-color: #996000 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8651,7 +8651,7 @@ table.table a.btn.btn-yellow {
 
 .btn-amber:not([disabled]):not(.disabled):active:focus,
 .btn-amber:not([disabled]):not(.disabled).active:focus,
-.show>.btn-amber.dropdown-toggle:focus {
+.show > .btn-amber.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8693,7 +8693,7 @@ table.table a.btn.btn-amber {
 
 .btn-outline-amber:not([disabled]):not(.disabled):active,
 .btn-outline-amber:not([disabled]):not(.disabled).active,
-.show>.btn-outline-amber.dropdown-toggle {
+.show > .btn-outline-amber.dropdown-toggle {
     background-color: transparent !important;
     border-color: #ffa000 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8702,7 +8702,7 @@ table.table a.btn.btn-amber {
 
 .btn-outline-amber:not([disabled]):not(.disabled):active:focus,
 .btn-outline-amber:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-amber.dropdown-toggle:focus {
+.show > .btn-outline-amber.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8740,7 +8740,7 @@ table.table a.btn.btn-amber {
 
 .btn-orange:not([disabled]):not(.disabled):active,
 .btn-orange:not([disabled]):not(.disabled).active,
-.show>.btn-orange.dropdown-toggle {
+.show > .btn-orange.dropdown-toggle {
     background-color: #8f4800 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8748,7 +8748,7 @@ table.table a.btn.btn-amber {
 
 .btn-orange:not([disabled]):not(.disabled):active:focus,
 .btn-orange:not([disabled]):not(.disabled).active:focus,
-.show>.btn-orange.dropdown-toggle:focus {
+.show > .btn-orange.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8790,7 +8790,7 @@ table.table a.btn.btn-orange {
 
 .btn-outline-orange:not([disabled]):not(.disabled):active,
 .btn-outline-orange:not([disabled]):not(.disabled).active,
-.show>.btn-outline-orange.dropdown-toggle {
+.show > .btn-outline-orange.dropdown-toggle {
     background-color: transparent !important;
     border-color: #f57c00 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8799,7 +8799,7 @@ table.table a.btn.btn-orange {
 
 .btn-outline-orange:not([disabled]):not(.disabled):active:focus,
 .btn-outline-orange:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-orange.dropdown-toggle:focus {
+.show > .btn-outline-orange.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8837,7 +8837,7 @@ table.table a.btn.btn-orange {
 
 .btn-deep-orange:not([disabled]):not(.disabled):active,
 .btn-deep-orange:not([disabled]):not(.disabled).active,
-.show>.btn-deep-orange.dropdown-toggle {
+.show > .btn-deep-orange.dropdown-toggle {
     background-color: #dc3500 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8845,7 +8845,7 @@ table.table a.btn.btn-orange {
 
 .btn-deep-orange:not([disabled]):not(.disabled):active:focus,
 .btn-deep-orange:not([disabled]):not(.disabled).active:focus,
-.show>.btn-deep-orange.dropdown-toggle:focus {
+.show > .btn-deep-orange.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8887,7 +8887,7 @@ table.table a.btn.btn-deep-orange {
 
 .btn-outline-deep-orange:not([disabled]):not(.disabled):active,
 .btn-outline-deep-orange:not([disabled]):not(.disabled).active,
-.show>.btn-outline-deep-orange.dropdown-toggle {
+.show > .btn-outline-deep-orange.dropdown-toggle {
     background-color: transparent !important;
     border-color: #ff7043 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8896,7 +8896,7 @@ table.table a.btn.btn-deep-orange {
 
 .btn-outline-deep-orange:not([disabled]):not(.disabled):active:focus,
 .btn-outline-deep-orange:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-deep-orange.dropdown-toggle:focus {
+.show > .btn-outline-deep-orange.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8934,7 +8934,7 @@ table.table a.btn.btn-deep-orange {
 
 .btn-brown:not([disabled]):not(.disabled):active,
 .btn-brown:not([disabled]):not(.disabled).active,
-.show>.btn-brown.dropdown-toggle {
+.show > .btn-brown.dropdown-toggle {
     background-color: #392822 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -8942,7 +8942,7 @@ table.table a.btn.btn-deep-orange {
 
 .btn-brown:not([disabled]):not(.disabled):active:focus,
 .btn-brown:not([disabled]):not(.disabled).active:focus,
-.show>.btn-brown.dropdown-toggle:focus {
+.show > .btn-brown.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -8984,7 +8984,7 @@ table.table a.btn.btn-brown {
 
 .btn-outline-brown:not([disabled]):not(.disabled):active,
 .btn-outline-brown:not([disabled]):not(.disabled).active,
-.show>.btn-outline-brown.dropdown-toggle {
+.show > .btn-outline-brown.dropdown-toggle {
     background-color: transparent !important;
     border-color: #795548 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -8993,7 +8993,7 @@ table.table a.btn.btn-brown {
 
 .btn-outline-brown:not([disabled]):not(.disabled):active:focus,
 .btn-outline-brown:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-brown.dropdown-toggle:focus {
+.show > .btn-outline-brown.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9031,7 +9031,7 @@ table.table a.btn.btn-brown {
 
 .btn-grey:not([disabled]):not(.disabled):active,
 .btn-grey:not([disabled]):not(.disabled).active,
-.show>.btn-grey.dropdown-toggle {
+.show > .btn-grey.dropdown-toggle {
     background-color: #2e2e2e !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -9039,7 +9039,7 @@ table.table a.btn.btn-brown {
 
 .btn-grey:not([disabled]):not(.disabled):active:focus,
 .btn-grey:not([disabled]):not(.disabled).active:focus,
-.show>.btn-grey.dropdown-toggle:focus {
+.show > .btn-grey.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9081,7 +9081,7 @@ table.table a.btn.btn-grey {
 
 .btn-outline-grey:not([disabled]):not(.disabled):active,
 .btn-outline-grey:not([disabled]):not(.disabled).active,
-.show>.btn-outline-grey.dropdown-toggle {
+.show > .btn-outline-grey.dropdown-toggle {
     background-color: transparent !important;
     border-color: #616161 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -9090,7 +9090,7 @@ table.table a.btn.btn-grey {
 
 .btn-outline-grey:not([disabled]):not(.disabled):active:focus,
 .btn-outline-grey:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-grey.dropdown-toggle:focus {
+.show > .btn-outline-grey.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9128,7 +9128,7 @@ table.table a.btn.btn-grey {
 
 .btn-blue-grey:not([disabled]):not(.disabled):active,
 .btn-blue-grey:not([disabled]):not(.disabled).active,
-.show>.btn-blue-grey.dropdown-toggle {
+.show > .btn-blue-grey.dropdown-toggle {
     background-color: #4a5b64 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -9136,7 +9136,7 @@ table.table a.btn.btn-grey {
 
 .btn-blue-grey:not([disabled]):not(.disabled):active:focus,
 .btn-blue-grey:not([disabled]):not(.disabled).active:focus,
-.show>.btn-blue-grey.dropdown-toggle:focus {
+.show > .btn-blue-grey.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9178,7 +9178,7 @@ table.table a.btn.btn-blue-grey {
 
 .btn-outline-blue-grey:not([disabled]):not(.disabled):active,
 .btn-outline-blue-grey:not([disabled]):not(.disabled).active,
-.show>.btn-outline-blue-grey.dropdown-toggle {
+.show > .btn-outline-blue-grey.dropdown-toggle {
     background-color: transparent !important;
     border-color: #78909c !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -9187,7 +9187,7 @@ table.table a.btn.btn-blue-grey {
 
 .btn-outline-blue-grey:not([disabled]):not(.disabled):active:focus,
 .btn-outline-blue-grey:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-blue-grey.dropdown-toggle:focus {
+.show > .btn-outline-blue-grey.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9225,7 +9225,7 @@ table.table a.btn.btn-blue-grey {
 
 .btn-dark:not([disabled]):not(.disabled):active,
 .btn-dark:not([disabled]):not(.disabled).active,
-.show>.btn-dark.dropdown-toggle {
+.show > .btn-dark.dropdown-toggle {
     background-color: #000 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -9233,7 +9233,7 @@ table.table a.btn.btn-blue-grey {
 
 .btn-dark:not([disabled]):not(.disabled):active:focus,
 .btn-dark:not([disabled]):not(.disabled).active:focus,
-.show>.btn-dark.dropdown-toggle:focus {
+.show > .btn-dark.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9275,7 +9275,7 @@ table.table a.btn.btn-dark {
 
 .btn-outline-dark:not([disabled]):not(.disabled):active,
 .btn-outline-dark:not([disabled]):not(.disabled).active,
-.show>.btn-outline-dark.dropdown-toggle {
+.show > .btn-outline-dark.dropdown-toggle {
     background-color: transparent !important;
     border-color: #212121 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -9284,7 +9284,7 @@ table.table a.btn.btn-dark {
 
 .btn-outline-dark:not([disabled]):not(.disabled):active:focus,
 .btn-outline-dark:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-dark.dropdown-toggle:focus {
+.show > .btn-outline-dark.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9322,7 +9322,7 @@ table.table a.btn.btn-dark {
 
 .btn-light:not([disabled]):not(.disabled):active,
 .btn-light:not([disabled]):not(.disabled).active,
-.show>.btn-light.dropdown-toggle {
+.show > .btn-light.dropdown-toggle {
     background-color: #adadad !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -9330,7 +9330,7 @@ table.table a.btn.btn-dark {
 
 .btn-light:not([disabled]):not(.disabled):active:focus,
 .btn-light:not([disabled]):not(.disabled).active:focus,
-.show>.btn-light.dropdown-toggle:focus {
+.show > .btn-light.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9372,7 +9372,7 @@ table.table a.btn.btn-light {
 
 .btn-outline-light:not([disabled]):not(.disabled):active,
 .btn-outline-light:not([disabled]):not(.disabled).active,
-.show>.btn-outline-light.dropdown-toggle {
+.show > .btn-outline-light.dropdown-toggle {
     background-color: transparent !important;
     border-color: #e0e0e0 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -9381,7 +9381,7 @@ table.table a.btn.btn-light {
 
 .btn-outline-light:not([disabled]):not(.disabled):active:focus,
 .btn-outline-light:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-light.dropdown-toggle:focus {
+.show > .btn-outline-light.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9419,7 +9419,7 @@ table.table a.btn.btn-light {
 
 .btn-white:not([disabled]):not(.disabled):active,
 .btn-white:not([disabled]):not(.disabled).active,
-.show>.btn-white.dropdown-toggle {
+.show > .btn-white.dropdown-toggle {
     background-color: #ccc !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -9427,7 +9427,7 @@ table.table a.btn.btn-light {
 
 .btn-white:not([disabled]):not(.disabled):active:focus,
 .btn-white:not([disabled]):not(.disabled).active:focus,
-.show>.btn-white.dropdown-toggle:focus {
+.show > .btn-white.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9469,7 +9469,7 @@ table.table a.btn.btn-white {
 
 .btn-outline-white:not([disabled]):not(.disabled):active,
 .btn-outline-white:not([disabled]):not(.disabled).active,
-.show>.btn-outline-white.dropdown-toggle {
+.show > .btn-outline-white.dropdown-toggle {
     background-color: transparent !important;
     border-color: #fff !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -9478,7 +9478,7 @@ table.table a.btn.btn-white {
 
 .btn-outline-white:not([disabled]):not(.disabled):active:focus,
 .btn-outline-white:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-white.dropdown-toggle:focus {
+.show > .btn-outline-white.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9516,7 +9516,7 @@ table.table a.btn.btn-white {
 
 .btn-black:not([disabled]):not(.disabled):active,
 .btn-black:not([disabled]):not(.disabled).active,
-.show>.btn-black.dropdown-toggle {
+.show > .btn-black.dropdown-toggle {
     background-color: #000 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
@@ -9524,7 +9524,7 @@ table.table a.btn.btn-white {
 
 .btn-black:not([disabled]):not(.disabled):active:focus,
 .btn-black:not([disabled]):not(.disabled).active:focus,
-.show>.btn-black.dropdown-toggle:focus {
+.show > .btn-black.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9566,7 +9566,7 @@ table.table a.btn.btn-black {
 
 .btn-outline-black:not([disabled]):not(.disabled):active,
 .btn-outline-black:not([disabled]):not(.disabled).active,
-.show>.btn-outline-black.dropdown-toggle {
+.show > .btn-outline-black.dropdown-toggle {
     background-color: transparent !important;
     border-color: #000 !important;
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
@@ -9575,7 +9575,7 @@ table.table a.btn.btn-black {
 
 .btn-outline-black:not([disabled]):not(.disabled):active:focus,
 .btn-outline-black:not([disabled]):not(.disabled).active:focus,
-.show>.btn-outline-black.dropdown-toggle:focus {
+.show > .btn-outline-black.dropdown-toggle:focus {
     -webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15)
 }
@@ -9638,7 +9638,7 @@ table.table a.btn.btn-black {
 
 .btn-warning:not(:disabled):not(.disabled).active,
 .btn-warning:not(:disabled):not(.disabled):active,
-.show>.btn-warning.dropdown-toggle {
+.show > .btn-warning.dropdown-toggle {
     color: #fff
 }
 
@@ -9834,13 +9834,13 @@ table.table a.btn.btn-black {
     color: rgba(0, 0, 0, 0.7)
 }
 
-.navbar.navbar-light .breadcrumb .nav-item.active>.nav-link,
-.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link {
+.navbar.navbar-light .breadcrumb .nav-item.active > .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
     background-color: rgba(0, 0, 0, 0.1)
 }
 
-.navbar.navbar-light .breadcrumb .nav-item.active>.nav-link:hover,
-.navbar.navbar-light .navbar-nav .nav-item.active>.nav-link:hover {
+.navbar.navbar-light .breadcrumb .nav-item.active > .nav-link:hover,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
     color: #000
 }
 
@@ -9910,13 +9910,13 @@ table.table a.btn.btn-black {
     color: rgba(255, 255, 255, 0.75)
 }
 
-.navbar.navbar-dark .breadcrumb .nav-item.active>.nav-link,
-.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link {
+.navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link {
     background-color: rgba(255, 255, 255, 0.1)
 }
 
-.navbar.navbar-dark .breadcrumb .nav-item.active>.nav-link:hover,
-.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link:hover {
+.navbar.navbar-dark .breadcrumb .nav-item.active > .nav-link:hover,
+.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link:hover {
     color: #fff
 }
 
@@ -9969,7 +9969,7 @@ table.table a.btn.btn-black {
         transition: background 0.5s ease-in-out, padding 0.5s ease-in-out
     }
 
-    .navbar.scrolling-navbar .navbar-nav>li {
+    .navbar.scrolling-navbar .navbar-nav > li {
         -webkit-transition-duration: 1s;
         transition-duration: 1s
     }
@@ -10717,37 +10717,37 @@ body.scrollable {
     box-shadow: 0 1px 0 0 #4285f4
 }
 
-.md-form input:not([type]):focus:not([readonly])+label,
-.md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="password"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="email"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="url"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="time"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="date"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="datetime"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="tel"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="number"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="search"]:not(.browser-default):focus:not([readonly])+label,
-.md-form input[type="search-md"]:focus:not([readonly])+label,
-.md-form textarea.md-textarea:focus:not([readonly])+label {
+.md-form input:not([type]):focus:not([readonly]) + label,
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="password"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="url"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="time"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="date"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="datetime"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="datetime-local"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="tel"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="number"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="search"]:not(.browser-default):focus:not([readonly]) + label,
+.md-form input[type="search-md"]:focus:not([readonly]) + label,
+.md-form textarea.md-textarea:focus:not([readonly]) + label {
     color: #4285f4
 }
 
-.md-form input:not([type])+label::after,
-.md-form input[type="text"]:not(.browser-default)+label::after,
-.md-form input[type="password"]:not(.browser-default)+label::after,
-.md-form input[type="email"]:not(.browser-default)+label::after,
-.md-form input[type="url"]:not(.browser-default)+label::after,
-.md-form input[type="time"]:not(.browser-default)+label::after,
-.md-form input[type="date"]:not(.browser-default)+label::after,
-.md-form input[type="datetime"]:not(.browser-default)+label::after,
-.md-form input[type="datetime-local"]:not(.browser-default)+label::after,
-.md-form input[type="tel"]:not(.browser-default)+label::after,
-.md-form input[type="number"]:not(.browser-default)+label::after,
-.md-form input[type="search"]:not(.browser-default)+label::after,
-.md-form input[type="search-md"]+label::after,
-.md-form textarea.md-textarea+label::after {
+.md-form input:not([type]) + label::after,
+.md-form input[type="text"]:not(.browser-default) + label::after,
+.md-form input[type="password"]:not(.browser-default) + label::after,
+.md-form input[type="email"]:not(.browser-default) + label::after,
+.md-form input[type="url"]:not(.browser-default) + label::after,
+.md-form input[type="time"]:not(.browser-default) + label::after,
+.md-form input[type="date"]:not(.browser-default) + label::after,
+.md-form input[type="datetime"]:not(.browser-default) + label::after,
+.md-form input[type="datetime-local"]:not(.browser-default) + label::after,
+.md-form input[type="tel"]:not(.browser-default) + label::after,
+.md-form input[type="number"]:not(.browser-default) + label::after,
+.md-form input[type="search"]:not(.browser-default) + label::after,
+.md-form input[type="search-md"] + label::after,
+.md-form textarea.md-textarea + label::after {
     position: absolute;
     top: 65px;
     display: block;
@@ -10790,34 +10790,34 @@ body.scrollable {
     box-shadow: 0 1px 0 0 #00c851
 }
 
-.md-form input:not([type]).valid+label:after,
-.md-form input:not([type]):focus.valid+label:after,
-.md-form input[type="text"]:not(.browser-default).valid+label:after,
-.md-form input[type="text"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="password"]:not(.browser-default).valid+label:after,
-.md-form input[type="password"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="email"]:not(.browser-default).valid+label:after,
-.md-form input[type="email"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="url"]:not(.browser-default).valid+label:after,
-.md-form input[type="url"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="time"]:not(.browser-default).valid+label:after,
-.md-form input[type="time"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="date"]:not(.browser-default).valid+label:after,
-.md-form input[type="date"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).valid+label:after,
-.md-form input[type="datetime"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).valid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="tel"]:not(.browser-default).valid+label:after,
-.md-form input[type="tel"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="number"]:not(.browser-default).valid+label:after,
-.md-form input[type="number"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="search"]:not(.browser-default).valid+label:after,
-.md-form input[type="search"]:not(.browser-default):focus.valid+label:after,
-.md-form input[type="search-md"].valid+label:after,
-.md-form input[type="search-md"]:focus.valid+label:after,
-.md-form textarea.md-textarea.valid+label:after,
-.md-form textarea.md-textarea:focus.valid+label:after {
+.md-form input:not([type]).valid + label:after,
+.md-form input:not([type]):focus.valid + label:after,
+.md-form input[type="text"]:not(.browser-default).valid + label:after,
+.md-form input[type="text"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="password"]:not(.browser-default).valid + label:after,
+.md-form input[type="password"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="email"]:not(.browser-default).valid + label:after,
+.md-form input[type="email"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="url"]:not(.browser-default).valid + label:after,
+.md-form input[type="url"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="time"]:not(.browser-default).valid + label:after,
+.md-form input[type="time"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="date"]:not(.browser-default).valid + label:after,
+.md-form input[type="date"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).valid + label:after,
+.md-form input[type="datetime"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).valid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="tel"]:not(.browser-default).valid + label:after,
+.md-form input[type="tel"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="number"]:not(.browser-default).valid + label:after,
+.md-form input[type="number"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="search"]:not(.browser-default).valid + label:after,
+.md-form input[type="search"]:not(.browser-default):focus.valid + label:after,
+.md-form input[type="search-md"].valid + label:after,
+.md-form input[type="search-md"]:focus.valid + label:after,
+.md-form textarea.md-textarea.valid + label:after,
+.md-form textarea.md-textarea:focus.valid + label:after {
     color: #00c851;
     content: attr(data-success);
     opacity: 1
@@ -10856,234 +10856,234 @@ body.scrollable {
     box-shadow: 0 1px 0 0 #f44336
 }
 
-.md-form input:not([type]).invalid+label:after,
-.md-form input:not([type]):focus.invalid+label:after,
-.md-form input[type="text"]:not(.browser-default).invalid+label:after,
-.md-form input[type="text"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="password"]:not(.browser-default).invalid+label:after,
-.md-form input[type="password"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="email"]:not(.browser-default).invalid+label:after,
-.md-form input[type="email"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="url"]:not(.browser-default).invalid+label:after,
-.md-form input[type="url"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="time"]:not(.browser-default).invalid+label:after,
-.md-form input[type="time"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="date"]:not(.browser-default).invalid+label:after,
-.md-form input[type="date"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).invalid+label:after,
-.md-form input[type="datetime"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).invalid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="tel"]:not(.browser-default).invalid+label:after,
-.md-form input[type="tel"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="number"]:not(.browser-default).invalid+label:after,
-.md-form input[type="number"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="search"]:not(.browser-default).invalid+label:after,
-.md-form input[type="search"]:not(.browser-default):focus.invalid+label:after,
-.md-form input[type="search-md"].invalid+label:after,
-.md-form input[type="search-md"]:focus.invalid+label:after,
-.md-form textarea.md-textarea.invalid+label:after,
-.md-form textarea.md-textarea:focus.invalid+label:after {
+.md-form input:not([type]).invalid + label:after,
+.md-form input:not([type]):focus.invalid + label:after,
+.md-form input[type="text"]:not(.browser-default).invalid + label:after,
+.md-form input[type="text"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="password"]:not(.browser-default).invalid + label:after,
+.md-form input[type="password"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="email"]:not(.browser-default).invalid + label:after,
+.md-form input[type="email"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="url"]:not(.browser-default).invalid + label:after,
+.md-form input[type="url"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="time"]:not(.browser-default).invalid + label:after,
+.md-form input[type="time"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="date"]:not(.browser-default).invalid + label:after,
+.md-form input[type="date"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).invalid + label:after,
+.md-form input[type="datetime"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).invalid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="tel"]:not(.browser-default).invalid + label:after,
+.md-form input[type="tel"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="number"]:not(.browser-default).invalid + label:after,
+.md-form input[type="number"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="search"]:not(.browser-default).invalid + label:after,
+.md-form input[type="search"]:not(.browser-default):focus.invalid + label:after,
+.md-form input[type="search-md"].invalid + label:after,
+.md-form input[type="search-md"]:focus.invalid + label:after,
+.md-form textarea.md-textarea.invalid + label:after,
+.md-form textarea.md-textarea:focus.invalid + label:after {
     color: #f44336;
     content: attr(data-error);
     opacity: 1
 }
 
-.md-form input:not([type]).form-control.valid+label:after,
-.md-form input:not([type]).form-control:focus.valid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control.valid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control:focus.valid+label:after,
-.md-form input[type="search-md"].form-control.valid+label:after,
-.md-form input[type="search-md"].form-control:focus.valid+label:after,
-.md-form textarea.md-textarea.form-control.valid+label:after,
-.md-form textarea.md-textarea.form-control:focus.valid+label:after {
+.md-form input:not([type]).form-control.valid + label:after,
+.md-form input:not([type]).form-control:focus.valid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control.valid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control:focus.valid + label:after,
+.md-form input[type="search-md"].form-control.valid + label:after,
+.md-form input[type="search-md"].form-control:focus.valid + label:after,
+.md-form textarea.md-textarea.form-control.valid + label:after,
+.md-form textarea.md-textarea.form-control:focus.valid + label:after {
     top: 4.1rem
 }
 
-.md-form input:not([type]).form-control.invalid+label:after,
-.md-form input:not([type]).form-control:focus.invalid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control.invalid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control:focus.invalid+label:after,
-.md-form input[type="search-md"].form-control.invalid+label:after,
-.md-form input[type="search-md"].form-control:focus.invalid+label:after,
-.md-form textarea.md-textarea.form-control.invalid+label:after,
-.md-form textarea.md-textarea.form-control:focus.invalid+label:after {
+.md-form input:not([type]).form-control.invalid + label:after,
+.md-form input:not([type]).form-control:focus.invalid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control.invalid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control:focus.invalid + label:after,
+.md-form input[type="search-md"].form-control.invalid + label:after,
+.md-form input[type="search-md"].form-control:focus.invalid + label:after,
+.md-form textarea.md-textarea.form-control.invalid + label:after,
+.md-form textarea.md-textarea.form-control:focus.invalid + label:after {
     top: 4rem
 }
 
-.md-form input:not([type]).form-control-lg.valid+label:after,
-.md-form input:not([type]).form-control-lg:focus.valid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control-lg.valid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control-lg:focus.valid+label:after,
-.md-form input[type="search-md"].form-control-lg.valid+label:after,
-.md-form input[type="search-md"].form-control-lg:focus.valid+label:after,
-.md-form textarea.md-textarea.form-control-lg.valid+label:after,
-.md-form textarea.md-textarea.form-control-lg:focus.valid+label:after {
+.md-form input:not([type]).form-control-lg.valid + label:after,
+.md-form input:not([type]).form-control-lg:focus.valid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control-lg.valid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control-lg:focus.valid + label:after,
+.md-form input[type="search-md"].form-control-lg.valid + label:after,
+.md-form input[type="search-md"].form-control-lg:focus.valid + label:after,
+.md-form textarea.md-textarea.form-control-lg.valid + label:after,
+.md-form textarea.md-textarea.form-control-lg:focus.valid + label:after {
     top: 4.6rem
 }
 
-.md-form input:not([type]).form-control-lg.invalid+label:after,
-.md-form input:not([type]).form-control-lg:focus.invalid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control-lg.invalid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control-lg:focus.invalid+label:after,
-.md-form input[type="search-md"].form-control-lg.invalid+label:after,
-.md-form input[type="search-md"].form-control-lg:focus.invalid+label:after,
-.md-form textarea.md-textarea.form-control-lg.invalid+label:after,
-.md-form textarea.md-textarea.form-control-lg:focus.invalid+label:after {
+.md-form input:not([type]).form-control-lg.invalid + label:after,
+.md-form input:not([type]).form-control-lg:focus.invalid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control-lg.invalid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control-lg:focus.invalid + label:after,
+.md-form input[type="search-md"].form-control-lg.invalid + label:after,
+.md-form input[type="search-md"].form-control-lg:focus.invalid + label:after,
+.md-form textarea.md-textarea.form-control-lg.invalid + label:after,
+.md-form textarea.md-textarea.form-control-lg:focus.invalid + label:after {
     top: 4.6rem
 }
 
-.md-form input:not([type]).form-control-sm.valid+label:after,
-.md-form input:not([type]).form-control-sm:focus.valid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control-sm.valid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control-sm:focus.valid+label:after,
-.md-form input[type="search-md"].form-control-sm.valid+label:after,
-.md-form input[type="search-md"].form-control-sm:focus.valid+label:after,
-.md-form textarea.md-textarea.form-control-sm.valid+label:after,
-.md-form textarea.md-textarea.form-control-sm:focus.valid+label:after {
+.md-form input:not([type]).form-control-sm.valid + label:after,
+.md-form input:not([type]).form-control-sm:focus.valid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control-sm.valid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control-sm:focus.valid + label:after,
+.md-form input[type="search-md"].form-control-sm.valid + label:after,
+.md-form input[type="search-md"].form-control-sm:focus.valid + label:after,
+.md-form textarea.md-textarea.form-control-sm.valid + label:after,
+.md-form textarea.md-textarea.form-control-sm:focus.valid + label:after {
     top: 3.7rem
 }
 
-.md-form input:not([type]).form-control-sm.invalid+label:after,
-.md-form input:not([type]).form-control-sm:focus.invalid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="text"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="password"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="email"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="url"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="time"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="date"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="datetime"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="datetime-local"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="tel"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="number"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control-sm.invalid+label:after,
-.md-form input[type="search"]:not(.browser-default).form-control-sm:focus.invalid+label:after,
-.md-form input[type="search-md"].form-control-sm.invalid+label:after,
-.md-form input[type="search-md"].form-control-sm:focus.invalid+label:after,
-.md-form textarea.md-textarea.form-control-sm.invalid+label:after,
-.md-form textarea.md-textarea.form-control-sm:focus.invalid+label:after {
+.md-form input:not([type]).form-control-sm.invalid + label:after,
+.md-form input:not([type]).form-control-sm:focus.invalid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="text"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="password"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="email"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="url"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="time"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="date"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="datetime"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="datetime-local"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="tel"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="number"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control-sm.invalid + label:after,
+.md-form input[type="search"]:not(.browser-default).form-control-sm:focus.invalid + label:after,
+.md-form input[type="search-md"].form-control-sm.invalid + label:after,
+.md-form input[type="search-md"].form-control-sm:focus.invalid + label:after,
+.md-form textarea.md-textarea.form-control-sm.invalid + label:after,
+.md-form textarea.md-textarea.form-control-sm:focus.invalid + label:after {
     top: 3.6rem
 }
 
-.md-form>input[type="date"]:not(.browser-default)+label {
+.md-form > input[type="date"]:not(.browser-default) + label {
     -webkit-transform: translateY(-27px) scale(0.8);
     transform: translateY(-27px) scale(0.8);
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0
 }
 
-.md-form>input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
-.md-form>input[type="time"]:not(.browser-default)+label {
+.md-form > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+.md-form > input[type="time"]:not(.browser-default) + label {
     font-size: .8rem;
     -webkit-transform: translateY(-25px);
     transform: translateY(-25px);
@@ -11091,11 +11091,11 @@ body.scrollable {
     transform-origin: 0 0
 }
 
-.md-form .was-validated input[type="text"]:valid+label {
+.md-form .was-validated input[type="text"]:valid + label {
     color: #00c851 !important
 }
 
-.md-form .was-validated input[type="text"]:invalid+label {
+.md-form .was-validated input[type="text"]:invalid + label {
     color: #f44336 !important
 }
 
@@ -11178,17 +11178,17 @@ body.scrollable {
     font-size: 1.75rem
 }
 
-.md-form .prefix~input,
-.md-form .prefix~textarea {
+.md-form .prefix ~ input,
+.md-form .prefix ~ textarea {
     width: calc(100% - 2.5rem);
     margin-left: 2.5rem
 }
 
-.md-form .prefix~label {
+.md-form .prefix ~ label {
     margin-left: 2.5rem
 }
 
-.md-form .prefix~.form-text {
+.md-form .prefix ~ .form-text {
     margin-left: 2.6rem
 }
 
@@ -11241,17 +11241,17 @@ body.scrollable {
     font-size: 2rem
 }
 
-.md-form.form-lg .prefix~input,
-.md-form.form-lg .prefix~textarea {
+.md-form.form-lg .prefix ~ input,
+.md-form.form-lg .prefix ~ textarea {
     width: calc(100% - 3rem);
     margin-left: 3rem
 }
 
-.md-form.form-lg .prefix~label {
+.md-form.form-lg .prefix ~ label {
     margin-left: 3rem
 }
 
-.md-form.form-lg .prefix~.form-text {
+.md-form.form-lg .prefix ~ .form-text {
     margin-left: 3.1rem
 }
 
@@ -11272,17 +11272,17 @@ body.scrollable {
     font-size: 1.5rem
 }
 
-.md-form.form-sm .prefix~input,
-.md-form.form-sm .prefix~textarea {
+.md-form.form-sm .prefix ~ input,
+.md-form.form-sm .prefix ~ textarea {
     width: calc(100% - 2rem);
     margin-left: 2rem
 }
 
-.md-form.form-sm .prefix~label {
+.md-form.form-sm .prefix ~ label {
     margin-left: 2rem
 }
 
-.md-form.form-sm .prefix~.form-text {
+.md-form.form-sm .prefix ~ .form-text {
     margin-left: 2rem
 }
 
@@ -11343,18 +11343,18 @@ body.scrollable {
     box-shadow: inset 0 0 0 1px #4285f4
 }
 
-.md-form.md-outline input[type="text"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="password"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="email"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="url"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="time"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="date"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="datetime-local"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="tel"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="number"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="search-md"]:focus:not([readonly])+label,
-.md-form.md-outline input[type="search"]:focus:not([readonly])+label,
-.md-form.md-outline textarea.md-textarea:focus:not([readonly])+label {
+.md-form.md-outline input[type="text"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="password"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="email"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="url"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="time"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="date"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="datetime-local"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="tel"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="number"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="search-md"]:focus:not([readonly]) + label,
+.md-form.md-outline input[type="search"]:focus:not([readonly]) + label,
+.md-form.md-outline textarea.md-textarea:focus:not([readonly]) + label {
     color: #4285f4
 }
 
@@ -11387,42 +11387,42 @@ body.scrollable {
     box-shadow: inset 0 0 0 1px #00c851
 }
 
-.md-form.md-outline input[type="text"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="text"].valid+label:after,
-.md-form.md-outline input[type="text"]:focus.valid+label:after,
-.md-form.md-outline input[type="password"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="password"].valid+label:after,
-.md-form.md-outline input[type="password"]:focus.valid+label:after,
-.md-form.md-outline input[type="email"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="email"].valid+label:after,
-.md-form.md-outline input[type="email"]:focus.valid+label:after,
-.md-form.md-outline input[type="url"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="url"].valid+label:after,
-.md-form.md-outline input[type="url"]:focus.valid+label:after,
-.md-form.md-outline input[type="time"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="time"].valid+label:after,
-.md-form.md-outline input[type="time"]:focus.valid+label:after,
-.md-form.md-outline input[type="date"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="date"].valid+label:after,
-.md-form.md-outline input[type="date"]:focus.valid+label:after,
-.md-form.md-outline input[type="datetime-local"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="datetime-local"].valid+label:after,
-.md-form.md-outline input[type="datetime-local"]:focus.valid+label:after,
-.md-form.md-outline input[type="tel"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="tel"].valid+label:after,
-.md-form.md-outline input[type="tel"]:focus.valid+label:after,
-.md-form.md-outline input[type="number"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="number"].valid+label:after,
-.md-form.md-outline input[type="number"]:focus.valid+label:after,
-.md-form.md-outline input[type="search-md"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="search-md"].valid+label:after,
-.md-form.md-outline input[type="search-md"]:focus.valid+label:after,
-.md-form.md-outline input[type="search"]:focus:not([readonly]).valid+label,
-.md-form.md-outline input[type="search"].valid+label:after,
-.md-form.md-outline input[type="search"]:focus.valid+label:after,
-.md-form.md-outline textarea.md-textarea:focus:not([readonly]).valid+label,
-.md-form.md-outline textarea.md-textarea.valid+label:after,
-.md-form.md-outline textarea.md-textarea:focus.valid+label:after {
+.md-form.md-outline input[type="text"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="text"].valid + label:after,
+.md-form.md-outline input[type="text"]:focus.valid + label:after,
+.md-form.md-outline input[type="password"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="password"].valid + label:after,
+.md-form.md-outline input[type="password"]:focus.valid + label:after,
+.md-form.md-outline input[type="email"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="email"].valid + label:after,
+.md-form.md-outline input[type="email"]:focus.valid + label:after,
+.md-form.md-outline input[type="url"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="url"].valid + label:after,
+.md-form.md-outline input[type="url"]:focus.valid + label:after,
+.md-form.md-outline input[type="time"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="time"].valid + label:after,
+.md-form.md-outline input[type="time"]:focus.valid + label:after,
+.md-form.md-outline input[type="date"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="date"].valid + label:after,
+.md-form.md-outline input[type="date"]:focus.valid + label:after,
+.md-form.md-outline input[type="datetime-local"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="datetime-local"].valid + label:after,
+.md-form.md-outline input[type="datetime-local"]:focus.valid + label:after,
+.md-form.md-outline input[type="tel"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="tel"].valid + label:after,
+.md-form.md-outline input[type="tel"]:focus.valid + label:after,
+.md-form.md-outline input[type="number"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="number"].valid + label:after,
+.md-form.md-outline input[type="number"]:focus.valid + label:after,
+.md-form.md-outline input[type="search-md"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="search-md"].valid + label:after,
+.md-form.md-outline input[type="search-md"]:focus.valid + label:after,
+.md-form.md-outline input[type="search"]:focus:not([readonly]).valid + label,
+.md-form.md-outline input[type="search"].valid + label:after,
+.md-form.md-outline input[type="search"]:focus.valid + label:after,
+.md-form.md-outline textarea.md-textarea:focus:not([readonly]).valid + label,
+.md-form.md-outline textarea.md-textarea.valid + label:after,
+.md-form.md-outline textarea.md-textarea:focus.valid + label:after {
     color: #00c851;
     content: attr(data-success);
     opacity: 1
@@ -11457,107 +11457,107 @@ body.scrollable {
     box-shadow: inset 0 0 0 1px #f44336
 }
 
-.md-form.md-outline input[type="text"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="text"].invalid+label:after,
-.md-form.md-outline input[type="text"]:focus.invalid+label:after,
-.md-form.md-outline input[type="password"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="password"].invalid+label:after,
-.md-form.md-outline input[type="password"]:focus.invalid+label:after,
-.md-form.md-outline input[type="email"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="email"].invalid+label:after,
-.md-form.md-outline input[type="email"]:focus.invalid+label:after,
-.md-form.md-outline input[type="url"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="url"].invalid+label:after,
-.md-form.md-outline input[type="url"]:focus.invalid+label:after,
-.md-form.md-outline input[type="time"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="time"].invalid+label:after,
-.md-form.md-outline input[type="time"]:focus.invalid+label:after,
-.md-form.md-outline input[type="date"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="date"].invalid+label:after,
-.md-form.md-outline input[type="date"]:focus.invalid+label:after,
-.md-form.md-outline input[type="datetime-local"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="datetime-local"].invalid+label:after,
-.md-form.md-outline input[type="datetime-local"]:focus.invalid+label:after,
-.md-form.md-outline input[type="tel"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="tel"].invalid+label:after,
-.md-form.md-outline input[type="tel"]:focus.invalid+label:after,
-.md-form.md-outline input[type="number"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="number"].invalid+label:after,
-.md-form.md-outline input[type="number"]:focus.invalid+label:after,
-.md-form.md-outline input[type="search-md"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="search-md"].invalid+label:after,
-.md-form.md-outline input[type="search-md"]:focus.invalid+label:after,
-.md-form.md-outline input[type="search"]:focus:not([readonly]).invalid+label,
-.md-form.md-outline input[type="search"].invalid+label:after,
-.md-form.md-outline input[type="search"]:focus.invalid+label:after,
-.md-form.md-outline textarea.md-textarea:focus:not([readonly]).invalid+label,
-.md-form.md-outline textarea.md-textarea.invalid+label:after,
-.md-form.md-outline textarea.md-textarea:focus.invalid+label:after {
+.md-form.md-outline input[type="text"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="text"].invalid + label:after,
+.md-form.md-outline input[type="text"]:focus.invalid + label:after,
+.md-form.md-outline input[type="password"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="password"].invalid + label:after,
+.md-form.md-outline input[type="password"]:focus.invalid + label:after,
+.md-form.md-outline input[type="email"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="email"].invalid + label:after,
+.md-form.md-outline input[type="email"]:focus.invalid + label:after,
+.md-form.md-outline input[type="url"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="url"].invalid + label:after,
+.md-form.md-outline input[type="url"]:focus.invalid + label:after,
+.md-form.md-outline input[type="time"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="time"].invalid + label:after,
+.md-form.md-outline input[type="time"]:focus.invalid + label:after,
+.md-form.md-outline input[type="date"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="date"].invalid + label:after,
+.md-form.md-outline input[type="date"]:focus.invalid + label:after,
+.md-form.md-outline input[type="datetime-local"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="datetime-local"].invalid + label:after,
+.md-form.md-outline input[type="datetime-local"]:focus.invalid + label:after,
+.md-form.md-outline input[type="tel"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="tel"].invalid + label:after,
+.md-form.md-outline input[type="tel"]:focus.invalid + label:after,
+.md-form.md-outline input[type="number"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="number"].invalid + label:after,
+.md-form.md-outline input[type="number"]:focus.invalid + label:after,
+.md-form.md-outline input[type="search-md"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="search-md"].invalid + label:after,
+.md-form.md-outline input[type="search-md"]:focus.invalid + label:after,
+.md-form.md-outline input[type="search"]:focus:not([readonly]).invalid + label,
+.md-form.md-outline input[type="search"].invalid + label:after,
+.md-form.md-outline input[type="search"]:focus.invalid + label:after,
+.md-form.md-outline textarea.md-textarea:focus:not([readonly]).invalid + label,
+.md-form.md-outline textarea.md-textarea.invalid + label:after,
+.md-form.md-outline textarea.md-textarea:focus.invalid + label:after {
     color: #f44336;
     content: attr(data-error);
     opacity: 1
 }
 
-.md-form.md-outline input[type="text"].form-control.valid+label:after,
-.md-form.md-outline input[type="text"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="password"].form-control.valid+label:after,
-.md-form.md-outline input[type="password"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="email"].form-control.valid+label:after,
-.md-form.md-outline input[type="email"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="url"].form-control.valid+label:after,
-.md-form.md-outline input[type="url"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="time"].form-control.valid+label:after,
-.md-form.md-outline input[type="time"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="date"].form-control.valid+label:after,
-.md-form.md-outline input[type="date"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="datetime-local"].form-control.valid+label:after,
-.md-form.md-outline input[type="datetime-local"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="tel"].form-control.valid+label:after,
-.md-form.md-outline input[type="tel"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="number"].form-control.valid+label:after,
-.md-form.md-outline input[type="number"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="search-md"].form-control.valid+label:after,
-.md-form.md-outline input[type="search-md"].form-control:focus.valid+label:after,
-.md-form.md-outline input[type="search"].form-control.valid+label:after,
-.md-form.md-outline input[type="search"].form-control:focus.valid+label:after,
-.md-form.md-outline textarea.md-textarea.form-control.valid+label:after,
-.md-form.md-outline textarea.md-textarea.form-control:focus.valid+label:after {
+.md-form.md-outline input[type="text"].form-control.valid + label:after,
+.md-form.md-outline input[type="text"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="password"].form-control.valid + label:after,
+.md-form.md-outline input[type="password"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="email"].form-control.valid + label:after,
+.md-form.md-outline input[type="email"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="url"].form-control.valid + label:after,
+.md-form.md-outline input[type="url"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="time"].form-control.valid + label:after,
+.md-form.md-outline input[type="time"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="date"].form-control.valid + label:after,
+.md-form.md-outline input[type="date"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="datetime-local"].form-control.valid + label:after,
+.md-form.md-outline input[type="datetime-local"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="tel"].form-control.valid + label:after,
+.md-form.md-outline input[type="tel"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="number"].form-control.valid + label:after,
+.md-form.md-outline input[type="number"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="search-md"].form-control.valid + label:after,
+.md-form.md-outline input[type="search-md"].form-control:focus.valid + label:after,
+.md-form.md-outline input[type="search"].form-control.valid + label:after,
+.md-form.md-outline input[type="search"].form-control:focus.valid + label:after,
+.md-form.md-outline textarea.md-textarea.form-control.valid + label:after,
+.md-form.md-outline textarea.md-textarea.form-control:focus.valid + label:after {
     position: absolute;
     top: 4rem;
     left: 0
 }
 
-.md-form.md-outline input[type="text"].form-control.invalid+label:after,
-.md-form.md-outline input[type="text"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="password"].form-control.invalid+label:after,
-.md-form.md-outline input[type="password"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="email"].form-control.invalid+label:after,
-.md-form.md-outline input[type="email"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="url"].form-control.invalid+label:after,
-.md-form.md-outline input[type="url"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="time"].form-control.invalid+label:after,
-.md-form.md-outline input[type="time"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="date"].form-control.invalid+label:after,
-.md-form.md-outline input[type="date"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="datetime-local"].form-control.invalid+label:after,
-.md-form.md-outline input[type="datetime-local"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="tel"].form-control.invalid+label:after,
-.md-form.md-outline input[type="tel"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="number"].form-control.invalid+label:after,
-.md-form.md-outline input[type="number"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="search-md"].form-control.invalid+label:after,
-.md-form.md-outline input[type="search-md"].form-control:focus.invalid+label:after,
-.md-form.md-outline input[type="search"].form-control.invalid+label:after,
-.md-form.md-outline input[type="search"].form-control:focus.invalid+label:after,
-.md-form.md-outline textarea.md-textarea.form-control.invalid+label:after,
-.md-form.md-outline textarea.md-textarea.form-control:focus.invalid+label:after {
+.md-form.md-outline input[type="text"].form-control.invalid + label:after,
+.md-form.md-outline input[type="text"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="password"].form-control.invalid + label:after,
+.md-form.md-outline input[type="password"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="email"].form-control.invalid + label:after,
+.md-form.md-outline input[type="email"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="url"].form-control.invalid + label:after,
+.md-form.md-outline input[type="url"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="time"].form-control.invalid + label:after,
+.md-form.md-outline input[type="time"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="date"].form-control.invalid + label:after,
+.md-form.md-outline input[type="date"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="datetime-local"].form-control.invalid + label:after,
+.md-form.md-outline input[type="datetime-local"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="tel"].form-control.invalid + label:after,
+.md-form.md-outline input[type="tel"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="number"].form-control.invalid + label:after,
+.md-form.md-outline input[type="number"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="search-md"].form-control.invalid + label:after,
+.md-form.md-outline input[type="search-md"].form-control:focus.invalid + label:after,
+.md-form.md-outline input[type="search"].form-control.invalid + label:after,
+.md-form.md-outline input[type="search"].form-control:focus.invalid + label:after,
+.md-form.md-outline textarea.md-textarea.form-control.invalid + label:after,
+.md-form.md-outline textarea.md-textarea.form-control:focus.invalid + label:after {
     position: absolute;
     top: 4rem;
     left: 0
 }
 
-.md-form.md-outline>input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
-.md-form.md-outline>input[type="time"]:not(.browser-default)+label {
+.md-form.md-outline > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+.md-form.md-outline > input[type="time"]:not(.browser-default) + label {
     left: 8px;
     padding-right: 5px;
     padding-left: 5px;
@@ -11570,8 +11570,8 @@ body.scrollable {
     transform-origin: 0 0
 }
 
-.md-form.md-outline>input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label.active,
-.md-form.md-outline>input[type="time"]:not(.browser-default)+label.active {
+.md-form.md-outline > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label.active,
+.md-form.md-outline > input[type="time"]:not(.browser-default) + label.active {
     -webkit-transform: translateY(-9px) scale(0.8);
     transform: translateY(-9px) scale(0.8);
     -webkit-transform-origin: 0 0;
@@ -11652,17 +11652,17 @@ body.scrollable {
     font-size: 25px
 }
 
-.md-form.md-outline.form-lg .prefix~input,
-.md-form.md-outline.form-lg .prefix~textarea {
+.md-form.md-outline.form-lg .prefix ~ input,
+.md-form.md-outline.form-lg .prefix ~ textarea {
     width: calc(100% - 2.2rem);
     margin-left: 2.2rem
 }
 
-.md-form.md-outline.form-lg .prefix~label {
+.md-form.md-outline.form-lg .prefix ~ label {
     margin-left: 2.2rem
 }
 
-.md-form.md-outline.form-lg .prefix~.form-text {
+.md-form.md-outline.form-lg .prefix ~ .form-text {
     margin-left: 2.3rem
 }
 
@@ -11687,17 +11687,17 @@ body.scrollable {
     font-size: 15px
 }
 
-.md-form.md-outline.form-sm .prefix~input,
-.md-form.md-outline.form-sm .prefix~textarea {
+.md-form.md-outline.form-sm .prefix ~ input,
+.md-form.md-outline.form-sm .prefix ~ textarea {
     width: calc(100% - 1.6rem);
     margin-left: 1.6rem
 }
 
-.md-form.md-outline.form-sm .prefix~label {
+.md-form.md-outline.form-sm .prefix ~ label {
     margin-left: 1.6rem
 }
 
-.md-form.md-outline.form-sm .prefix~.form-text {
+.md-form.md-outline.form-sm .prefix ~ .form-text {
     margin-left: 1.7rem
 }
 
@@ -11713,17 +11713,17 @@ body.scrollable {
     color: #4285f4
 }
 
-.md-form.md-outline .prefix~input,
-.md-form.md-outline .prefix~textarea {
+.md-form.md-outline .prefix ~ input,
+.md-form.md-outline .prefix ~ textarea {
     width: calc(100% - 2rem);
     margin-left: 2rem
 }
 
-.md-form.md-outline .prefix~label {
+.md-form.md-outline .prefix ~ label {
     margin-left: 2rem
 }
 
-.md-form.md-outline .prefix~.form-text {
+.md-form.md-outline .prefix ~ .form-text {
     margin-left: 2.1rem
 }
 
@@ -11792,15 +11792,15 @@ body.scrollable {
     outline: none
 }
 
-.md-form.md-bg>input[type="date"]:not(.browser-default)+label {
+.md-form.md-bg > input[type="date"]:not(.browser-default) + label {
     -webkit-transform: translateY(-12px) scale(0.8);
     transform: translateY(-12px) scale(0.8);
     -webkit-transform-origin: 0 0;
     transform-origin: 0 0
 }
 
-.md-form.md-bg>input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
-.md-form.md-bg>input[type="time"]:not(.browser-default)+label {
+.md-form.md-bg > input[type]:-webkit-autofill:not(.browser-default):not([type="search"]) + label,
+.md-form.md-bg > input[type="time"]:not(.browser-default) + label {
     font-size: .8rem;
     -webkit-transform: translateY(-12px);
     transform: translateY(-12px);
@@ -11867,31 +11867,31 @@ body.scrollable {
     left: .3rem
 }
 
-.custom-file-input:lang(es)~.custom-file-label::after {
+.custom-file-input:lang(es) ~ .custom-file-label::after {
     content: "Elegir"
 }
 
-.custom-file-input:lang(pl-pl)~.custom-file-label::after {
+.custom-file-input:lang(pl-pl) ~ .custom-file-label::after {
     content: "Wybierz"
 }
 
-.custom-file-input:lang(fr)~.custom-file-label::after {
+.custom-file-input:lang(fr) ~ .custom-file-label::after {
     content: "Choisir"
 }
 
-.custom-file-input:lang(in)~.custom-file-label::after {
+.custom-file-input:lang(in) ~ .custom-file-label::after {
     content: "Pilih"
 }
 
-.custom-file-input:lang(zh)~.custom-file-label::after {
+.custom-file-input:lang(zh) ~ .custom-file-label::after {
     content: "選擇"
 }
 
-.custom-file-input:lang(de)~.custom-file-label::after {
+.custom-file-input:lang(de) ~ .custom-file-label::after {
     content: "Wählen"
 }
 
-.custom-file-input:lang(ru)~.custom-file-label::after {
+.custom-file-input:lang(ru) ~ .custom-file-label::after {
     content: "выбирать"
 }
 
@@ -12172,11 +12172,11 @@ table.table-sm td {
     table-layout: fixed
 }
 
-.table-responsive>.table-bordered,
-.table-responsive-sm>.table-bordered,
-.table-responsive-md>.table-bordered,
-.table-responsive-lg>.table-bordered,
-.table-responsive-xl>.table-bordered {
+.table-responsive > .table-bordered,
+.table-responsive-sm > .table-bordered,
+.table-responsive-md > .table-bordered,
+.table-responsive-lg > .table-bordered,
+.table-responsive-xl > .table-bordered {
     border-top: 1px solid #dee2e6
 }
 
@@ -12311,7 +12311,7 @@ ul.stepper li.completed a .label {
     }
 }
 
-.stepper-horizontal>li:not(:last-of-type) {
+.stepper-horizontal > li:not(:last-of-type) {
     margin-bottom: 0 !important
 }
 

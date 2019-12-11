@@ -36,7 +36,7 @@ public class IndexController {
         ResultSet rs = qe.execSelect();
         List<LocationCity> locationCityList = new ArrayList<LocationCity>();
 
-        while(rs.hasNext()) {
+        while (rs.hasNext()) {
             QuerySolution qs = rs.next();
             LocationCity locationCity = new LocationCity(qs.get("label"));
             locationCityList.add(locationCity);
