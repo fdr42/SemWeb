@@ -133,7 +133,7 @@ function initMap() {
                     // always executed
                 });
 
-            document.getElementById("stationId").setAttribute("about", this.idStation);
+            document.getElementById("stationId").setAttribute("about", "http://ex.com/"+this.city+"/"+this.idStation);
             document.getElementById("locationCity").innerHTML ="<a href=\"http://dbpedia.org/resource/"+this.city+"\">"+this.city+"</a>";
             document.getElementById("stationLabel").innerHTML = this.nameStation;
             document.getElementById("stationDetail").innerHTML = this.detail;
@@ -141,8 +141,7 @@ function initMap() {
             document.getElementById("stationLat").innerHTML = this.latitude;
             document.getElementById("stationLon").innerHTML = this.longitude;
             document.getElementById("stationLon").innerHTML = this.longitude;
-            //mettre : "about=\"http://ex.com/"+this.city+"/"+this.idStation
-            //Dans le table de modal
+
 
             $('#modalProximite').on('show.bs.modal', function () {
                 setTimeout(function () {
