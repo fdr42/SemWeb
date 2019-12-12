@@ -1,10 +1,10 @@
-#General description
+# General description
 The aim of this project is to do a website that provide bikes stations informations and some other informations linked to this bikes stations using the principles semantic web. Follow this [link](https://en.wikipedia.org/wiki/Semantic_Web) to learn more about semantic web.
 
-#SPARQL-Generate
-##Description
+# SPARQL-Generate
+## Description
 Follow this [link](https://ci.mines-stetienne.fr/sparql-generate/) to learn more about SPARQL-Generate
-##Running bike request
+## Running bike request
 We used SPARQL-Generate to build RDF representation of bikes stations from originals API that provides the data in JSON format. We used 3 differents API of bikes stations :
 
 * First, we used [JCDecaux](https://developer.jcdecaux.com/#/opendata/vls?page=getstarted) API that provides very much stations around the world in JSON format,
@@ -14,9 +14,9 @@ We used SPARQL-Generate to build RDF representation of bikes stations from origi
 So we built 3 requests for SPARQL-Generate that you can find in **RequetesVilles** folder. Using SPARQL-Generate, this 3 requests generate RDF that have the same format for Saint-Étienne, Rennes and the other city from JCDecaux.
 
 # Apache Jena Fuseki
-##Description
+## Description
 Follow this [link](https://jena.apache.org/index.html) to learn more about Apache Jena Fuseki
-##How to setup ?
+## How to setup ?
 Follow this [link](https://jena.apache.org/download/index.cgi) to install Apache Jena Fuseki
 
 When Fuseki server is lauched there is differents steps to insert the data :
@@ -27,24 +27,24 @@ When Fuseki server is lauched there is differents steps to insert the data :
 
 Apache Jena Fuseki provides interface to import RDF file and automatically insert it in the server.
 
-#Spring boot
+# Spring boot
 We use [Spring boot](https://spring.io/projects/spring-boot) to do the backend of our web site.
 
 * First there is a controller that load all the stations from Apache Jena Fuseki. The request is done using Apache jena (see pom.xml).
 * Second there is a rest controller that request [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) to find important place near a station. Like the first controller, the request is done using Apache jena (see pom.xml).
 
-#Thymeleaf
+# Thymeleaf
 We use [Thymeleaf](https://www.thymeleaf.org/) to get data of stations from the controller to the view.
 
-#Axios
+# Axios
 We use [Axios](https://github.com/axios/axios) for the dynamic data :
 * To get the number of avalible bikes in a station requesting directly the original API.
 * To request our REST controller to get important places near the stations.
 
-#Leaflet with openstreetmap
+# Leaflet with openstreetmap
 We use [Leaflet](https://leafletjs.com/) with open [OpenStreetMap](https://www.openstreetmap.fr/) to provide a two maps :
 * The first map shows all the stations from our Fuseki dataset. Stations are represented by markers. When we click on  marker, there is a modal that provide the second map.
 * The second map shows the selected bike station (in blue) and near important places (in red)
 
-#Datatables
+# Datatables
 We use [DataTables](https://datatables.net/) to provide a table that can be sorted et that provide a search bar.
