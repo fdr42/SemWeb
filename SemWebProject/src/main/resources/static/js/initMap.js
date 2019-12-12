@@ -56,13 +56,13 @@ function initMap() {
         marker.detail = detail;
         marker.latitude = latPoint;
         marker.longitude = lonPoint;
-        marker.city = city;
+        marker.city = city.replace(" ","-");
         marker.idStation = idStation;
         marker.capacity = capacity;
 
         marker.on('click', function () {
             var stationActuelle = this.nameStation;
-
+            document.getElementById("available").innerHTML="Chargement";
             if (macarteProximite != undefined || macarteProximite != null) {
                 macarteProximite.remove();
             }
@@ -134,13 +134,15 @@ function initMap() {
                 });
 
             document.getElementById("stationId").setAttribute("about", this.idStation);
-            document.getElementById("locationCity").innerHTML = this.city;
+            document.getElementById("locationCity").innerHTML ="<a href=\"http://dbpedia.org/resource/"+this.city+"\">"+this.city+"</a>";
             document.getElementById("stationLabel").innerHTML = this.nameStation;
             document.getElementById("stationDetail").innerHTML = this.detail;
             document.getElementById("stationCapacity").innerHTML = this.capacity;
             document.getElementById("stationLat").innerHTML = this.latitude;
             document.getElementById("stationLon").innerHTML = this.longitude;
             document.getElementById("stationLon").innerHTML = this.longitude;
+            //mettre : "about=\"http://ex.com/"+this.city+"/"+this.idStation
+            //Dans le table de modal
 
             $('#modalProximite').on('show.bs.modal', function () {
                 setTimeout(function () {

@@ -47,9 +47,13 @@ public class StationListController {
         // FILTER regex(?stp, \"" + city + "\", \"i\").
         ResultSet rs = qe.execSelect();
         List<Station> stationList = new ArrayList<Station>();
+        List<String> villesUniques=new ArrayList<>();
         while (rs.hasNext()) {
             QuerySolution qs = rs.next();
             LocationCity locationCity = new LocationCity(qs.get("stp"));
+if(!villesUniques.contains(locationCity.getCityName().asLiteral().getString())){
+    villesUniques.add(locationCity.getCityName().asLiteral().getString());
+}
 
 
             if (!qs.get("nomStation").asLiteral().getString().toLowerCase().contains("test")) {
@@ -70,6 +74,7 @@ public class StationListController {
         ObjectMapper mapper = new ObjectMapper();
         String jsonInString = mapper.writeValueAsString(stationList);
         model.addAttribute("stationListJson", jsonInString);
+        model.addAttribute("villesUniques", villesUniques);
         return "stationList";
 
     }

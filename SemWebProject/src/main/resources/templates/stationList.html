@@ -60,11 +60,11 @@
                         </div>
 
                         <div class="col-md-6">
-                            <table id="stationId" about="" class="table table-striped table-bordered"
+                            <table id="stationId" about="" typeof="crm:Station" class="table table-striped table-bordered"
                                    style="width:100%">
                                 <tr style="min-height: 100px">
                                     <th>Ville</th>
-                                    <td id="locationCity" property="dbo:locationCity"></td>
+                                    <td id="locationCity" rel="dbo:locationCity"></td>
                                 </tr>
                                 <tr style="min-height: 100px">
                                     <th>Nom station</th>
@@ -118,7 +118,10 @@
                 </tr>
                 <tr style="min-height: 100px">
                     <th>Nombres de villes</th>
-                    <td id="qteVilles">800</td>
+                    <td id="qteVilles" th:text="${villesUniques.size()}"></td>
+                </tr>
+                <tr style="min-height: 100px">
+                     <td id="qteVilles2" th:text="${'Nous comptons '+stationList.size()+' stations dans '+villesUniques.size()+' villes à travers le monde'}"></td>
                 </tr>
             </table>
         </div>

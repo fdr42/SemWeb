@@ -19,7 +19,7 @@ public class AvailableRestController {
     @GetMapping(produces = "application/json")
     public int getAvailable(@RequestParam(name = "id") Integer id, @RequestParam(name = "city") String city) throws IOException, JSONException {
 
-        if (city.equals("Saint Etienne")) {
+        if (city.equals("Saint-Etienne")) {
             JSONObject response = readJsonFromUrl("https://saint-etienne-gbfs.klervi.net/gbfs/en/station_status.json");
             System.out.println(city + ": " + response);
             for (int i = 0; i < response.getJSONObject("data").getJSONArray("stations").length(); i++) {
