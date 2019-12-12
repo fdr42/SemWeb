@@ -11,7 +11,7 @@
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
       xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
       xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/" >
+      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/">
 <head>
     <meta charset="UTF-8"/>
     <title>Liste des stations </title>
@@ -76,7 +76,7 @@
                                 </tr>
                                 <tr style="min-height: 100px">
                                     <th>Nombres d'emplacements</th>
-                                    <td id="stationCapacity" property="rdfs:capacity"></td>
+                                    <td id="stationCapacity" property="dbo:capacity"></td>
                                 </tr>
                                 <tr style="display:none">
                                     <th>Latitude</th>
@@ -101,8 +101,22 @@
         <!-- Ici s'affichera la carte -->
     </div>
     <div class="col-md-6" onclick="setView(20,70,1.5)">
-        <div class="btn btn-success " onclick="setView(20,70,1.5)">
+        <div class="btn btn-success" style="width: 100%" onclick="setView(20,70,1.5)">
             Vue d'ensemble
+        </div>
+        <div class="pt-4">
+            <h3>Quelques chiffres</h3>
+            <table id="generalInfos" about="" class="table table-striped table-bordered"
+                   style="width:100%">
+                <tr style="min-height: 100px">
+                    <th>Nombre de sations</th>
+                    <td id="qteStation">100000</td>
+                </tr>
+                <tr style="min-height: 100px">
+                    <th>Nombres de villes</th>
+                    <td id="qteVilles">800</td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
@@ -111,7 +125,7 @@
         <tr>
             <th>Nom de la station</th>
             <th style="display:none">Id</th>
-            <th>Capacitée</th>
+            <th>Capacité</th>
             <th style="display:none">Latitude</th>
             <th style="display:none">Longitude</th>
             <th>Ville</th>
@@ -124,7 +138,7 @@
             th:about="${'http://ex.com/'+station.getLocationCity().replace(' ' ,'-')+'/'+station.stationId}" typeof="crm:Station">
             <td th:text="${station.stationName}" property="rdfs:label"></td>
             <td style="display:none" th:text="${station.getStationId()}" property="dbo:id"></td>
-            <td th:text="${station.capacity.toString()}" property="rdfs:capacity" datatype="xsd:integer"></td>
+            <td th:text="${station.capacity.toString()}" property="dbo:capacity" datatype="xsd:integer"></td>
             <td style="display:none" th:text="${station.latitude}" property="geo:lat" datatype="xsd:double"></td>
             <td style="display:none" th:text="${station.longitude}" property="geo:lon" datatype="xsd:double"></td>
             <td rel="dbo:locationCity"><a th:href="@{'http://dbpedia.org/resource/' + ${station.locationCity.toString().replace(' ', '-')}}" th:text="${station.locationCity.toString()}"></a></td>
