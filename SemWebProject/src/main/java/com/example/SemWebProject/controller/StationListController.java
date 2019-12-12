@@ -33,15 +33,16 @@ public class StationListController {
                 "PREFIX db: <http://dbpedia.org/>\n" +
                 "prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
                 "prefix owl: <http://www.w3.org/2002/07/owl#>\n" +
-                "SELECT ?nomStation (str(?capacity) as ?cap) (str(?latitude) as ?lat) (str(?longitude) as ?lon) ?id ?stp\n" +
+                "SELECT ?nomStation (str(?capacity) as ?cap) (str(?address) as ?add) (str(?latitude) as ?lat) (str(?longitude) as ?lon) ?id ?stp\n" +
                 "WHERE {\n" +
                 "  ?object dbo:locationCity ?label.\n" +
                 "  ?label rdfs:label ?stp.\n" +
                 "  ?object rdfs:label ?nomStation.\n" +
-                "  ?object rdfs:capacity ?capacity.\n" +
+                "  ?object dbo:capacity ?capacity.\n" +
                 "  ?object geo:lat ?latitude.\n" +
                 "  ?object geo:lon ?longitude.\n" +
                 "  ?object dbo:id ?id.\n" +
+                "  ?object rdfs:comment ?address.\n" +
                 "  }");
         // FILTER regex(?stp, \"" + city + "\", \"i\").
         ResultSet rs = qe.execSelect();
@@ -57,7 +58,8 @@ public class StationListController {
                         qs.get("nomStation"),
                         qs.get("cap"),
                         qs.get("lat"),
-                        qs.get("lon"));
+                        qs.get("lon"),
+                        qs.get("add"));
 
 
                 stationList.add(station);

@@ -15,7 +15,8 @@ GENERATE {
 		dbo:id ?Station_id;
 		dbo:locationCity dbr:Rennes;
            	rdfs:label ?name;
-    		rdfs:capacity ?capacity;
+    		dbo:capacity ?capacity;
+    		rdfs:comment "Commentaire non disponible.";
     		geo:lat ?lat;
     		geo:lon ?lon.
 }

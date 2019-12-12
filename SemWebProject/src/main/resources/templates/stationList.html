@@ -71,6 +71,10 @@
                                     <td id="stationLabel" property="rdfs:label"></td>
                                 </tr>
                                 <tr style="min-height: 100px">
+                                    <th>Détails</th>
+                                    <td id="stationDetail" property="rdfs:comment"></td>
+                                </tr>
+                                <tr style="min-height: 100px">
                                     <th>Vélos disponibles</th>
                                     <td id="available"></td>
                                 </tr>
@@ -110,7 +114,7 @@
                    style="width:100%">
                 <tr style="min-height: 100px">
                     <th>Nombre de sations</th>
-                    <td id="qteStation">100000</td>
+                    <td id="qteStation" th:text="${stationList.size()}"></td>
                 </tr>
                 <tr style="min-height: 100px">
                     <th>Nombres de villes</th>
@@ -124,6 +128,7 @@
         <thead>
         <tr>
             <th>Nom de la station</th>
+            <th>Détails</th>
             <th style="display:none">Id</th>
             <th>Capacité</th>
             <th style="display:none">Latitude</th>
@@ -137,6 +142,7 @@
                 th:onclick="'setView(' + ${station.getLatitude()} + ','+${station.getLongitude()}+',16);'"
             th:about="${'http://ex.com/'+station.getLocationCity().replace(' ' ,'-')+'/'+station.stationId}" typeof="crm:Station">
             <td th:text="${station.stationName}" property="rdfs:label"></td>
+            <td th:text="${station.address}" property="rdfs:comment"></td>
             <td style="display:none" th:text="${station.getStationId()}" property="dbo:id"></td>
             <td th:text="${station.capacity.toString()}" property="dbo:capacity" datatype="xsd:integer"></td>
             <td style="display:none" th:text="${station.latitude}" property="geo:lat" datatype="xsd:double"></td>

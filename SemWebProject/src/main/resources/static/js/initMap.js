@@ -44,6 +44,7 @@ function initMap() {
         var latPoint = listStation[j].latitude;
         var lonPoint = listStation[j].longitude;
         var nameStation = listStation[j].stationName;
+        var detail = listStation[j].address;
         var idStation = listStation[j].stationId;
         var city = listStation[j].locationCity;
         var capacity = listStation[j].capacity;
@@ -52,6 +53,7 @@ function initMap() {
         var marker = L.marker([latPoint, lonPoint]);
 
         marker.nameStation = nameStation;
+        marker.detail = detail;
         marker.latitude = latPoint;
         marker.longitude = lonPoint;
         marker.city = city;
@@ -134,6 +136,7 @@ function initMap() {
             document.getElementById("stationId").setAttribute("about", this.idStation);
             document.getElementById("locationCity").innerHTML = this.city;
             document.getElementById("stationLabel").innerHTML = this.nameStation;
+            document.getElementById("stationDetail").innerHTML = this.detail;
             document.getElementById("stationCapacity").innerHTML = this.capacity;
             document.getElementById("stationLat").innerHTML = this.latitude;
             document.getElementById("stationLon").innerHTML = this.longitude;
