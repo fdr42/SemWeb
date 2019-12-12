@@ -4,13 +4,15 @@
       xmlns="http://www.w3.org/1999/xhtml"
 >
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr"
+<html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:dbo="http://dbpedia.org/ontology/"
       xmlns:dbr="http://dbpedia.org/resource/"
       xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
       xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+      xml:base="http://www.ex.com/"
+      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/" >
 <head>
     <meta charset="UTF-8"/>
     <title>Liste des stations </title>
@@ -93,29 +95,36 @@
             </div>
         </div>
     </div>
-
-    <div id="map" class="mb-3">
+<div class="row">
+    <div id="map" class="mb-3 col-md-6">
         <!-- Ici s'affichera la carte -->
     </div>
-
-    <table id="example" class="table table-striped table-bordered" style="width:100%; height: 100%">
+    <div class="btn btn-success col-md-6" onclick="setView(20,70,1.5)">
+        Vue d'ensemble
+    </div>
+</div>
+    <table id="example" class="table table-striped table-bordered table-hover" style="width:100%; height: 100%">
         <thead>
         <tr>
             <th>Nom de la station</th>
+            <th style="display:none">Id</th>
             <th>Capacitée</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
+            <th style="display:none">Latitude</th>
+            <th style="display:none">Longitude</th>
             <th>Ville</th>
         </tr>
         </thead>
         <tbody>
-        <tr th:each="station : ${stationList}"
-            th:about="${station.getLocationCity().replace(' ' ,'-')+'/'+station.stationId}">
+        <tr class=""
+                th:each="station : ${stationList}"
+                th:onclick="'setView(' + ${station.getLatitude()} + ','+${station.getLongitude()}+',16);'"
+            th:about="${'http://ex.com/'+station.getLocationCity().replace(' ' ,'-')+'/'+station.stationId}" typeof="crm:Station">
             <td th:text="${station.stationName}" property="rdfs:label"></td>
+            <td style="display:none" th:text="${station.getStationId()}" property="dbo:id"></td>
             <td th:text="${station.capacity.toString()}" property="rdfs:capacity" datatype="xsd:integer"></td>
-            <td th:text="${station.latitude}" property="geo:lat" datatype="xsd:double"></td>
-            <td th:text="${station.longitude}" property="geo:lon" datatype="xsd:double"></td>
-            <td th:content="${'<http://dbpedia.org/resource/' + station.locationCity.toString() + '>'}" datatype="xsd:anyURI" property="dbr:locationCity"><a th:href="@{'http://dbpedia.org/resource/' + ${station.locationCity.toString()}}" th:text="${station.locationCity.toString()}"></a></td>
+            <td style="display:none" th:text="${station.latitude}" property="geo:lat" datatype="xsd:double"></td>
+            <td style="display:none" th:text="${station.longitude}" property="geo:lon" datatype="xsd:double"></td>
+            <td rel="dbo:locationCity"><a th:href="@{'http://dbpedia.org/resource/' + ${station.locationCity.toString().replace(' ', '-')}}" th:text="${station.locationCity.toString()}"></a></td>
         </tr>
         </tbody>
     </table>

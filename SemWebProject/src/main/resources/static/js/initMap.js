@@ -30,7 +30,7 @@ function initMap() {
         popupAnchor: [1, -34],
         shadowSize: [41, 41]
     });
-    macarte = L.map('map').setView([46.52863469527167, 2.43896484375], 5);
+    macarte = L.map('map').setView([20, 70], 1.5);
     markerClusters = L.markerClusterGroup();
     // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
@@ -154,6 +154,10 @@ function initMap() {
 
     macarte.addLayer(markerClusters);
 
+}
+function setView(lat, lon,zoom){
+
+   macarte.setView([lat, lon], zoom);
 }
 
 window.onload = function () {
