@@ -1,6 +1,7 @@
 # General description
 The aim of this project is to do a website that provide bikes stations informations and some other informations linked to this bikes stations using the principles semantic web. Follow this [link](https://en.wikipedia.org/wiki/Semantic_Web) to learn more about semantic web.
 
+
 # How to setup ?
 ## Jena database 
 Follow this [link](https://jena.apache.org/download/index.cgi) to install Apache Jena Fuseki
@@ -53,7 +54,7 @@ Follow this [link](https://jena.apache.org/index.html) to learn more about Apach
 
 ## RDFa
   
-We have integrated **RDFa** technology into html pages to facilitate data extraction. We made sure that all information of all the stations could be extracted via the source code of the main page, or each station individually via the station details popup.
+We have integrated **RDFa** technology into html pages to facilitate data extraction. We made sure that all information of all the stations could be extracted via the source code of the main page, or each station individually via the station details popup. (in **resources/templates/stationList.html**)
 # Other technologies used
 ## Spring boot
 We use [Spring boot](https://spring.io/projects/spring-boot) to do the backend of our web site.
