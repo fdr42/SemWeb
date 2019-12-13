@@ -1,18 +1,18 @@
+BASE <http://ex.com/>
 PREFIX ite: <http://w3id.org/sparql-generate/iter/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 PREFIX dbo:<http://dbpedia.org/ontology/>
 PREFIX dbr:<http://dbpedia.org/resource/> 
 PREFIX schema:<http://schema.org/> 
-PREFIX db: <http://dbpedia.org/>
+PREFIX ex: <http://ex.com/Ontology#>
 
 GENERATE { 
   
   <http://dbpedia.org/resource/{?cityFormated}> a schema:City;
     rdfs:label ?cityFormated.
 
-  <http://ex.com/{?cityFormated}/{?Station_id}> a crm:Station;
+  <http://ex.com/{?cityFormated}/{?Station_id}> a ex:Station;
 		dbo:id ?Station_id;
 		dbo:locationCity <http://dbpedia.org/resource/{?cityFormated}>;
            	rdfs:label  ?outputName;

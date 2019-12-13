@@ -4,14 +4,13 @@
       xmlns="http://www.w3.org/1999/xhtml"
 >
 
-<html xmlns="http://www.w3.org/1999/xhtml"
+<html xml:base="http://www.ex.com/"
       xmlns:dbo="http://dbpedia.org/ontology/"
       xmlns:dbr="http://dbpedia.org/resource/"
       xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
       xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-      xmlns:crm="http://www.cidoc-crm.org/cidoc-crm/">
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
 <head>
     <meta charset="UTF-8"/>
     <title>Liste des stations </title>
@@ -60,7 +59,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <table id="stationId" about="" typeof="crm:Station" class="table table-striped table-bordered"
+                            <table id="stationId" about="" typeof="ex:Station" class="table table-striped table-bordered"
                                    style="width:100%">
                                 <tr style="min-height: 100px">
                                     <th>Ville</th>
@@ -120,9 +119,7 @@
                     <th>Nombres de villes</th>
                     <td id="qteVilles" th:text="${villesUniques.size()}"></td>
                 </tr>
-                <tr style="min-height: 100px">
-                     <td id="qteVilles2" th:text="${'Nous comptons '+stationList.size()+' stations dans '+villesUniques.size()+' villes à travers le monde'}"></td>
-                </tr>
+               
             </table>
         </div>
     </div>
@@ -143,7 +140,7 @@
         <tr class=""
                 th:each="station : ${stationList}"
                 th:onclick="'setView(' + ${station.getLatitude()} + ','+${station.getLongitude()}+',16);'"
-            th:about="${'http://ex.com/'+station.getLocationCity().replace(' ' ,'-')+'/'+station.stationId}" typeof="crm:Station">
+            th:about="${'http://ex.com/'+station.getLocationCity().replace(' ' ,'-')+'/'+station.stationId}" typeof="ex:Station">
             <td th:text="${station.stationName}" property="rdfs:label"></td>
             <td th:text="${station.address}" property="rdfs:comment"></td>
             <td style="display:none" th:text="${station.getStationId()}" property="dbo:id"></td>

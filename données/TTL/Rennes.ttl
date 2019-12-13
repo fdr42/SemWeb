@@ -3,14 +3,13 @@
 @prefix schema: <http://schema.org/> .
 @prefix dbo:   <http://dbpedia.org/ontology/> .
 @prefix geo:   <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix ex:    <http://ex.com/Ontology#> .
 @prefix dbr:   <http://dbpedia.org/resource/> .
-@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix ite:   <http://w3id.org/sparql-generate/iter/> .
-@prefix crm:   <http://www.cidoc-crm.org/cidoc-crm/> .
 
 <http://ex.com/Rennes/5534>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "Brest - Verdun" ;
         dbo:capacity      24 ;
@@ -20,7 +19,7 @@
         geo:lon           -1.693264e0 .
 
 <http://ex.com/Rennes/5582>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "La Poterie" ;
         dbo:capacity      28 ;
@@ -33,7 +32,7 @@ dbr:Rennes  a       schema:City ;
         rdfs:label  "Rennes" .
 
 <http://ex.com/Rennes/5580>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "Painlevé" ;
         dbo:capacity      18 ;
@@ -43,7 +42,7 @@ dbr:Rennes  a       schema:City ;
         geo:lon           -1.660547e0 .
 
 <http://ex.com/Rennes/5521>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "La Criée" ;
         dbo:capacity      24 ;
@@ -53,7 +52,7 @@ dbr:Rennes  a       schema:City ;
         geo:lon           -1.680085e0 .
 
 <http://ex.com/Rennes/5510>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "Musée Beaux-Arts" ;
         dbo:capacity      16 ;
@@ -63,7 +62,7 @@ dbr:Rennes  a       schema:City ;
         geo:lon           -1.67408e0 .
 
 <http://ex.com/Rennes/5546>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "Plaine de Baud" ;
         dbo:capacity      24 ;
@@ -73,7 +72,7 @@ dbr:Rennes  a       schema:City ;
         geo:lon           -1.643674e0 .
 
 <http://ex.com/Rennes/5581>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "Turmel" ;
         dbo:capacity      16 ;
@@ -83,7 +82,7 @@ dbr:Rennes  a       schema:City ;
         geo:lon           -1.650808e0 .
 
 <http://ex.com/Rennes/5538>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "Marbeuf" ;
         dbo:capacity      20 ;
@@ -93,7 +92,7 @@ dbr:Rennes  a       schema:City ;
         geo:lon           -1.702077e0 .
 
 <http://ex.com/Rennes/5516>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "Champs Libres" ;
         dbo:capacity      24 ;
@@ -103,10 +102,10 @@ dbr:Rennes  a       schema:City ;
         geo:lon           -1.674328e0 .
 
 <http://ex.com/Rennes/5578>
-        a                 crm:Station ;
+        a                 ex:Station ;
         rdfs:comment      "Commentaire non disponible." ;
         rdfs:label        "Gros-Chêne" ;
-        dbo:capacity      17 ;
+        dbo:capacity      18 ;
         dbo:id            "5578" ;
         dbo:locationCity  dbr:Rennes ;
         geo:lat           48.126795e0 ;
