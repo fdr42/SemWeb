@@ -1,0 +1,32 @@
+BASE <http://ex.com/>
+PREFIX ite: <http://w3id.org/sparql-generate/iter/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX dbo:<http://dbpedia.org/ontology/>
+PREFIX dbr:<http://dbpedia.org/resource/> 
+PREFIX schema:<http://schema.org/> 
+PREFIX ex: <http://ex.com/Ontology#>
+
+GENERATE { 
+  
+  <http://dbpedia.org/resource/{?cityFormated}> a schema:City;
+    rdfs:label ?cityFormated.
+
+  <http://ex.com/{?cityFormated}/{?Station_id}> a ex:Station;
+		dbo:id ?Station_id;
+		dbo:locationCity <http://dbpedia.org/resource/{?cityFormated}>;
+           	rdfs:label  ?outputName;
+    		dbo:capacity ?capacity;
+    		rdfs:comment ?address;
+    		geo:lat ?lat;
+    		geo:lon ?lon.
+}
+
+ITERATOR ite:JSONPath(<https://api.jcdecaux.com/vls/v3/stations?apiKey=4a9440953e549e83e6263734f3ced9b67c44b639>,"$[*]", ".number","$.contractName","$.name","$.address", "$.totalStands.capacity", "$.position.latitude", "$.position.longitude") AS ?station ?Station_id ?city ?name ?address ?capacity ?lat ?lon 
+   WHERE{
+  BIND(REPLACE(STR(?name),"^.*?(?=[a-z]|[A-Z])","") AS ?outputName) .
+  BIND(CONCAT(UCASE(SUBSTR(?city, 1, 1)), SUBSTR(?city, 2)) as ?cityFormated).
+  } 
+
+
+

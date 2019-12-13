@@ -1,0 +1,24 @@
+BASE <http://ex.com/>
+PREFIX ite: <http://w3id.org/sparql-generate/iter/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+PREFIX dbo:<http://dbpedia.org/ontology/>
+PREFIX dbr:<http://dbpedia.org/resource/> 
+PREFIX schema:<http://schema.org/> 
+PREFIX ex: <http://ex.com/Ontology#>
+
+GENERATE { 
+  dbr:Rennes a schema:City;
+    	rdfs:label "Rennes".
+
+  <http://ex.com/Rennes/{ ?Station_id }> a ex:Station;
+		dbo:id ?Station_id;
+		dbo:locationCity dbr:Rennes;
+           	rdfs:label ?name;
+    		dbo:capacity ?capacity;
+    		rdfs:comment "Commentaire non disponible.";
+    		geo:lat ?lat;
+    		geo:lon ?lon.
+}
+ITERATOR ite:JSONPath(<https://data.rennesmetropole.fr/api/records/1.0/search/?dataset=etat-des-stations-le-velo-star-en-temps-reel>,"$.records.[*]", "$.fields.idstation","$.fields.nom", "$.fields.nombreemplacementsactuels", "$.fields.coordonnees[0]", "$.fields.coordonnees[1]") AS ?station ?Station_id ?name ?capacity ?lat ?lon
+
