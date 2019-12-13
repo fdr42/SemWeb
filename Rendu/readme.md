@@ -49,7 +49,7 @@ Follow this [link](https://jena.apache.org/index.html) to learn more about Apach
 ## Where in code
 * First there is a controller that load all the stations from Apache Jena Fuseki (**in controller/StationListController.java**). 
 	* The request is done using Apache jena (see pom.xml).
-* Second there is a rest controller that request [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) to find important place near a station 
+* Second there is a rest controller that request (with SPARQL request) [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) to find important place near a station 
 (**in restController/ProximityListController.java**).
 	* Like the first controller, the request is done using Apache jena (see pom.xml).
 
